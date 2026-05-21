@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "n_clusters": 16,
+    "n_labeled": 16,
+    "default_fusion_weights": [
+      0.6,
+      0.4
+    ]
+  },
+  "entries": {
+    "0": {
+      "tactic": "Reconnaissance",
+      "tactic_id": "TA0043",
+      "p_gmm": 0.40214994371650026,
+      "p_llm": 0.7,
+      "reasoning": "The cluster shows a distributed connectivity pattern with very short duration and inbound heavy traffic, which is indicative of scanning or probing activities. The below-average throughput and TCP flags also suggest a potential reconnaissance activity.",
+      "summary_text": "=== Cluster 0 Summary ===\nSize: 13650 flows (40.2% of dataset)\n\nTop Distinguishing Features:\n  - DST_TO_SRC_AVG_THROUGHPUT: BELOW global average (effect=-0.54, cluster=-0.536, global=-0.000)\n  - OUT_BYTES: BELOW global average (effect=-0.50, cluster=-0.504, global=0.000)\n  - TCP_FLAGS: BELOW global average (effect=-0.48, cluster=-0.485, global=-0.000)\n  - SERVER_TCP_FLAGS: BELOW global average (effect=-0.43, cluster=-0.433, global=-0.000)\n  - DST_TO_SRC_BYTES_SEC: BELOW global average (effect=-0.43, cluster=-0.427, global=0.000)\n  - TCP_WIN_MAX_IN: BELOW global average (effect=-0.41, cluster=-0.414, global=0.000)\n  - OUT_PKTS: BELOW global average (effect=-0.39, cluster=-0.395, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 7\n  - Unique destinations: 15\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 1950.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.0358\n  - OUT_BYTES: -0.8932\n  - OUT_PKTS: -0.6648\n  - FLOW_DURATION_MS: 0.6168\n  - DURATION_IN: 0.9116\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: 0.6850",
+      "fusion_weights": [
+        0.8,
+        0.19999999999999996
+      ]
+    },
+    "1": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.42543170351456433,
+      "p_llm": 0.75,
+      "reasoning": "The network traffic shows a distributed connectivity pattern with multiple unique sources communicating to a single unique destination, which is characteristic of Command and Control (C2) communication. The above-average server TCP flags and packet size also suggest an active C2 communication.",
+      "summary_text": "=== Cluster 1 Summary ===\nSize: 14441 flows (42.5% of dataset)\n\nTop Distinguishing Features:\n  - SERVER_TCP_FLAGS: ABOVE global average (effect=+0.43, cluster=0.432, global=-0.000)\n  - TCP_WIN_MAX_OUT: ABOVE global average (effect=+0.43, cluster=0.430, global=0.000)\n  - TCP_WIN_MAX_IN: BELOW global average (effect=-0.32, cluster=-0.316, global=0.000)\n  - DURATION_OUT: BELOW global average (effect=-0.30, cluster=-0.298, global=-0.000)\n  - FLOW_DURATION_MS: BELOW global average (effect=-0.26, cluster=-0.256, global=-0.000)\n  - SHORTEST_FLOW_PKT: BELOW global average (effect=-0.24, cluster=-0.237, global=0.000)\n  - NUM_PKTS_UP_TO_128_BYTES: ABOVE global average (effect=+0.23, cluster=0.227, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: BALANCED\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 7\n  - Unique destinations: 1\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 2063.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.5463\n  - OUT_BYTES: 0.6836\n  - OUT_PKTS: 0.3656\n  - FLOW_DURATION_MS: -1.6212\n  - DURATION_IN: -1.1654\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: -1.2552",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "2": {
+      "tactic": "Reconnaissance",
+      "tactic_id": "TA0043",
+      "p_gmm": 0.1604577798370381,
+      "p_llm": 0.85,
+      "reasoning": "The network traffic shows a ONE_TO_MANY connectivity pattern, which is indicative of scanning or probing. The traffic is also inbound heavy and very short in duration, which is consistent with reconnaissance activities.",
+      "summary_text": "=== Cluster 2 Summary ===\nSize: 5447 flows (16.0% of dataset)\n\nTop Distinguishing Features:\n  - TCP_WIN_MAX_IN: ABOVE global average (effect=+1.90, cluster=1.902, global=0.000)\n  - DURATION_OUT: ABOVE global average (effect=+1.36, cluster=1.365, global=-0.000)\n  - CLIENT_TCP_FLAGS: ABOVE global average (effect=+1.21, cluster=1.211, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+1.09, cluster=1.090, global=0.000)\n  - MIN_TTL: BELOW global average (effect=-0.92, cluster=-0.919, global=-0.000)\n  - OUT_BYTES: ABOVE global average (effect=+0.87, cluster=0.866, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 15\n  - Connectivity pattern: ONE_TO_MANY (scanning/spray)\n  - Avg fan-out: 5447.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.5463\n  - OUT_BYTES: 1.3140\n  - OUT_PKTS: 0.9684\n  - FLOW_DURATION_MS: 0.6168\n  - DURATION_IN: -1.1654\n  - DURATION_OUT: 3.0566\n  - MIN_TTL: -1.2552",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "3": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.00026442488780994343,
+      "p_llm": 0.8,
+      "reasoning": "The traffic pattern shows a balanced, short duration, one-to-one connectivity which is typical for command and control communication. The above average packet lengths and counts also suggest a consistent data exchange, which is common in C2 communication.",
+      "summary_text": "=== Cluster 3 Summary ===\nSize: 8 flows (0.0% of dataset)\n\nTop Distinguishing Features:\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+11.75, cluster=11.754, global=-0.000)\n  - OUT_PKTS: ABOVE global average (effect=+10.12, cluster=10.118, global=0.000)\n  - IN_PKTS: ABOVE global average (effect=+7.72, cluster=7.716, global=0.000)\n  - SHORTEST_FLOW_PKT: ABOVE global average (effect=+6.51, cluster=6.507, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+5.43, cluster=5.432, global=0.000)\n  - OUT_BYTES: ABOVE global average (effect=+5.09, cluster=5.095, global=0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+3.51, cluster=3.513, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: BALANCED\n  - Duration: SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 1\n  - Connectivity pattern: ONE_TO_ONE (targeted/tunnel)\n  - Avg fan-out: 8.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 5.9414\n  - OUT_BYTES: 4.4950\n  - OUT_PKTS: 8.0265\n  - FLOW_DURATION_MS: 0.6168\n  - DURATION_IN: 0.9978\n  - DURATION_OUT: 3.0223\n  - MIN_TTL: 2.5949",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "4": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.0018463362465585512,
+      "p_llm": 0.8,
+      "reasoning": "The network traffic cluster indicates a one-to-one targeted or tunnel connection with balanced traffic direction and short duration, which is typical of Command and Control (C2) communication. The above-average packet lengths and bytes per second also suggest data being sent and received, possibly command instructions and their responses.",
+      "summary_text": "=== Cluster 4 Summary ===\nSize: 62 flows (0.2% of dataset)\n\nTop Distinguishing Features:\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+11.73, cluster=11.730, global=-0.000)\n  - OUT_PKTS: ABOVE global average (effect=+8.52, cluster=8.515, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+7.50, cluster=7.497, global=0.000)\n  - SHORTEST_FLOW_PKT: ABOVE global average (effect=+6.49, cluster=6.493, global=0.000)\n  - IN_PKTS: ABOVE global average (effect=+6.36, cluster=6.356, global=0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+5.26, cluster=5.264, global=0.000)\n  - OUT_BYTES: ABOVE global average (effect=+4.63, cluster=4.625, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: BALANCED\n  - Duration: SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 1\n  - Connectivity pattern: ONE_TO_ONE (targeted/tunnel)\n  - Avg fan-out: 62.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 6.9120\n  - OUT_BYTES: 4.8183\n  - OUT_PKTS: 9.1746\n  - FLOW_DURATION_MS: 0.6168\n  - DURATION_IN: 0.9918\n  - DURATION_OUT: 3.0131\n  - MIN_TTL: 2.5949",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "7": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.0018892559816006144,
+      "p_llm": 0.8,
+      "reasoning": "The distinguishing features of this cluster suggest a high volume of outbound traffic, which is typical of Command and Control (C2) communication. The distributed connectivity pattern and the very short duration of the flows also align with C2 tactics, where the attacker communicates with multiple compromised systems in a short amount of time.",
+      "summary_text": "=== Cluster 7 Summary ===\nSize: 64 flows (0.2% of dataset)\n\nTop Distinguishing Features:\n  - OUT_BYTES: ABOVE global average (effect=+1.93, cluster=1.926, global=0.000)\n  - OUT_PKTS: ABOVE global average (effect=+1.79, cluster=1.795, global=0.000)\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+1.54, cluster=1.538, global=-0.000)\n  - LONGEST_FLOW_PKT: ABOVE global average (effect=+1.38, cluster=1.379, global=-0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+1.36, cluster=1.365, global=0.000)\n  - DST_TO_SRC_AVG_THROUGHPUT: ABOVE global average (effect=+1.16, cluster=1.161, global=-0.000)\n  - NUM_PKTS_UP_TO_128_BYTES: ABOVE global average (effect=+1.07, cluster=1.075, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 9\n  - Unique destinations: 57\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 7.1\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 8.3881\n  - OUT_BYTES: 7.1262\n  - OUT_PKTS: 11.2469\n  - FLOW_DURATION_MS: 0.6168\n  - DURATION_IN: 0.2134\n  - DURATION_OUT: 1.8065\n  - MIN_TTL: 0.6850",
+      "fusion_weights": [
+        0.8,
+        0.19999999999999996
+      ]
+    },
+    "8": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.00020258347620880584,
+      "p_llm": 0.8,
+      "reasoning": "The traffic pattern is inbound heavy with a very short duration, indicating a possible command and control server communication. The above average outbound bytes and below average flow duration also suggest a quick data exchange, which is typical in C2 communication.",
+      "summary_text": "=== Cluster 8 Summary ===\nSize: 6 flows (0.0% of dataset)\n\nTop Distinguishing Features:\n  - FLOW_DURATION_MS: BELOW global average (effect=-1.62, cluster=-1.621, global=-0.000)\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+1.55, cluster=1.551, global=-0.000)\n  - OUT_BYTES: ABOVE global average (effect=+1.48, cluster=1.482, global=0.000)\n  - DST_TO_SRC_AVG_THROUGHPUT: ABOVE global average (effect=+1.29, cluster=1.288, global=-0.000)\n  - MIN_TTL: BELOW global average (effect=-1.26, cluster=-1.255, global=-0.000)\n  - DURATION_IN: BELOW global average (effect=-1.17, cluster=-1.165, global=-0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 1\n  - Connectivity pattern: ONE_TO_ONE (targeted/tunnel)\n  - Avg fan-out: 6.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.5463\n  - OUT_BYTES: 1.5817\n  - OUT_PKTS: 0.3656\n  - FLOW_DURATION_MS: -1.6212\n  - DURATION_IN: -1.1654\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: -1.2552",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "9": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.00028832125521497125,
+      "p_llm": 0.8,
+      "reasoning": "The traffic pattern indicates a single source communicating with multiple destinations, suggesting a Command and Control (C2) pattern. The above-average outbound bytes and below-average flow duration suggest short, data-heavy communications typical of C2 traffic.",
+      "summary_text": "=== Cluster 9 Summary ===\nSize: 9 flows (0.0% of dataset)\n\nTop Distinguishing Features:\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+1.86, cluster=1.861, global=-0.000)\n  - OUT_BYTES: ABOVE global average (effect=+1.72, cluster=1.723, global=0.000)\n  - DST_TO_SRC_AVG_THROUGHPUT: ABOVE global average (effect=+1.38, cluster=1.376, global=-0.000)\n  - MIN_TTL: BELOW global average (effect=-1.26, cluster=-1.255, global=-0.000)\n  - DURATION_IN: BELOW global average (effect=-1.17, cluster=-1.165, global=-0.000)\n  - FLOW_DURATION_MS: BELOW global average (effect=-1.12, cluster=-1.124, global=-0.000)\n  - TCP_FLAGS: BELOW global average (effect=-1.04, cluster=-1.044, global=-0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 9\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 9.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.5463\n  - OUT_BYTES: 1.6245\n  - OUT_PKTS: 0.3656\n  - FLOW_DURATION_MS: -1.6212\n  - DURATION_IN: -1.1654\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: -1.2552",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "10": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.005399434146902023,
+      "p_llm": 0.85,
+      "reasoning": "The cluster shows a high amount of outbound traffic with short durations, which is indicative of Command and Control (C2) communication. The one-to-one connectivity pattern suggests a targeted or tunneled connection, which is common in C2 scenarios.",
+      "summary_text": "=== Cluster 10 Summary ===\nSize: 187 flows (0.6% of dataset)\n\nTop Distinguishing Features:\n  - SHORTEST_FLOW_PKT: ABOVE global average (effect=+6.66, cluster=6.663, global=0.000)\n  - IN_PKTS: ABOVE global average (effect=+6.11, cluster=6.109, global=0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+4.59, cluster=4.586, global=0.000)\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+3.51, cluster=3.507, global=-0.000)\n  - MIN_TTL: ABOVE global average (effect=+2.59, cluster=2.595, global=-0.000)\n  - OUT_PKTS: ABOVE global average (effect=+2.27, cluster=2.272, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+1.95, cluster=1.953, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: OUTBOUND_HEAVY\n  - Duration: SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 1\n  - Connectivity pattern: ONE_TO_ONE (targeted/tunnel)\n  - Avg fan-out: 187.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 6.5939\n  - OUT_BYTES: 4.7344\n  - OUT_PKTS: 8.7971\n  - FLOW_DURATION_MS: 0.6168\n  - DURATION_IN: 1.0429\n  - DURATION_OUT: 3.0922\n  - MIN_TTL: 2.5949",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "12": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.0019821516039590908,
+      "p_llm": 0.8,
+      "reasoning": "The above-average packet lengths, number of packets, and bytes sent/received suggest a consistent communication pattern, which is typical of Command and Control (C2) traffic. The balanced traffic direction and short duration also align with this tactic.",
+      "summary_text": "=== Cluster 12 Summary ===\nSize: 70 flows (0.2% of dataset)\n\nTop Distinguishing Features:\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+4.39, cluster=4.389, global=-0.000)\n  - OUT_PKTS: ABOVE global average (effect=+4.23, cluster=4.228, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+3.31, cluster=3.311, global=0.000)\n  - IN_PKTS: ABOVE global average (effect=+2.72, cluster=2.724, global=0.000)\n  - DURATION_OUT: ABOVE global average (effect=+2.67, cluster=2.665, global=-0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+2.56, cluster=2.560, global=0.000)\n  - OUT_BYTES: ABOVE global average (effect=+2.51, cluster=2.508, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: BALANCED\n  - Duration: SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 2\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 70.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.3264\n  - OUT_BYTES: 1.2536\n  - OUT_PKTS: 1.3961\n  - FLOW_DURATION_MS: 0.6168\n  - DURATION_IN: 0.3706\n  - DURATION_OUT: 2.0501\n  - MIN_TTL: 0.6850",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "19": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.9966947169811321,
+      "p_llm": 0.7,
+      "reasoning": "The traffic pattern shows a high volume of inbound traffic with very short duration, which is typical of command and control servers sending instructions to compromised hosts. The high fan-out and distributed connectivity pattern also suggest a command and control network.",
+      "summary_text": "=== Cluster 19 Summary ===\nSize: 794 flows (79.4% of dataset)\n\nTop Distinguishing Features:\n  - PROTO_OTHER: BELOW global average (effect=-1.68, cluster=-0.005, global=-0.005)\n  - SRC_PORT_REGISTERED: ABOVE global average (effect=+0.09, cluster=-0.046, global=-0.136)\n  - SRC_PORT_EPHEMERAL: BELOW global average (effect=-0.08, cluster=0.479, global=0.574)\n  - PROTO_TCP: ABOVE global average (effect=+0.05, cluster=0.627, global=0.620)\n  - SRC_PORT_WELL_KNOWN: BELOW global average (effect=-0.05, cluster=-0.476, global=-0.468)\n  - DST_PORT_WELL_KNOWN: ABOVE global average (effect=+0.05, cluster=-0.378, global=-0.427)\n  - PROTO_ICMP: BELOW global average (effect=-0.04, cluster=-0.142, global=-0.128)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 3\n  - Unique destinations: 4\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 264.7\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.5463\n  - OUT_BYTES: 0.6836\n  - OUT_PKTS: 0.3656\n  - FLOW_DURATION_MILLISECONDS: -1.6212\n  - DURATION_IN: -1.1654\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: -1.2552",
+      "fusion_weights": [
+        0.8,
+        0.19999999999999996
+      ]
+    },
+    "18": {
+      "tactic": "Reconnaissance",
+      "tactic_id": "TA0043",
+      "p_gmm": 0.4350800000000001,
+      "p_llm": 0.7,
+      "reasoning": "The traffic pattern shows a high number of ephemeral source ports and a distributed connectivity pattern, which suggests scanning or probing activity. The very short duration of the flows also aligns with a reconnaissance tactic.",
+      "summary_text": "=== Cluster 18 Summary ===\nSize: 758 flows (75.8% of dataset)\n\nTop Distinguishing Features:\n  - PROTO_OTHER: BELOW global average (effect=-1.68, cluster=-0.005, global=-0.005)\n  - SRC_PORT_EPHEMERAL: ABOVE global average (effect=+0.07, cluster=0.638, global=0.561)\n  - SRC_PORT_REGISTERED: BELOW global average (effect=-0.07, cluster=-0.186, global=-0.120)\n  - L7_OTHER: BELOW global average (effect=-0.04, cluster=-0.559, global=-0.545)\n  - SRC_PORT_WELL_KNOWN: BELOW global average (effect=-0.03, cluster=-0.476, global=-0.473)\n  - PROTO_ICMP: BELOW global average (effect=-0.03, cluster=-0.142, global=-0.135)\n  - DURATION_OUT: BELOW global average (effect=-0.03, cluster=-0.300, global=-0.291)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 3\n  - Unique destinations: 4\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 252.7\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.5463\n  - OUT_BYTES: -0.8932\n  - OUT_PKTS: -0.6648\n  - FLOW_DURATION_MILLISECONDS: -1.6212\n  - DURATION_IN: -1.1654\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: -1.2552",
+      "fusion_weights": [
+        0.7,
+        0.30000000000000004
+      ]
+    },
+    "17": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.14740249873535416,
+      "p_llm": 0.7,
+      "reasoning": "The cluster shows a high number of flows from a few unique sources to multiple destinations, indicating a distributed connectivity pattern. The high number of packets of 128 to 256 bytes and the very short duration of the flows suggest the presence of command and control communication.",
+      "summary_text": "=== Cluster 17 Summary ===\nSize: 283 flows (28.3% of dataset)\n\nTop Distinguishing Features:\n  - PROTO_ICMP: BELOW global average (effect=-22.74, cluster=-0.142, global=-0.142)\n  - PROTO_OTHER: BELOW global average (effect=-1.18, cluster=-0.005, global=-0.005)\n  - SRC_PORT_EPHEMERAL: ABOVE global average (effect=+0.16, cluster=0.717, global=0.533)\n  - SRC_PORT_REGISTERED: BELOW global average (effect=-0.16, cluster=-0.255, global=-0.098)\n  - SERVER_TCP_FLAGS: BELOW global average (effect=-0.14, cluster=1.090, global=1.167)\n  - DST_TO_SRC_AVG_THROUGHPUT: BELOW global average (effect=-0.13, cluster=0.820, global=0.885)\n  - NUM_PKTS_128_TO_256_BYTES: ABOVE global average (effect=+0.13, cluster=-0.077, global=-0.183)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 2\n  - Unique destinations: 4\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 141.5\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.3264\n  - OUT_BYTES: 0.7231\n  - OUT_PKTS: 0.3656\n  - FLOW_DURATION_MILLISECONDS: 0.6168\n  - DURATION_IN: 1.0875\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: 0.6850",
+      "fusion_weights": [
+        0.7,
+        0.30000000000000004
+      ]
+    },
+    "16": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.060715294117651676,
+      "p_llm": 0.7,
+      "reasoning": "The traffic pattern is inbound heavy with a very short duration, suggesting a command and control server sending commands to a compromised host. The above average registered source port and the distributed connectivity pattern also align with a command and control tactic.",
+      "summary_text": "=== Cluster 16 Summary ===\nSize: 248 flows (24.8% of dataset)\n\nTop Distinguishing Features:\n  - PROTO_OTHER: BELOW global average (effect=-1.06, cluster=-0.005, global=-0.005)\n  - SRC_PORT_REGISTERED: ABOVE global average (effect=+0.20, cluster=0.057, global=-0.142)\n  - SRC_PORT_EPHEMERAL: BELOW global average (effect=-0.20, cluster=0.360, global=0.586)\n  - LONGEST_FLOW_PKT: ABOVE global average (effect=+0.09, cluster=-0.025, global=-0.041)\n  - FLOW_DURATION_MILLISECONDS: ABOVE global average (effect=+0.08, cluster=-0.592, global=-0.679)\n  - TCP_WIN_MAX_OUT: ABOVE global average (effect=+0.07, cluster=0.983, global=0.866)\n  - NUM_PKTS_128_TO_256_BYTES: ABOVE global average (effect=+0.06, cluster=-0.118, global=-0.172)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 4\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 248.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.5463\n  - OUT_BYTES: 0.6836\n  - OUT_PKTS: 0.3656\n  - FLOW_DURATION_MILLISECONDS: -1.6212\n  - DURATION_IN: -1.1654\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: -1.2552",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "15": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.0475531990838656,
+      "p_llm": 0.7,
+      "reasoning": "The traffic pattern is inbound heavy with very short duration, which is typical for command and control servers sending commands to compromised hosts. The use of UDP protocol and registered source ports also aligns with common C2 communication methods.",
+      "summary_text": "=== Cluster 15 Summary ===\nSize: 239 flows (23.9% of dataset)\n\nTop Distinguishing Features:\n  - PROTO_UDP: ABOVE global average (effect=+166.89, cluster=-0.596, global=-0.596)\n  - PROTO_OTHER: BELOW global average (effect=-1.02, cluster=-0.005, global=-0.005)\n  - SRC_PORT_REGISTERED: ABOVE global average (effect=+0.26, cluster=0.152, global=-0.106)\n  - SRC_PORT_EPHEMERAL: BELOW global average (effect=-0.25, cluster=0.251, global=0.544)\n  - SHORTEST_FLOW_PKT: ABOVE global average (effect=+0.10, cluster=-0.330, global=-0.360)\n  - L7_OTHER: ABOVE global average (effect=+0.09, cluster=-0.538, global=-0.563)\n  - NUM_PKTS_UP_TO_128_BYTES: BELOW global average (effect=-0.08, cluster=0.220, global=0.256)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 4\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 239.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.0358\n  - OUT_BYTES: -0.8932\n  - OUT_PKTS: -0.6648\n  - FLOW_DURATION_MILLISECONDS: 0.6168\n  - DURATION_IN: 0.9684\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: 0.6850",
+      "fusion_weights": [
+        0.6,
+        0.4
+      ]
+    },
+    "14": {
+      "tactic": "Command and Control",
+      "tactic_id": "TA0011",
+      "p_gmm": 0.15078190601097383,
+      "p_llm": 0.7,
+      "reasoning": "The network traffic shows a distributed connectivity pattern with high inbound traffic and very short duration, which is common in Command and Control tactics. The above average flow duration and source to destination bytes also suggest ongoing communication between compromised hosts and external controllers.",
+      "summary_text": "=== Cluster 14 Summary ===\nSize: 996 flows (99.6% of dataset)\n\nTop Distinguishing Features:\n  - PROTO_UDP: BELOW global average (effect=-119.21, cluster=-0.596, global=-0.596)\n  - PROTO_OTHER: BELOW global average (effect=-1.76, cluster=-0.005, global=-0.005)\n  - TCP_WIN_MAX_IN: ABOVE global average (effect=+0.01, cluster=1.219, global=1.213)\n  - MIN_TTL: ABOVE global average (effect=+0.00, cluster=-0.123, global=-0.128)\n  - FLOW_DURATION_MILLISECONDS: ABOVE global average (effect=+0.00, cluster=-0.844, global=-0.847)\n  - DURATION_IN: ABOVE global average (effect=+0.00, cluster=-0.507, global=-0.510)\n  - SRC_TO_DST_SECOND_BYTES: ABOVE global average (effect=+0.00, cluster=-0.025, global=-0.028)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 6\n  - Unique destinations: 6\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 166.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.3264\n  - OUT_BYTES: 0.7231\n  - OUT_PKTS: 0.3656\n  - FLOW_DURATION_MILLISECONDS: 0.6168\n  - DURATION_IN: 0.9471\n  - DURATION_OUT: -0.3307\n  - MIN_TTL: 0.6850",
+      "fusion_weights": [
+        0.7,
+        0.30000000000000004
+      ]
+    }
+  }
+}
