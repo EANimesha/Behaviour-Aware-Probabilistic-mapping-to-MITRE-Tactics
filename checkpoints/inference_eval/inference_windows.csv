@@ -1,0 +1,431 @@
+src_ip,n_flows,primary_tactic,final_tactics,score_Impact,score_Reconnaissance,score_Discovery,score_Exfiltration,score_None,score_Command and Control,true_attack,true_tactic
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3516,0.1471,0.005,0.3162,0.0375,0.1426,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4187,0.1823,0.0114,0.238,0.0243,0.1253,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.501,0.1352,0.0056,0.2185,0.0209,0.1188,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4074,0.1875,0.0119,0.2228,0.059,0.1114,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3834,0.135,0.0081,0.2846,0.0397,0.1492,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4427,0.17,0.0103,0.2051,0.0667,0.1051,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4014,0.1517,0.0078,0.2618,0.048,0.1293,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4625,0.1512,0.01,0.2227,0.0237,0.1299,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4625,0.1512,0.01,0.2227,0.0237,0.1299,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4127,0.1465,0.0072,0.2771,0.0132,0.1432,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control, None",0.2924,0.1638,0.0184,0.2647,0.1064,0.1544,Benign,None
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5275,0.1383,0.0056,0.198,0.0209,0.1097,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3894,0.1708,0.0122,0.2455,0.0507,0.1313,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4956,0.1503,0.0025,0.2297,0.0188,0.1031,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4833,0.1763,0.0089,0.2129,0.0056,0.1131,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4691,0.1472,0.0025,0.2501,0.0188,0.1122,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.4219,0.2096,0.0164,0.186,0.0618,0.1043,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4162,0.1669,0.0103,0.2256,0.0667,0.1142,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4575,0.1594,0.005,0.2344,0.0375,0.1063,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.419,0.1753,0.0094,0.2385,0.0403,0.1174,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3686,0.1457,0.0134,0.2553,0.0689,0.1481,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4957,0.1761,0.0103,0.1642,0.0667,0.087,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4512,0.1305,0.0028,0.2729,0.0105,0.1321,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3778,0.1829,0.0147,0.2298,0.0695,0.1253,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4014,0.1517,0.0078,0.2618,0.048,0.1293,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4544,0.1579,0.0078,0.2209,0.048,0.1111,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.507,0.1709,0.0097,0.1795,0.032,0.1009,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4953,0.1831,0.0122,0.1637,0.0507,0.095,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5105,0.1655,0.005,0.1935,0.0375,0.0881,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance",0.6132,0.1505,0.0,0.1636,0.0,0.0727,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4509,0.1633,0.0125,0.2069,0.0425,0.124,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5482,0.1634,0.0044,0.1883,0.0028,0.0929,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4279,0.1548,0.0078,0.2414,0.048,0.1202,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5186,0.1588,0.0072,0.1952,0.0132,0.1069,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4509,0.1633,0.0125,0.2069,0.0425,0.124,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4953,0.1572,0.0044,0.2292,0.0028,0.1111,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4893,0.1473,0.0081,0.2027,0.0397,0.1129,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4162,0.1411,0.0025,0.2911,0.0188,0.1304,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4332,0.1397,0.0109,0.2302,0.0501,0.1359,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.413,0.1396,0.0053,0.2776,0.0292,0.1353,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3664,0.1623,0.0075,0.28,0.0563,0.1276,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3399,0.1592,0.0075,0.3004,0.0563,0.1366,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4046,0.1791,0.0128,0.2098,0.0855,0.1083,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4014,0.1517,0.0078,0.2618,0.048,0.1293,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4509,0.1633,0.0125,0.2069,0.0425,0.124,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.3979,0.183,0.0203,0.1823,0.0904,0.126,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4752,0.2088,0.0144,0.1456,0.0778,0.0782,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3544,0.1813,0.0119,0.2637,0.059,0.1296,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4162,0.1411,0.0025,0.2911,0.0188,0.1304,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3248,0.1768,0.0147,0.2707,0.0695,0.1435,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4893,0.1473,0.0081,0.2027,0.0397,0.1129,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4159,0.1739,0.0122,0.2251,0.0507,0.1222,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3569,0.132,0.0081,0.305,0.0397,0.1583,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5486,0.1564,0.0025,0.1888,0.0188,0.0849,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3453,0.1441,0.0106,0.2892,0.0584,0.1523,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.431,0.1563,0.005,0.2548,0.0375,0.1153,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3894,0.1449,0.0044,0.311,0.0028,0.1475,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3718,0.1472,0.0106,0.2688,0.0584,0.1432,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5221,0.1534,0.0025,0.2092,0.0188,0.094,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3657,0.1761,0.0114,0.2789,0.0243,0.1435,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4777,0.1336,0.0028,0.2524,0.0105,0.123,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3746,0.1556,0.0097,0.2817,0.032,0.1464,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4385,0.1892,0.0189,0.1901,0.0293,0.134,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5454,0.155,0.0053,0.1753,0.0292,0.0898,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4544,0.1579,0.0078,0.2209,0.048,0.1111,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.507,0.1709,0.0097,0.1795,0.032,0.1009,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4745,0.158,0.0134,0.1735,0.0689,0.1117,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4216,0.126,0.0056,0.2799,0.0209,0.1461,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5306,0.1398,0.0028,0.2115,0.0105,0.1049,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.501,0.1352,0.0056,0.2185,0.0209,0.1188,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4512,0.1564,0.0106,0.2074,0.0584,0.116,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4836,0.1694,0.0069,0.2134,0.0215,0.1051,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4512,0.1564,0.0106,0.2074,0.0584,0.116,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4099,0.1381,0.0081,0.2641,0.0397,0.1401,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4339,0.1905,0.0119,0.2023,0.059,0.1023,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4011,0.1845,0.0175,0.1958,0.08,0.1211,DoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3926,0.1723,0.0094,0.259,0.0403,0.1265,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5486,0.1564,0.0025,0.1888,0.0188,0.0849,DDoS,Impact
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3777,0.1571,0.0069,0.2952,0.0215,0.1415,Reconnaissance,Reconnaissance
+192.168.100.149,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4279,0.1548,0.0078,0.2414,0.048,0.1202,DoS,Impact
+192.168.100.149,2,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4512,0.1564,0.0106,0.2074,0.0584,0.116,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5899,0.1747,0.005,0.1321,0.0375,0.0608,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3806,0.1913,0.0139,0.2427,0.0431,0.1285,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4575,0.1594,0.005,0.2344,0.0375,0.1063,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5221,0.1534,0.0025,0.2092,0.0188,0.094,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5218,0.1603,0.0044,0.2087,0.0028,0.102,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5631,0.1786,0.0069,0.152,0.0215,0.0779,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5186,0.1588,0.0072,0.1952,0.0132,0.1069,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4544,0.1579,0.0078,0.2209,0.048,0.1111,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4985,0.1846,0.0094,0.1772,0.0403,0.0901,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4688,0.1542,0.0044,0.2496,0.0028,0.1202,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3834,0.135,0.0081,0.2846,0.0397,0.1492,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4011,0.1845,0.0175,0.1958,0.08,0.1211,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4801,0.1748,0.0117,0.1994,0.016,0.118,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4691,0.1472,0.0025,0.2501,0.0188,0.1122,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.472,0.1815,0.0094,0.1976,0.0403,0.0992,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.472,0.1815,0.0094,0.1976,0.0403,0.0992,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5105,0.1655,0.005,0.1935,0.0375,0.0881,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5571,0.1428,0.0028,0.1911,0.0105,0.0958,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3778,0.1829,0.0147,0.2298,0.0695,0.1253,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5218,0.1603,0.0044,0.2087,0.0028,0.102,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.5038,0.1694,0.0125,0.166,0.0425,0.1058,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4483,0.2127,0.0164,0.1656,0.0618,0.0952,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.628,0.1657,0.0025,0.1274,0.0188,0.0577,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5186,0.1846,0.015,0.1298,0.0612,0.0907,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4985,0.1846,0.0094,0.1772,0.0403,0.0901,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5952,0.1596,0.0081,0.1209,0.0397,0.0765,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5747,0.1923,0.0122,0.1023,0.0507,0.0677,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5073,0.164,0.0078,0.18,0.048,0.0929,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3682,0.2173,0.0203,0.2259,0.0299,0.1385,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4307,0.1632,0.0069,0.2543,0.0215,0.1233,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.6249,0.1642,0.0053,0.1139,0.0292,0.0625,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5306,0.1398,0.0028,0.2115,0.0105,0.1049,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.4304,0.196,0.0167,0.1883,0.0535,0.1152,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4836,0.1694,0.0069,0.2134,0.0215,0.1051,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4427,0.1442,0.0025,0.2706,0.0188,0.1213,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5253,0.1807,0.0075,0.1572,0.0563,0.073,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5804,0.1444,0.0056,0.1571,0.0209,0.0915,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4597,0.1428,0.0109,0.2097,0.0501,0.1268,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4364,0.1412,0.0081,0.2436,0.0397,0.131,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4808,0.1609,0.0078,0.2004,0.048,0.102,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5073,0.164,0.0078,0.18,0.048,0.0929,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4509,0.1633,0.0125,0.2069,0.0425,0.124,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.3922,0.205,0.0192,0.193,0.0723,0.1183,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.6015,0.1626,0.0025,0.1479,0.0188,0.0668,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3929,0.1654,0.0075,0.2595,0.0563,0.1185,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5249,0.1876,0.0094,0.1567,0.0403,0.081,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3894,0.1449,0.0044,0.311,0.0028,0.1475,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5602,0.1443,0.0,0.2045,0.0,0.0909,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.4219,0.2096,0.0164,0.186,0.0618,0.1043,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4572,0.1663,0.0069,0.2339,0.0215,0.1142,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.6132,0.1505,0.0,0.1636,0.0,0.0727,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5306,0.1398,0.0028,0.2115,0.0105,0.1049,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.413,0.1396,0.0053,0.2776,0.0292,0.1353,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3743,0.1883,0.0195,0.2158,0.064,0.1382,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5334,0.174,0.0097,0.159,0.032,0.0918,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.507,0.1709,0.0097,0.1795,0.032,0.1009,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4452,0.1853,0.0114,0.2176,0.0243,0.1163,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5716,0.1649,0.0072,0.1543,0.0132,0.0887,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4777,0.1336,0.0028,0.2524,0.0105,0.123,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4777,0.1336,0.0028,0.2524,0.0105,0.123,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.519,0.1519,0.0053,0.1958,0.0292,0.0989,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4187,0.1823,0.0114,0.238,0.0243,0.1253,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4836,0.1694,0.0069,0.2134,0.0215,0.1051,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5571,0.1687,0.0106,0.1256,0.0584,0.0796,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3302,0.1617,0.0178,0.2595,0.0717,0.1592,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5454,0.155,0.0053,0.1753,0.0292,0.0898,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.4692,0.1731,0.0103,0.1847,0.0667,0.0961,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.449,0.1988,0.0125,0.1666,0.0938,0.0793,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.507,0.1709,0.0097,0.1795,0.032,0.1009,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.46,0.2005,0.0139,0.1813,0.0431,0.1012,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5369,0.1686,0.005,0.173,0.0375,0.079,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5486,0.1564,0.0025,0.1888,0.0188,0.0849,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3926,0.1723,0.0094,0.259,0.0403,0.1265,Reconnaissance,Reconnaissance
+192.168.100.147,20,Impact,"Impact, Exfiltration, Reconnaissance",0.472,0.1815,0.0094,0.1976,0.0403,0.0992,DoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5603,0.1702,0.0078,0.1391,0.048,0.0747,DDoS,Impact
+192.168.100.147,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5366,0.1755,0.0069,0.1725,0.0215,0.087,DDoS,Impact
+192.168.100.147,9,Impact,"Impact, Reconnaissance, Exfiltration",0.4979,0.1645,0.0118,0.1623,0.0649,0.0986,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5105,0.1655,0.005,0.1935,0.0375,0.0881,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.484,0.1883,0.0128,0.1485,0.0855,0.081,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5804,0.1444,0.0056,0.1571,0.0209,0.0915,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4745,0.1321,0.0056,0.239,0.0209,0.1279,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5423,0.1535,0.0081,0.1618,0.0397,0.0947,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5514,0.1907,0.0094,0.1363,0.0403,0.0719,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4216,0.126,0.0056,0.2799,0.0209,0.1461,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4837,0.1952,0.0147,0.1479,0.0695,0.089,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4773,0.1664,0.0125,0.1864,0.0425,0.1149,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.484,0.1624,0.005,0.2139,0.0375,0.0972,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5218,0.1603,0.0044,0.2087,0.0028,0.102,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5571,0.1428,0.0028,0.1911,0.0105,0.0958,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4716,0.1884,0.0114,0.1971,0.0243,0.1072,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.4988,0.1776,0.0075,0.1777,0.0563,0.0821,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4279,0.1548,0.0078,0.2414,0.048,0.1202,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4187,0.1823,0.0114,0.238,0.0243,0.1253,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5105,0.1655,0.005,0.1935,0.0375,0.0881,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5369,0.1686,0.005,0.173,0.0375,0.079,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4226,0.1958,0.0125,0.1871,0.0938,0.0884,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5836,0.1459,0.0028,0.1706,0.0105,0.0867,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5751,0.1595,0.0025,0.1683,0.0188,0.0759,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4688,0.18,0.0122,0.1842,0.0507,0.104,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5221,0.1534,0.0025,0.2092,0.0188,0.094,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5214,0.193,0.0142,0.1427,0.0348,0.0938,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5836,0.1459,0.0028,0.1706,0.0105,0.0867,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5836,0.1459,0.0028,0.1706,0.0105,0.0867,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4575,0.1594,0.005,0.2344,0.0375,0.1063,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4455,0.1784,0.0094,0.2181,0.0403,0.1083,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5568,0.1756,0.0125,0.1251,0.0425,0.0876,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.436,0.1481,0.01,0.2431,0.0237,0.139,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5338,0.1671,0.0078,0.1595,0.048,0.0838,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4544,0.1579,0.0078,0.2209,0.048,0.1111,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.407,0.1944,0.0139,0.2223,0.0431,0.1194,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4212,0.1587,0.0153,0.2139,0.0529,0.1379,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.484,0.1624,0.005,0.2139,0.0375,0.0972,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4427,0.1442,0.0025,0.2706,0.0188,0.1213,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5221,0.1534,0.0025,0.2092,0.0188,0.094,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4543,0.132,0.0,0.2864,0.0,0.1273,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration, None",0.3813,0.2033,0.0178,0.1783,0.123,0.0963,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.628,0.1657,0.0025,0.1274,0.0188,0.0577,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3926,0.1723,0.0094,0.259,0.0403,0.1265,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5454,0.155,0.0053,0.1753,0.0292,0.0898,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4455,0.1784,0.0094,0.2181,0.0403,0.1083,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5105,0.1655,0.005,0.1935,0.0375,0.0881,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4275,0.1617,0.0097,0.2408,0.032,0.1282,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3654,0.183,0.0133,0.2784,0.0083,0.1515,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5864,0.1801,0.0097,0.1181,0.032,0.0736,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3351,0.2181,0.0278,0.2189,0.0348,0.1653,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4921,0.1557,0.0072,0.2157,0.0132,0.116,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4537,0.1717,0.0117,0.2199,0.016,0.1271,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4691,0.1472,0.0025,0.2501,0.0188,0.1122,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.466,0.1457,0.0053,0.2367,0.0292,0.1171,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5221,0.1534,0.0025,0.2092,0.0188,0.094,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5221,0.1534,0.0025,0.2092,0.0188,0.094,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5101,0.1724,0.0069,0.1929,0.0215,0.0961,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5454,0.155,0.0053,0.1753,0.0292,0.0898,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4452,0.1853,0.0114,0.2176,0.0243,0.1163,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4452,0.1853,0.0114,0.2176,0.0243,0.1163,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5836,0.1459,0.0028,0.1706,0.0105,0.0867,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5221,0.1534,0.0025,0.2092,0.0188,0.094,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.507,0.1709,0.0097,0.1795,0.032,0.1009,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4155,0.1808,0.0142,0.2245,0.0348,0.1302,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5246,0.1945,0.0114,0.1562,0.0243,0.089,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5631,0.1786,0.0069,0.152,0.0215,0.0779,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3661,0.1692,0.0094,0.2795,0.0403,0.1355,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4424,0.1769,0.0122,0.2046,0.0507,0.1131,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5602,0.1443,0.0,0.2045,0.0,0.0909,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5306,0.1656,0.0106,0.1461,0.0584,0.0887,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5482,0.1634,0.0044,0.1883,0.0028,0.0929,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4894,0.1732,0.0159,0.1373,0.0876,0.0967,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3708,0.1937,0.0242,0.2018,0.0585,0.151,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.4099,0.2286,0.0208,0.1697,0.0646,0.1063,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.4723,0.1746,0.0075,0.1982,0.0563,0.0912,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4777,0.1595,0.0106,0.187,0.0584,0.1069,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4096,0.145,0.01,0.2636,0.0237,0.1481,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4014,0.1259,0.0,0.3273,0.0,0.1455,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.454,0.1648,0.0097,0.2204,0.032,0.1191,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5751,0.1595,0.0025,0.1683,0.0188,0.0759,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4395,0.1427,0.0053,0.2571,0.0292,0.1262,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5627,0.1855,0.0089,0.1515,0.0056,0.0859,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5836,0.1459,0.0028,0.1706,0.0105,0.0867,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4836,0.1694,0.0069,0.2134,0.0215,0.1051,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4512,0.1305,0.0028,0.2729,0.0105,0.1321,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5867,0.1474,0.0,0.1841,0.0,0.0818,DDoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5482,0.1634,0.0044,0.1883,0.0028,0.0929,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.5218,0.1861,0.0122,0.1432,0.0507,0.0859,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance",0.519,0.1519,0.0053,0.1958,0.0292,0.0989,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4423,0.1511,0.0044,0.2701,0.0028,0.1293,Reconnaissance,Reconnaissance
+192.168.100.148,20,Impact,"Impact, Reconnaissance, Exfiltration",0.4455,0.2042,0.0172,0.1526,0.0882,0.0921,DoS,Impact
+192.168.100.148,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3929,0.1654,0.0075,0.2595,0.0563,0.1185,Reconnaissance,Reconnaissance
+192.168.100.148,19,Impact,"Impact, Exfiltration, Reconnaissance",0.4813,0.1851,0.0099,0.1865,0.0424,0.0948,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4395,0.1427,0.0053,0.2571,0.0292,0.1262,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.501,0.1352,0.0056,0.2185,0.0209,0.1188,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.413,0.1396,0.0053,0.2776,0.0292,0.1353,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3481,0.1783,0.0175,0.2367,0.08,0.1393,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.413,0.1396,0.0053,0.2776,0.0292,0.1353,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4657,0.1527,0.0072,0.2361,0.0132,0.1251,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3686,0.1457,0.0134,0.2553,0.0689,0.1481,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance",0.484,0.1624,0.005,0.2139,0.0375,0.0972,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3894,0.1449,0.0044,0.311,0.0028,0.1475,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3919,0.1214,0.0084,0.2868,0.0314,0.16,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4364,0.167,0.0159,0.1782,0.0876,0.1149,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.333,0.1701,0.017,0.2724,0.0452,0.1623,Reconnaissance,Reconnaissance
+192.168.100.150,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.304,0.1258,0.0081,0.3459,0.0397,0.1765,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5041,0.1367,0.0028,0.232,0.0105,0.114,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4956,0.1503,0.0025,0.2297,0.0188,0.1031,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3983,0.1502,0.0106,0.2483,0.0584,0.1342,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4427,0.1442,0.0025,0.2706,0.0188,0.1213,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3132,0.1889,0.0172,0.2549,0.0882,0.1376,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control, None",0.3015,0.201,0.0197,0.2391,0.107,0.1316,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4688,0.18,0.0122,0.1842,0.0507,0.104,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3037,0.1586,0.0178,0.2799,0.0717,0.1683,Benign,None
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4921,0.1557,0.0072,0.2157,0.0132,0.116,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4805,0.1679,0.0097,0.1999,0.032,0.11,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4244,0.1602,0.0125,0.2274,0.0425,0.1331,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3516,0.1729,0.0128,0.2507,0.0855,0.1265,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4155,0.1808,0.0142,0.2245,0.0348,0.1302,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4127,0.1465,0.0072,0.2771,0.0132,0.1432,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4247,0.1275,0.0028,0.2933,0.0105,0.1412,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4512,0.1305,0.0028,0.2729,0.0105,0.1321,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3926,0.1723,0.0094,0.259,0.0403,0.1265,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4279,0.1548,0.0078,0.2414,0.048,0.1202,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4279,0.1548,0.0078,0.2414,0.048,0.1202,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3983,0.1502,0.0106,0.2483,0.0584,0.1342,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4893,0.1473,0.0081,0.2027,0.0397,0.1129,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance",0.484,0.1624,0.005,0.2139,0.0375,0.0972,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3862,0.1435,0.0072,0.2975,0.0132,0.1523,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3661,0.1692,0.0094,0.2795,0.0403,0.1355,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4014,0.1517,0.0078,0.2618,0.048,0.1293,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5073,0.164,0.0078,0.18,0.048,0.0929,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3866,0.1365,0.0053,0.298,0.0292,0.1444,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4575,0.1594,0.005,0.2344,0.0375,0.1063,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3368,0.1577,0.0103,0.2869,0.0667,0.1415,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3594,0.1731,0.017,0.252,0.0452,0.1533,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4184,0.1503,0.0162,0.2009,0.0794,0.1348,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3632,0.135,0.0025,0.332,0.0188,0.1486,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4042,0.1601,0.0069,0.2748,0.0215,0.1324,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5105,0.1655,0.005,0.1935,0.0375,0.0881,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4247,0.1533,0.0106,0.2279,0.0584,0.1251,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3333,0.1632,0.015,0.2729,0.0612,0.1544,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3863,0.1693,0.015,0.232,0.0612,0.1362,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3664,0.1623,0.0075,0.28,0.0563,0.1276,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.4279,0.1806,0.0156,0.1759,0.0959,0.104,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3248,0.1768,0.0147,0.2707,0.0695,0.1435,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance",0.519,0.1519,0.0053,0.1958,0.0292,0.0989,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Reconnaissance, Exfiltration, Command and Control",0.3894,0.1966,0.02,0.1801,0.0987,0.1152,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4184,0.1245,0.0084,0.2664,0.0314,0.151,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.4099,0.1381,0.0081,0.2641,0.0397,0.1401,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance",0.5073,0.164,0.0078,0.18,0.048,0.0929,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3777,0.1571,0.0069,0.2952,0.0215,0.1415,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3597,0.1404,0.0072,0.318,0.0132,0.1614,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3718,0.1472,0.0106,0.2688,0.0584,0.1432,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4061,0.1763,0.0226,0.1841,0.0662,0.1448,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3718,0.1472,0.0106,0.2688,0.0584,0.1432,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5155,0.1573,0.01,0.1818,0.0237,0.1117,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4925,0.1488,0.0053,0.2162,0.0292,0.108,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3072,0.1532,0.0131,0.2939,0.0772,0.1555,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4395,0.1427,0.0053,0.2571,0.0292,0.1262,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Command and Control, Reconnaissance",0.3919,0.1214,0.0084,0.2868,0.0314,0.16,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5275,0.1383,0.0056,0.198,0.0209,0.1097,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4279,0.1548,0.0078,0.2414,0.048,0.1202,Reconnaissance,Reconnaissance
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3714,0.1541,0.0125,0.2683,0.0425,0.1512,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.3629,0.1677,0.0122,0.266,0.0507,0.1404,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4572,0.1663,0.0069,0.2339,0.0215,0.1142,DDoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4275,0.1617,0.0097,0.2408,0.032,0.1282,DoS,Impact
+192.168.100.150,20,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.4575,0.1594,0.005,0.2344,0.0375,0.1063,Reconnaissance,Reconnaissance
+192.168.100.150,5,Impact,"Impact, Exfiltration, Reconnaissance, Command and Control",0.5073,0.1382,0.0,0.2455,0.0,0.1091,DDoS,Impact
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.3,20,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.6,20,Reconnaissance,"Reconnaissance, Command and Control, None, Exfiltration, Impact",0.106,0.3699,0.0575,0.1521,0.1562,0.1582,Benign,None
+192.168.100.6,20,Reconnaissance,"Reconnaissance, None, Exfiltration, Command and Control, Impact",0.1183,0.344,0.0511,0.1689,0.1694,0.1482,Benign,None
+192.168.100.6,20,Reconnaissance,"Reconnaissance, Exfiltration, Command and Control, None, Impact",0.1176,0.3578,0.055,0.1679,0.1375,0.1642,Benign,None
+192.168.100.6,20,Reconnaissance,"Reconnaissance, None, Command and Control, Exfiltration",0.083,0.3873,0.0606,0.1211,0.2097,0.1383,Benign,None
+192.168.100.6,20,Reconnaissance,"Reconnaissance, None, Impact, Exfiltration, Command and Control",0.1335,0.3523,0.0517,0.1332,0.2042,0.1252,Benign,None
+192.168.100.6,20,Reconnaissance,"Reconnaissance, Exfiltration, Command and Control, Impact, None",0.1533,0.3076,0.0436,0.2162,0.1132,0.1661,Benign,None
+192.168.100.6,20,Reconnaissance,"Reconnaissance, None, Command and Control, Exfiltration",0.0943,0.382,0.06,0.1364,0.175,0.1523,Benign,None
+192.168.100.6,17,Reconnaissance,"Reconnaissance, Exfiltration, Command and Control, None, Impact",0.1282,0.3418,0.0513,0.1822,0.1332,0.1634,Benign,None
+192.168.100.5,20,Reconnaissance,"Reconnaissance, Exfiltration, Command and Control, Impact",0.1406,0.3404,0.0519,0.1989,0.084,0.1841,Benign,None
+192.168.100.5,20,Reconnaissance,"Reconnaissance, Exfiltration, Command and Control, Impact, None",0.1416,0.3197,0.0461,0.2005,0.1319,0.1602,Benign,None
+192.168.100.5,20,Reconnaissance,"Reconnaissance, Exfiltration, Command and Control, Impact, None",0.1409,0.3335,0.05,0.1994,0.1,0.1761,Benign,None
+192.168.100.5,20,Reconnaissance,"Reconnaissance, Command and Control, Exfiltration, Impact",0.1286,0.3595,0.0564,0.1826,0.0868,0.1861,Benign,None
+192.168.100.5,20,Reconnaissance,"Reconnaissance, Command and Control, None, Exfiltration",0.0936,0.3959,0.0639,0.1353,0.1431,0.1682,Benign,None
+192.168.100.5,2,Reconnaissance,"Reconnaissance, Command and Control",0.0556,0.4944,0.0889,0.0833,0.0556,0.2222,Benign,None
+192.168.100.46,20,Impact,"Impact, Reconnaissance, Exfiltration",0.7102,0.142,0.0,0.1023,0.0,0.0455,Benign,None
+192.168.100.46,20,Impact,"Impact, Reconnaissance",0.7379,0.1439,0.0,0.0818,0.0,0.0364,Benign,None
+192.168.100.46,20,Impact,"Impact, Reconnaissance, Exfiltration",0.6826,0.1402,0.0,0.1227,0.0,0.0545,Benign,None
+192.168.100.46,11,Impact,"Impact, Reconnaissance",0.7479,0.1446,0.0,0.0744,0.0,0.0331,Benign,None
+192.168.100.55,16,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None
+192.168.100.7,20,Reconnaissance,"Reconnaissance, Impact, None, Command and Control, Exfiltration",0.1709,0.357,0.0531,0.1275,0.1535,0.138,Benign,None
+192.168.100.7,20,Reconnaissance,"Reconnaissance, Impact, Exfiltration, Command and Control",0.2443,0.3046,0.0411,0.1706,0.0944,0.1448,Benign,None
+192.168.100.7,20,Reconnaissance,"Reconnaissance, Exfiltration, Impact, Command and Control, None",0.1561,0.3418,0.0506,0.1637,0.1347,0.1531,Benign,None
+192.168.100.7,20,Reconnaissance,"Reconnaissance, None, Exfiltration, Command and Control",0.095,0.3682,0.0561,0.1374,0.2069,0.1363,Benign,None
+192.168.100.7,20,Reconnaissance,"Reconnaissance, None, Exfiltration, Impact, Command and Control",0.1451,0.3401,0.0492,0.149,0.1854,0.1312,Benign,None
+192.168.100.7,5,Reconnaissance,"Reconnaissance, None, Exfiltration, Command and Control, Impact",0.1063,0.363,0.0556,0.1527,0.1722,0.1503,Benign,None
+192.168.100.4,1,Exfiltration,"Exfiltration, Impact, Command and Control, Reconnaissance",0.2955,0.1136,0.0,0.4091,0.0,0.1818,Benign,None

@@ -128,26 +128,127 @@ UNSW_NB15_MAPPING = {
 }
 
 
-class GroundTruthMapper:
-    """Maps dataset attack labels to MITRE ATT&CK tactics for evaluation.
+# ══════════════════════════════════════════════════════
+# NF-CSE-CIC-IDS2018-v2 mapping
+# ══════════════════════════════════════════════════════
 
-    Usage:
-        mapper = GroundTruthMapper('bot_iot')
-        true_tactics = mapper.map_labels(y_test)  # array of tactic strings
-    """
+CICIDS2018_MAPPING = {
+    'Benign': {
+        'tactic': 'None',
+        'tactic_id': '',
+        'technique_id': '',
+        'technique_name': 'Normal Traffic',
+    },
+    # DDoS attacks → Impact
+    'DDoS attacks-LOIC-HTTP': {
+        'tactic': 'Impact',
+        'tactic_id': 'TA0040',
+        'technique_id': 'T1498',
+        'technique_name': 'Network Denial of Service',
+    },
+    'DDOS attack-LOIC-UDP': {
+        'tactic': 'Impact',
+        'tactic_id': 'TA0040',
+        'technique_id': 'T1498',
+        'technique_name': 'Network Denial of Service',
+    },
+    'DDOS attack-HOIC': {
+        'tactic': 'Impact',
+        'tactic_id': 'TA0040',
+        'technique_id': 'T1498',
+        'technique_name': 'Network Denial of Service',
+    },
+    # DoS attacks → Impact
+    'DoS attacks-Hulk': {
+        'tactic': 'Impact',
+        'tactic_id': 'TA0040',
+        'technique_id': 'T1499',
+        'technique_name': 'Endpoint Denial of Service',
+    },
+    'DoS attacks-SlowHTTPTest': {
+        'tactic': 'Impact',
+        'tactic_id': 'TA0040',
+        'technique_id': 'T1499',
+        'technique_name': 'Endpoint Denial of Service',
+    },
+    'DoS attacks-Slowloris': {
+        'tactic': 'Impact',
+        'tactic_id': 'TA0040',
+        'technique_id': 'T1499',
+        'technique_name': 'Endpoint Denial of Service',
+    },
+    'DoS attacks-GoldenEye': {
+        'tactic': 'Impact',
+        'tactic_id': 'TA0040',
+        'technique_id': 'T1499',
+        'technique_name': 'Endpoint Denial of Service',
+    },
+    # Bot → Command and Control
+    'Bot': {
+        'tactic': 'Command and Control',
+        'tactic_id': 'TA0011',
+        'technique_id': 'T1071',
+        'technique_name': 'Application Layer Protocol',
+    },
+    # Infiltration → Lateral Movement
+    'Infilteration': {
+        'tactic': 'Lateral Movement',
+        'tactic_id': 'TA0008',
+        'technique_id': 'T1570',
+        'technique_name': 'Lateral Tool Transfer',
+    },
+    # Brute Force → Credential Access
+    'FTP-BruteForce': {
+        'tactic': 'Credential Access',
+        'tactic_id': 'TA0006',
+        'technique_id': 'T1110',
+        'technique_name': 'Brute Force',
+    },
+    'SSH-Bruteforce': {
+        'tactic': 'Credential Access',
+        'tactic_id': 'TA0006',
+        'technique_id': 'T1110',
+        'technique_name': 'Brute Force',
+    },
+    # Web attacks → Initial Access
+    'Brute Force -Web': {
+        'tactic': 'Credential Access',
+        'tactic_id': 'TA0006',
+        'technique_id': 'T1110',
+        'technique_name': 'Brute Force - Web',
+    },
+    'Brute Force -XSS': {
+        'tactic': 'Initial Access',
+        'tactic_id': 'TA0001',
+        'technique_id': 'T1189',
+        'technique_name': 'Drive-by Compromise',
+    },
+    'SQL Injection': {
+        'tactic': 'Initial Access',
+        'tactic_id': 'TA0001',
+        'technique_id': 'T1190',
+        'technique_name': 'Exploit Public-Facing Application',
+    },
+}
+
+
+class GroundTruthMapper:
+    """Maps dataset attack labels to MITRE ATT&CK tactics for evaluation."""
 
     def __init__(self, dataset='bot_iot'):
         """
         Args:
-            dataset: 'bot_iot' or 'unsw_nb15'
+            dataset: 'bot_iot', 'unsw_nb15', or 'cicids2018'
         """
         if dataset == 'bot_iot':
             self.mapping = BOT_IOT_MAPPING
         elif dataset == 'unsw_nb15':
             self.mapping = UNSW_NB15_MAPPING
+        elif dataset == 'cicids2018':
+            self.mapping = CICIDS2018_MAPPING
         else:
             raise ValueError(f"Unknown dataset: {dataset}. "
-                             f"Use 'bot_iot' or 'unsw_nb15'.")
+                             f"Use 'bot_iot', 'unsw_nb15', or 'cicids2018'.")
 
         self.dataset = dataset
         self.unique_tactics = sorted(set(

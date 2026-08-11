@@ -1,0 +1,347 @@
+src_ip,n_flows,pred_tactic,final_tactics,tactic_scores,true_attack,true_tactic,correct,correct_top2,purity
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Command and Control:0.13, Reconnaissance:0.11, Initial Access:0.11, None:0.03",DDoS,Impact,True,True,0.32
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.09",DoS,Impact,True,True,0.3
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.09",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.149,100,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.09",Reconnaissance,Reconnaissance,False,True,0.31
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Exfiltration:0.05, None:0.05",Reconnaissance,Reconnaissance,False,False,0.35
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Exfiltration:0.09, Command and Control:0.06",DoS,Impact,True,True,0.31
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.37
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Exfiltration:0.10, Command and Control:0.07",Reconnaissance,Reconnaissance,False,False,0.3
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.12",DoS,Impact,True,True,0.33
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.33
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.4
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.09",DDoS,Impact,True,True,0.33
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DDoS,Impact,True,True,0.32
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.09",DDoS,Impact,True,True,0.35
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",DoS,Impact,True,True,0.32
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09, Exfiltration:0.02",DDoS,Impact,True,True,0.3
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.08",Reconnaissance,Reconnaissance,False,False,0.29
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Command and Control:0.14, Reconnaissance:0.12, Initial Access:0.12, None:0.07",Reconnaissance,Reconnaissance,False,False,0.35
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.04",Reconnaissance,Reconnaissance,False,False,0.34
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Command and Control:0.13, Reconnaissance:0.11, Initial Access:0.11, None:0.07",DoS,Impact,True,True,0.34
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Exfiltration:0.09, Command and Control:0.07",DDoS,Impact,True,True,0.32
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12, None:0.04, Exfiltration:0.03",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.38
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.08",DDoS,Impact,True,True,0.33
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.13, Initial Access:0.13, None:0.08",DDoS,Impact,True,True,0.35
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12, None:0.04, Exfiltration:0.03",DoS,Impact,True,True,0.34
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Exfiltration:0.10, Command and Control:0.07",DoS,Impact,True,True,0.33
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.29
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Exfiltration:0.10, Command and Control:0.07",DoS,Impact,True,True,0.32
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.15, Initial Access:0.15, None:0.09",DDoS,Impact,True,True,0.32
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.35
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12, Exfiltration:0.03",DoS,Impact,True,True,0.31
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.04",DDoS,Impact,True,True,0.28
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.31
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Command and Control:0.14, Reconnaissance:0.11, Initial Access:0.11, None:0.07",DoS,Impact,True,True,0.34
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.31
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",DoS,Impact,True,True,0.37
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DoS,Impact,True,True,0.35
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.38
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DDoS,Impact,True,True,0.32
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.08",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DDoS,Impact,True,True,0.35
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.4
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.31
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.33
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.24, None:0.09, Exfiltration:0.05",Reconnaissance,Reconnaissance,False,False,0.41
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11, Exfiltration:0.03",DDoS,Impact,True,True,0.31
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.09",DoS,Impact,True,True,0.33
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.34
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.41
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Command and Control:0.13, Reconnaissance:0.11, Initial Access:0.11, None:0.07",DDoS,Impact,True,True,0.32
+192.168.100.149,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.09",Reconnaissance,Reconnaissance,False,False,0.35
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.12",DoS,Impact,True,True,0.31
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.39
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Exfiltration:0.10, Command and Control:0.07",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.149,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.09",DDoS,Impact,True,True,0.36
+192.168.100.149,88,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.375
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.4
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, None:0.09",Reconnaissance,Reconnaissance,False,False,0.34
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.31
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.15, Initial Access:0.15, None:0.04",Reconnaissance,Reconnaissance,False,False,0.39
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Exfiltration:0.09, Command and Control:0.07",Reconnaissance,Reconnaissance,False,False,0.34
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.24, None:0.05, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.44
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.09",DDoS,Impact,True,True,0.36
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.41
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.08, Initial Access:0.08, Exfiltration:0.07, Command and Control:0.05",DDoS,Impact,True,True,0.34
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.26, None:0.05, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.08, Initial Access:0.08, Exfiltration:0.07, Command and Control:0.05",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.150,100,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.05",Reconnaissance,Reconnaissance,False,True,0.42
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.25, None:0.05, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.46
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.23, None:0.09, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.42
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.25, None:0.10, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.45
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.24, None:0.09, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.25, None:0.10, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.09",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.44
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.24, None:0.10, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.09",DDoS,Impact,True,True,0.32
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.24, None:0.09, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.43
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.04",DDoS,Impact,True,True,0.32
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, None:0.09",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Command and Control:0.15, Reconnaissance:0.12, Initial Access:0.12, None:0.04",DDoS,Impact,True,True,0.37
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.08",DoS,Impact,True,True,0.31
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.04",Reconnaissance,Reconnaissance,False,False,0.4
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.08, Initial Access:0.08, Exfiltration:0.07, Command and Control:0.05",Reconnaissance,Reconnaissance,False,False,0.35
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.08",Reconnaissance,Reconnaissance,False,False,0.34
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.24, None:0.10, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.35
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.45
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.08",Reconnaissance,Reconnaissance,False,False,0.35
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.150,100,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.05",Reconnaissance,Reconnaissance,False,True,0.35
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.15, Initial Access:0.15, None:0.04",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.150,100,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.19, Reconnaissance:0.16, Initial Access:0.16, None:0.05",Reconnaissance,Reconnaissance,False,True,0.38
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.25, None:0.10, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.42
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.09",DoS,Impact,True,True,0.32
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.150,100,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.05",Reconnaissance,Reconnaissance,False,True,0.39
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.04",Reconnaissance,Reconnaissance,False,False,0.34
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, None:0.09",Reconnaissance,Reconnaissance,False,False,0.35
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.08",DDoS,Impact,True,True,0.34
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",DDoS,Impact,True,True,0.32
+192.168.100.150,100,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.05",Reconnaissance,Reconnaissance,False,True,0.34
+192.168.100.150,100,Impact,"Impact, Reconnaissance, Initial Access","Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,True,0.41
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.08, Initial Access:0.08, Exfiltration:0.07, Command and Control:0.05",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.09",Reconnaissance,Reconnaissance,False,False,0.38
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.08",DoS,Impact,True,True,0.32
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.08, Initial Access:0.08, Exfiltration:0.07, Command and Control:0.05",DoS,Impact,True,True,0.32
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, None:0.09",Reconnaissance,Reconnaissance,False,False,0.41
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, None:0.09",Reconnaissance,Reconnaissance,False,False,0.44
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.18, None:0.05",Reconnaissance,Reconnaissance,False,False,0.4
+192.168.100.150,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.14, None:0.09, Exfiltration:0.07",Reconnaissance,Reconnaissance,False,False,0.32
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.17, Reconnaissance:0.14, Initial Access:0.14, None:0.04",DoS,Impact,True,True,0.31
+192.168.100.150,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.23, None:0.09, Exfiltration:0.02",Reconnaissance,Reconnaissance,False,False,0.34
+192.168.100.150,42,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.38095238095238093
+192.168.100.5,100,Reconnaissance,"Reconnaissance, Exfiltration, Lateral Movement, Persistence, Command and Control, Initial Access, Impact, None, Discovery","Reconnaissance:1.00, Exfiltration:0.69, Lateral Movement:0.69, Persistence:0.65, Command and Control:0.60, Initial Access:0.56, Impact:0.49, None:0.32, Discovery:0.20, Execution:0.14",Benign,None,False,True,1.0
+192.168.100.5,100,Reconnaissance,"Reconnaissance, Exfiltration, Lateral Movement, None, Persistence, Command and Control, Initial Access, Impact, Discovery","Reconnaissance:1.00, Exfiltration:0.69, Lateral Movement:0.69, None:0.65, Persistence:0.65, Command and Control:0.60, Initial Access:0.56, Impact:0.45, Discovery:0.20, Execution:0.14",Benign,None,False,True,0.99
+192.168.100.5,100,Reconnaissance,"Reconnaissance, Lateral Movement, Exfiltration, Initial Access, Impact, Persistence, Command and Control, Execution, Discovery, None","Reconnaissance:1.00, Lateral Movement:0.58, Exfiltration:0.47, Initial Access:0.47, Impact:0.41, Persistence:0.39, Command and Control:0.35, Execution:0.31, Discovery:0.28, None:0.27",Benign,None,False,True,0.99
+192.168.100.5,45,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.20, Reconnaissance:0.16, Initial Access:0.16, Exfiltration:0.12, None:0.11",Benign,None,False,False,0.9777777777777777
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.84, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.07",Benign,None,False,True,0.74
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Lateral Movement, Persistence, Command and Control, Exfiltration, Initial Access, Execution, Discovery","Reconnaissance:1.00, None:0.90, Lateral Movement:0.80, Persistence:0.74, Command and Control:0.69, Exfiltration:0.64, Initial Access:0.64, Execution:0.43, Discovery:0.28, Impact:0.11",Benign,None,False,True,0.75
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.84, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.04",Benign,None,False,True,0.82
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Reconnaissance, Initial Access, Persistence, Command and Control, Execution, Impact","None:1.00, Exfiltration:0.88, Lateral Movement:0.88, Reconnaissance:0.86, Initial Access:0.71, Persistence:0.59, Command and Control:0.53, Execution:0.47, Impact:0.29, Discovery:0.14",Benign,None,True,True,0.81
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.96, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.05",Benign,None,False,True,0.77
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Impact:0.09, Exfiltration:0.08",Benign,None,False,True,0.79
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.08",Benign,None,False,True,0.73
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.96, Command and Control:0.72, Persistence:0.67, Initial Access:0.38, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.06",Benign,None,False,True,0.76
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Initial Access, Command and Control, Persistence, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.67, Initial Access:0.58, Command and Control:0.53, Persistence:0.48, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.10",Benign,None,False,True,0.76
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Reconnaissance, Persistence, Command and Control, Initial Access, Execution","None:1.00, Exfiltration:0.75, Lateral Movement:0.75, Reconnaissance:0.73, Persistence:0.70, Command and Control:0.65, Initial Access:0.60, Execution:0.40, Discovery:0.12, Impact:0.08",Benign,None,True,True,0.71
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.84, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.06",Benign,None,False,True,0.77
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Impact:0.09, Exfiltration:0.08",Benign,None,False,True,0.78
+192.168.100.3,100,Exfiltration,"Exfiltration, None, Initial Access, Reconnaissance, Persistence, Command and Control, Lateral Movement, Execution, Impact, Discovery","Exfiltration:1.00, None:0.93, Initial Access:0.80, Reconnaissance:0.77, Persistence:0.67, Command and Control:0.60, Lateral Movement:0.60, Execution:0.53, Impact:0.43, Discovery:0.16",Benign,None,False,True,0.68
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.84, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.04",Benign,None,False,True,0.74
+192.168.100.3,100,Exfiltration,"Exfiltration, Lateral Movement, Reconnaissance, None, Persistence, Command and Control, Initial Access, Impact, Execution, Discovery","Exfiltration:1.00, Lateral Movement:1.00, Reconnaissance:0.97, None:0.93, Persistence:0.93, Command and Control:0.87, Initial Access:0.80, Impact:0.50, Execution:0.20, Discovery:0.16",Benign,None,False,True,0.78
+192.168.100.3,100,None,"None, Reconnaissance, Lateral Movement, Persistence, Command and Control, Exfiltration, Initial Access, Execution, Discovery","None:1.00, Reconnaissance:0.94, Lateral Movement:0.75, Persistence:0.70, Command and Control:0.65, Exfiltration:0.60, Initial Access:0.60, Execution:0.40, Discovery:0.26, Impact:0.07",Benign,None,True,True,0.79
+192.168.100.3,100,None,"None, Reconnaissance, Command and Control, Lateral Movement, Persistence, Initial Access, Execution, Exfiltration, Discovery","None:1.00, Reconnaissance:0.94, Command and Control:0.75, Lateral Movement:0.75, Persistence:0.70, Initial Access:0.60, Execution:0.40, Exfiltration:0.30, Discovery:0.26, Impact:0.05",Benign,None,True,True,0.83
+192.168.100.3,100,Exfiltration,"Exfiltration, Lateral Movement, Reconnaissance, None, Initial Access, Persistence, Command and Control, Execution, Impact, Discovery","Exfiltration:1.00, Lateral Movement:1.00, Reconnaissance:0.97, None:0.93, Initial Access:0.80, Persistence:0.67, Command and Control:0.60, Execution:0.53, Impact:0.52, Discovery:0.16",Benign,None,False,True,0.77
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.07",Benign,None,False,True,0.76
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.07",Benign,None,False,True,0.81
+192.168.100.3,100,None,"None, Exfiltration, Persistence, Command and Control, Initial Access, Reconnaissance, Lateral Movement, Impact, Execution","None:1.00, Exfiltration:0.88, Persistence:0.82, Command and Control:0.76, Initial Access:0.71, Reconnaissance:0.68, Lateral Movement:0.53, Impact:0.45, Execution:0.18, Discovery:0.14",Benign,None,True,True,0.8
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.96, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.05",Benign,None,False,True,0.81
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Exfiltration, Initial Access, Persistence, Command and Control, Lateral Movement, Impact, Execution, Discovery","Reconnaissance:1.00, None:0.89, Exfiltration:0.76, Initial Access:0.76, Persistence:0.63, Command and Control:0.57, Lateral Movement:0.57, Impact:0.52, Execution:0.51, Discovery:0.33",Benign,None,False,True,0.7
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.82, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.08",Benign,None,False,True,0.76
+192.168.100.3,100,Exfiltration,"Exfiltration, Lateral Movement, Reconnaissance, None, Initial Access, Persistence, Impact, Command and Control, Execution, Discovery","Exfiltration:1.00, Lateral Movement:1.00, Reconnaissance:0.97, None:0.93, Initial Access:0.80, Persistence:0.67, Impact:0.60, Command and Control:0.60, Execution:0.53, Discovery:0.16",Benign,None,False,True,0.63
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Reconnaissance, Persistence, Command and Control, Initial Access, Execution","None:1.00, Exfiltration:0.88, Lateral Movement:0.88, Reconnaissance:0.86, Persistence:0.82, Command and Control:0.76, Initial Access:0.71, Execution:0.47, Discovery:0.14, Impact:0.12",Benign,None,True,True,0.71
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.07",Benign,None,False,True,0.76
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Lateral Movement, Persistence, Initial Access, Execution, Discovery","Reconnaissance:1.00, None:0.90, Command and Control:0.80, Lateral Movement:0.80, Persistence:0.74, Initial Access:0.64, Execution:0.43, Discovery:0.28, Impact:0.12, Exfiltration:0.11",Benign,None,False,True,0.75
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Lateral Movement, Persistence, Initial Access, Execution, Exfiltration, Discovery","Reconnaissance:1.00, None:0.90, Command and Control:0.80, Lateral Movement:0.80, Persistence:0.74, Initial Access:0.64, Execution:0.43, Exfiltration:0.32, Discovery:0.28, Impact:0.10",Benign,None,False,True,0.76
+192.168.100.3,100,None,"None, Exfiltration, Persistence, Command and Control, Initial Access, Reconnaissance, Lateral Movement, Execution","None:1.00, Exfiltration:0.88, Persistence:0.82, Command and Control:0.76, Initial Access:0.71, Reconnaissance:0.68, Lateral Movement:0.53, Execution:0.47, Discovery:0.14, Impact:0.12",Benign,None,True,True,0.76
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Reconnaissance, Persistence, Command and Control, Initial Access, Execution","None:1.00, Exfiltration:0.88, Lateral Movement:0.88, Reconnaissance:0.86, Persistence:0.82, Command and Control:0.76, Initial Access:0.71, Execution:0.47, Discovery:0.14, Impact:0.10",Benign,None,True,True,0.76
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Impact:0.09, Exfiltration:0.08",Benign,None,False,True,0.75
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Initial Access, Lateral Movement, Command and Control, Persistence, Discovery","Reconnaissance:1.00, None:0.59, Initial Access:0.50, Lateral Movement:0.50, Command and Control:0.46, Persistence:0.42, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.08",Benign,None,False,True,0.7
+192.168.100.3,100,None,"None, Reconnaissance, Command and Control, Lateral Movement, Persistence, Initial Access, Execution, Discovery","None:1.00, Reconnaissance:0.94, Command and Control:0.75, Lateral Movement:0.75, Persistence:0.70, Initial Access:0.60, Execution:0.40, Discovery:0.26, Exfiltration:0.10, Impact:0.06",Benign,None,True,True,0.75
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Reconnaissance, Persistence, Command and Control, Initial Access, Execution","None:1.00, Exfiltration:0.88, Lateral Movement:0.88, Reconnaissance:0.86, Persistence:0.82, Command and Control:0.76, Initial Access:0.71, Execution:0.47, Discovery:0.14, Impact:0.13",Benign,None,True,True,0.75
+192.168.100.3,100,Exfiltration,"Exfiltration, Lateral Movement, Reconnaissance, None, Persistence, Command and Control, Initial Access, Impact, Execution, Discovery","Exfiltration:1.00, Lateral Movement:1.00, Reconnaissance:0.97, None:0.93, Persistence:0.93, Command and Control:0.87, Initial Access:0.80, Impact:0.52, Execution:0.20, Discovery:0.16",Benign,None,False,True,0.77
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Initial Access, Lateral Movement, Command and Control, Persistence, Discovery","Reconnaissance:1.00, None:0.59, Initial Access:0.50, Lateral Movement:0.50, Command and Control:0.46, Persistence:0.42, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.07",Benign,None,False,True,0.77
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Lateral Movement, Exfiltration, Initial Access, Persistence, Command and Control, Execution, Discovery","Reconnaissance:1.00, None:0.90, Lateral Movement:0.80, Exfiltration:0.64, Initial Access:0.64, Persistence:0.53, Command and Control:0.48, Execution:0.43, Discovery:0.28, Impact:0.07",Benign,None,False,True,0.77
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.82, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.09",Benign,None,False,True,0.78
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.82, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Impact:0.11, Exfiltration:0.10",Benign,None,False,True,0.75
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.96, Command and Control:0.72, Persistence:0.67, Initial Access:0.38, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.06",Benign,None,False,True,0.8
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Reconnaissance, Persistence, Command and Control, Initial Access, Execution","None:1.00, Exfiltration:0.88, Lateral Movement:0.88, Reconnaissance:0.86, Persistence:0.82, Command and Control:0.76, Initial Access:0.71, Execution:0.47, Discovery:0.14, Impact:0.14",Benign,None,True,True,0.72
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.08",Benign,None,False,True,0.72
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Persistence, Command and Control, Reconnaissance, Initial Access, Impact, Execution","None:1.00, Exfiltration:0.88, Lateral Movement:0.88, Persistence:0.82, Command and Control:0.76, Reconnaissance:0.72, Initial Access:0.71, Impact:0.44, Execution:0.18, Discovery:0.05",Benign,None,True,True,0.76
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.82, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Impact:0.11, Exfiltration:0.10",Benign,None,False,True,0.71
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Reconnaissance, Persistence, Command and Control, Initial Access, Execution, Impact","None:1.00, Exfiltration:0.88, Lateral Movement:0.88, Reconnaissance:0.86, Persistence:0.82, Command and Control:0.76, Initial Access:0.71, Execution:0.47, Impact:0.17, Discovery:0.14",Benign,None,True,True,0.67
+192.168.100.3,100,None,"None, Exfiltration, Lateral Movement, Reconnaissance, Persistence, Command and Control, Initial Access, Execution","None:1.00, Exfiltration:0.88, Lateral Movement:0.88, Reconnaissance:0.86, Persistence:0.82, Command and Control:0.76, Initial Access:0.71, Execution:0.47, Impact:0.14, Discovery:0.14",Benign,None,True,True,0.72
+192.168.100.3,100,Exfiltration,"Exfiltration, Lateral Movement, Reconnaissance, None, Persistence, Command and Control, Initial Access, Impact, Execution, Discovery","Exfiltration:1.00, Lateral Movement:1.00, Reconnaissance:0.97, None:0.93, Persistence:0.93, Command and Control:0.87, Initial Access:0.80, Impact:0.51, Execution:0.20, Discovery:0.16",Benign,None,False,True,0.76
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.71, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.08",Benign,None,False,True,0.77
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.84, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.05",Benign,None,False,True,0.86
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.96, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.06",Benign,None,False,True,0.79
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.96, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.08",Benign,None,False,True,0.76
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.84, Command and Control:0.63, Persistence:0.59, Initial Access:0.50, Lateral Movement:0.50, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.07",Benign,None,False,True,0.78
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Persistence, Initial Access, Lateral Movement, Discovery","Reconnaissance:1.00, None:0.96, Command and Control:0.72, Persistence:0.67, Initial Access:0.58, Lateral Movement:0.29, Discovery:0.25, Execution:0.14, Exfiltration:0.10, Impact:0.07",Benign,None,False,True,0.76
+192.168.100.3,100,Reconnaissance,"Reconnaissance, None, Command and Control, Lateral Movement, Persistence, Initial Access, Execution, Discovery","Reconnaissance:1.00, None:0.90, Command and Control:0.80, Lateral Movement:0.80, Persistence:0.74, Initial Access:0.64, Execution:0.43, Discovery:0.28, Exfiltration:0.11, Impact:0.09",Benign,None,False,True,0.71
+192.168.100.3,73,Reconnaissance,"Reconnaissance, None, Initial Access, Lateral Movement, Command and Control, Persistence, Discovery","Reconnaissance:1.00, None:0.59, Initial Access:0.50, Lateral Movement:0.50, Command and Control:0.46, Persistence:0.42, Discovery:0.22, Execution:0.13, Exfiltration:0.08, Impact:0.08",Benign,None,False,True,0.684931506849315
+192.168.100.6,100,Reconnaissance,"Reconnaissance, Lateral Movement, Initial Access, Impact, Command and Control, Persistence, Execution, Discovery, None, Exfiltration","Reconnaissance:1.00, Lateral Movement:0.54, Initial Access:0.50, Impact:0.41, Command and Control:0.40, Persistence:0.36, Execution:0.29, Discovery:0.26, None:0.25, Exfiltration:0.22",Benign,None,False,True,0.84
+192.168.100.6,100,Impact,Impact,"Impact:1.00, Command and Control:0.10, Reconnaissance:0.09, Initial Access:0.09, None:0.04",Benign,None,False,False,0.77
+192.168.100.6,100,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.17, Reconnaissance:0.16, Initial Access:0.16, None:0.06, Exfiltration:0.02",Benign,None,False,False,0.82
+192.168.100.6,100,Reconnaissance,"Reconnaissance, Impact, Initial Access, Command and Control, Persistence, Discovery, Lateral Movement","Reconnaissance:1.00, Impact:0.39, Initial Access:0.37, Command and Control:0.37, Persistence:0.34, Discovery:0.24, Lateral Movement:0.20, None:0.13, Execution:0.10, Exfiltration:0.07",Benign,None,False,False,0.82
+192.168.100.6,100,Reconnaissance,"Reconnaissance, Initial Access, Exfiltration, Impact, Persistence, Command and Control, Lateral Movement, Execution, Discovery, None","Reconnaissance:1.00, Initial Access:0.56, Exfiltration:0.48, Impact:0.44, Persistence:0.40, Command and Control:0.36, Lateral Movement:0.36, Execution:0.32, Discovery:0.29, None:0.28",Benign,None,False,True,0.87
+192.168.100.6,100,Impact,"Impact, Reconnaissance, Initial Access","Impact:1.00, Reconnaissance:0.16, Initial Access:0.16, Command and Control:0.15, Exfiltration:0.12, None:0.11",Benign,None,False,False,0.77
+192.168.100.6,100,Reconnaissance,"Reconnaissance, Lateral Movement, Initial Access, Exfiltration, Impact, Persistence, Command and Control, Execution, Discovery, None","Reconnaissance:1.00, Lateral Movement:0.54, Initial Access:0.50, Exfiltration:0.43, Impact:0.38, Persistence:0.36, Command and Control:0.32, Execution:0.29, Discovery:0.26, None:0.25",Benign,None,False,True,0.88
+192.168.100.6,9,Reconnaissance,"Reconnaissance, Initial Access, Command and Control, Impact, Persistence, Discovery, Execution, Lateral Movement","Reconnaissance:1.00, Initial Access:0.57, Command and Control:0.40, Impact:0.37, Persistence:0.37, Discovery:0.26, Execution:0.26, Lateral Movement:0.18, None:0.15, Exfiltration:0.07",Benign,None,False,False,0.7777777777777778
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DoS,Impact,True,True,0.37
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.35
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.38
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.42
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DDoS,Impact,True,True,0.42
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.34
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.35
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DDoS,Impact,True,True,0.45
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.41
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.34
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.37
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DDoS,Impact,True,True,0.39
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.33
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DDoS,Impact,True,True,0.39
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.45
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DDoS,Impact,True,True,0.39
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.08",DDoS,Impact,True,True,0.41
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DoS,Impact,True,True,0.43
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DDoS,Impact,True,True,0.39
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DoS,Impact,True,True,0.37
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Command and Control:0.13, Reconnaissance:0.11, Initial Access:0.11, None:0.06, Exfiltration:0.02",DDoS,Impact,True,True,0.38
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.39
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DDoS,Impact,True,True,0.42
+192.168.100.147,100,Impact,"Impact, Command and Control","Impact:1.00, Command and Control:0.16, Reconnaissance:0.14, Initial Access:0.14, None:0.04",DoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.08",DDoS,Impact,True,True,0.38
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.4
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.42
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.32
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.08",DoS,Impact,True,True,0.4
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.4
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.34
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.34
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.33
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.37
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.08",DoS,Impact,True,True,0.38
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.37
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.35
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.37
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.34
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DDoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.39
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.34
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.37
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.35
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DDoS,Impact,True,True,0.38
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.34
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.41
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.35
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.4
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DoS,Impact,True,True,0.46
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.37
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Command and Control:0.15, Reconnaissance:0.12, Initial Access:0.12, None:0.07",DDoS,Impact,True,True,0.39
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.35
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.36
+192.168.100.147,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.34
+192.168.100.147,1,Command and Control,"Command and Control, Impact, Persistence, Initial Access, Reconnaissance, Execution, Lateral Movement, Discovery, None","Command and Control:1.00, Impact:0.94, Persistence:0.81, Initial Access:0.78, Reconnaissance:0.74, Execution:0.69, Lateral Movement:0.44, Discovery:0.23, None:0.19, Exfiltration:0.12",Reconnaissance,Reconnaissance,False,True,1.0
+192.168.100.46,100,Impact,"Impact, Reconnaissance, Initial Access","Impact:1.00, Reconnaissance:0.24, Initial Access:0.24, Command and Control:0.08, Exfiltration:0.04",Benign,None,False,False,1.0
+192.168.100.46,88,Impact,"Impact, Reconnaissance, Initial Access","Impact:1.00, Reconnaissance:0.24, Initial Access:0.24, Command and Control:0.08, Exfiltration:0.05",Benign,None,False,False,1.0
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.4
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.4
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DoS,Impact,True,True,0.39
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.39
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.38
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.34
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.36
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.38
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.37
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.31
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.34
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.3
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.39
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DDoS,Impact,True,True,0.39
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.38
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.39
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.36
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.34
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DDoS,Impact,True,True,0.37
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.37
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.34
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DoS,Impact,True,True,0.48
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.39
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DoS,Impact,True,True,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DoS,Impact,True,True,0.43
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.34
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.32
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DDoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.4
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.33
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.37
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.32
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.10, Initial Access:0.10, Command and Control:0.08",DDoS,Impact,True,True,0.39
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.36
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DoS,Impact,True,True,0.45
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.44
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.46
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.36
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DDoS,Impact,True,True,0.38
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",Reconnaissance,Reconnaissance,False,False,0.38
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.09",DoS,Impact,True,True,0.37
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",DoS,Impact,True,True,0.4
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.4
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.37
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.12",DoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.37
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DoS,Impact,True,True,0.3
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.43
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.14, Initial Access:0.14, Command and Control:0.11",DDoS,Impact,True,True,0.32
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.10",DoS,Impact,True,True,0.41
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.35
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.11, Initial Access:0.11, Command and Control:0.08",DoS,Impact,True,True,0.39
+192.168.100.148,100,Impact,"Impact, Command and Control, Reconnaissance, Initial Access","Impact:1.00, Command and Control:0.18, Reconnaissance:0.15, Initial Access:0.15, None:0.09, Exfiltration:0.03",Reconnaissance,Reconnaissance,False,True,0.34
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.34
+192.168.100.148,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.13, Initial Access:0.13, Command and Control:0.11",DoS,Impact,True,True,0.35
+192.168.100.148,69,Impact,Impact,"Impact:1.00, Reconnaissance:0.15, Initial Access:0.15, Command and Control:0.12",Reconnaissance,Reconnaissance,False,False,0.37681159420289856
+192.168.100.7,100,Impact,Impact,"Impact:1.00, Command and Control:0.13, None:0.03, Exfiltration:0.01",Benign,None,False,False,0.98
+192.168.100.7,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.09",Benign,None,False,False,0.98
+192.168.100.7,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.08, Initial Access:0.08, Command and Control:0.07",Benign,None,False,False,1.0
+192.168.100.7,100,Impact,Impact,"Impact:1.00, Reconnaissance:0.09, Initial Access:0.09, Command and Control:0.07, None:0.03",Benign,None,False,False,0.99
+192.168.100.7,57,Impact,Impact,"Impact:1.00, Reconnaissance:0.12, Initial Access:0.12, Command and Control:0.10",Benign,None,False,False,1.0
+192.168.100.27,6,Impact,"Impact, Reconnaissance, Initial Access","Impact:1.00, Reconnaissance:0.36, Initial Access:0.36, None:0.11, Command and Control:0.08",Benign,None,False,False,1.0
+192.168.100.55,63,Impact,"Impact, Reconnaissance, Initial Access","Impact:1.00, Reconnaissance:0.19, Initial Access:0.19, Command and Control:0.11, Exfiltration:0.05, None:0.02",Benign,None,False,False,1.0
+192.168.100.4,3,Impact,"Impact, Reconnaissance, Initial Access","Impact:1.00, Reconnaissance:0.36, Initial Access:0.36, None:0.14, Command and Control:0.12",Benign,None,False,False,1.0

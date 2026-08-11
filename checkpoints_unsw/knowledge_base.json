@@ -1,144 +1,1084 @@
 {
   "metadata": {
-    "n_clusters": 11,
-    "n_labeled": 11,
-    "default_fusion_weights": [
-      0.6,
-      0.4
-    ]
+    "n_clusters": 25,
+    "n_labeled": 25,
+    "dataset": ""
   },
   "entries": {
     "0": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 0.06767140101518362,
-      "p_llm": 0.8,
-      "reasoning": "The traffic pattern is inbound heavy with very short duration, and the connectivity pattern is distributed, which is indicative of Command and Control behavior. The above-average packet length and throughput also suggest data is being sent to multiple destinations, further supporting this tactic.",
-      "summary_text": "=== Cluster 0 Summary ===\nSize: 17749 flows (7.8% of dataset)\n\nTop Distinguishing Features:\n  - MIN_TTL: BELOW global average (effect=-0.61, cluster=-0.614, global=-0.000)\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+0.47, cluster=0.474, global=-0.000)\n  - DST_TO_SRC_AVG_THROUGHPUT: ABOVE global average (effect=+0.43, cluster=0.430, global=-0.000)\n  - OUT_BYTES: ABOVE global average (effect=+0.41, cluster=0.408, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+0.40, cluster=0.403, global=0.000)\n  - OUT_PKTS: ABOVE global average (effect=+0.34, cluster=0.344, global=0.000)\n  - NUM_PKTS_UP_TO_128_BYTES: ABOVE global average (effect=+0.31, cluster=0.310, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 2\n  - Unique destinations: 6\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 8874.5\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -1.2405\n  - OUT_BYTES: -0.4327\n  - OUT_PKTS: -0.7361\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6143",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 0.0003534817956875221,
+        "port_scanning": 0.23895369388476492,
+        "service_probing": 0.27712972781901735,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.17108518911276072,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.17108518911276072,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.14139271827500882,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "service_probing",
+      "tactic_scores": {
+        "None": 0.0003534817956875221,
+        "Reconnaissance": 0.4759278897136797,
+        "Discovery": 0.11085189112760695,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.24178154825026513,
+        "Persistence": 0.17108518911276072,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 12701,
+      "cluster_proportion": 0.1999,
+      "cluster_features": {
+        "tcp_flags": 0.0,
+        "out_bytes": 0.0,
+        "min_ttl": 254.0,
+        "packets_per_second": 0,
+        "direction_ratio": 0.0,
+        "fan_out": 9.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.199911
+    },
+    "1": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 2080,
+      "cluster_proportion": 0.0327,
+      "cluster_features": {
+        "tcp_flags": 24.244230769230768,
+        "out_bytes": 1855.602403846154,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 1.385080551828381,
+        "fan_out": 10.0,
+        "fan_in": 5.0
+      },
+      "p_gmm": 0.032764
     },
     "2": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 9.202542279291285e-05,
-      "p_llm": 0.8,
-      "reasoning": "The network traffic shows an outbound-heavy pattern with above-average throughput, which is characteristic of C2 communication. The distributed connectivity pattern and very short duration of the flows also suggest a command and control tactic.",
-      "summary_text": "=== Cluster 2 Summary ===\nSize: 20 flows (0.0% of dataset)\n\nTop Distinguishing Features:\n  - TCP_WIN_MAX_OUT: ABOVE global average (effect=+2.03, cluster=2.029, global=-0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+1.29, cluster=1.292, global=0.000)\n  - SRC_TO_DST_AVG_THROUGHPUT: ABOVE global average (effect=+0.95, cluster=0.953, global=0.000)\n  - MIN_TTL: BELOW global average (effect=-0.64, cluster=-0.635, global=-0.000)\n  - DURATION_OUT: ABOVE global average (effect=+0.57, cluster=0.571, global=0.000)\n  - IN_PKTS: ABOVE global average (effect=+0.57, cluster=0.566, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: OUTBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 2\n  - Unique destinations: 2\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 10.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 1.0792\n  - OUT_BYTES: 0.3289\n  - OUT_PKTS: 0.9369\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6352",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 0.0021827252884315555,
+        "port_scanning": 0.21827252884315557,
+        "service_probing": 0.0,
+        "exploitation": 0.21827252884315557,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.160363490578645,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.040090872644661234,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.360817853801951
+      },
+      "primary_behaviour": "periodic_comm",
+      "tactic_scores": {
+        "None": 0.0021827252884315555,
+        "Reconnaissance": 0.21827252884315557,
+        "Discovery": 0.0,
+        "Execution": 0.13096351730589334,
+        "Initial Access": 0.24767250211590722,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.040090872644661234,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.360817853801951,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Command and Control",
+      "cluster_size": 5853,
+      "cluster_proportion": 0.0921,
+      "cluster_features": {
+        "tcp_flags": 20.25662053647702,
+        "out_bytes": 514.1783700666325,
+        "min_ttl": 214.40594566888774,
+        "packets_per_second": 0,
+        "direction_ratio": 0.6664871347120827,
+        "fan_out": 9.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.092128
     },
     "3": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 0.012206320345545014,
-      "p_llm": 0.85,
-      "reasoning": "The distinguishing features such as above average outbound bytes, packets, and throughput, along with a very short duration and inbound heavy traffic direction, suggest a possible Command and Control (C2) communication pattern. The distributed connectivity pattern with multiple unique sources and a single destination also fits the C2 profile.",
-      "summary_text": "=== Cluster 3 Summary ===\nSize: 2784 flows (1.2% of dataset)\n\nTop Distinguishing Features:\n  - MIN_TTL: BELOW global average (effect=-0.61, cluster=-0.614, global=-0.000)\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+0.48, cluster=0.478, global=-0.000)\n  - DST_TO_SRC_AVG_THROUGHPUT: ABOVE global average (effect=+0.42, cluster=0.422, global=-0.000)\n  - OUT_BYTES: ABOVE global average (effect=+0.40, cluster=0.396, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+0.39, cluster=0.389, global=0.000)\n  - OUT_PKTS: ABOVE global average (effect=+0.34, cluster=0.337, global=0.000)\n  - NUM_PKTS_UP_TO_128_BYTES: ABOVE global average (effect=+0.30, cluster=0.302, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 2\n  - Unique destinations: 1\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 1392.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.4620\n  - OUT_BYTES: 0.2334\n  - OUT_PKTS: 0.5349\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6143",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1035,
+      "cluster_proportion": 0.0163,
+      "cluster_features": {
+        "tcp_flags": 26.98454106280193,
+        "out_bytes": 32396.49082125604,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 10.028697372348617,
+        "fan_out": 10.0,
+        "fan_in": 1.0
+      },
+      "p_gmm": 0.016315
     },
     "4": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 0.030490412776796174,
-      "p_llm": 0.8,
-      "reasoning": "The distinguishing features such as above average packet length, throughput, and outbound bytes suggest a high volume of data being sent, which is typical of Command and Control (C2) communication. The distributed connectivity pattern and inbound heavy traffic direction also align with C2 tactics.",
-      "summary_text": "=== Cluster 4 Summary ===\nSize: 22364 flows (9.8% of dataset)\n\nTop Distinguishing Features:\n  - MIN_TTL: BELOW global average (effect=-0.61, cluster=-0.614, global=-0.000)\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+0.47, cluster=0.474, global=-0.000)\n  - DST_TO_SRC_AVG_THROUGHPUT: ABOVE global average (effect=+0.43, cluster=0.427, global=-0.000)\n  - OUT_BYTES: ABOVE global average (effect=+0.41, cluster=0.406, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+0.40, cluster=0.402, global=0.000)\n  - OUT_PKTS: ABOVE global average (effect=+0.35, cluster=0.353, global=0.000)\n  - NUM_PKTS_UP_TO_128_BYTES: ABOVE global average (effect=+0.32, cluster=0.320, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 8\n  - Unique destinations: 3\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 2795.5\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.1797\n  - OUT_BYTES: 0.2104\n  - OUT_PKTS: 0.0642\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6143",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 0.0005479452054794521,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.4931506849315068,
+        "volumetric_flood": 0.019726027397260273,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.008767123287671234,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.10739726027397259,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.37041095890410963
+      },
+      "primary_behaviour": "exploitation",
+      "tactic_scores": {
+        "None": 0.0005479452054794521,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.29589041095890406,
+        "Initial Access": 0.20602739726027397,
+        "Impact": 0.019726027397260273,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.10739726027397259,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.37041095890410963,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Command and Control",
+      "cluster_size": 1711,
+      "cluster_proportion": 0.0269,
+      "cluster_features": {
+        "tcp_flags": 21.334307422559906,
+        "out_bytes": 5937.531268264173,
+        "min_ttl": 191.15955581531267,
+        "packets_per_second": 0,
+        "direction_ratio": 1.0419156260022004,
+        "fan_out": 1.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.026946
     },
     "5": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 2.1914209011601484e-05,
-      "p_llm": 0.8,
-      "reasoning": "The traffic direction is outbound heavy and the connectivity pattern is one-to-one, which is often indicative of Command and Control communication. The above average throughput and packet flow also suggest a steady stream of data, which is typical of C2 communication.",
-      "summary_text": "=== Cluster 5 Summary ===\nSize: 4 flows (0.0% of dataset)\n\nTop Distinguishing Features:\n  - TCP_WIN_MAX_OUT: ABOVE global average (effect=+1.75, cluster=1.751, global=-0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+1.29, cluster=1.290, global=0.000)\n  - SRC_TO_DST_AVG_THROUGHPUT: ABOVE global average (effect=+1.01, cluster=1.009, global=0.000)\n  - IN_PKTS: ABOVE global average (effect=+0.77, cluster=0.772, global=0.000)\n  - LONGEST_FLOW_PKT: ABOVE global average (effect=+0.67, cluster=0.675, global=-0.000)\n  - FLOW_DURATION_MS: ABOVE global average (effect=+0.67, cluster=0.671, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: OUTBOUND_HEAVY\n  - Duration: SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 1\n  - Connectivity pattern: ONE_TO_ONE (targeted/tunnel)\n  - Avg fan-out: 4.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: -0.5468\n  - OUT_BYTES: 0.3788\n  - OUT_PKTS: -0.1855\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6352",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1957,
+      "cluster_proportion": 0.0308,
+      "cluster_features": {
+        "tcp_flags": 26.98569238630557,
+        "out_bytes": 37835.26417986715,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 11.283222967644607,
+        "fan_out": 10.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.03076
+    },
+    "6": {
+      "behaviour_scores": {
+        "normal_activity": 0.0003279763857002297,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.4250573958674976,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.005247622171203675,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.37914070186946536,
+        "data_transfer": 0.0839619547392588,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.10626434896687437
+      },
+      "primary_behaviour": "exploitation",
+      "tactic_scores": {
+        "None": 0.0003279763857002297,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.25503443752049854,
+        "Initial Access": 0.1752705805182027,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.37914070186946536,
+        "Exfiltration": 0.0839619547392588,
+        "Command and Control": 0.10626434896687437,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Lateral Movement",
+      "cluster_size": 1391,
+      "cluster_proportion": 0.0219,
+      "cluster_features": {
+        "tcp_flags": 23.32925952552121,
+        "out_bytes": 223352.4478792236,
+        "min_ttl": 144.95183321351544,
+        "packets_per_second": 0.10688618959716277,
+        "direction_ratio": 0.8569655421290845,
+        "fan_out": 5.571428571428571,
+        "fan_in": 3.25
+      },
+      "p_gmm": 0.021935
+    },
+    "7": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 2211,
+      "cluster_proportion": 0.0348,
+      "cluster_features": {
+        "tcp_flags": 2.3518769787426503,
+        "out_bytes": 209.78471279963819,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 0.9052857159586387,
+        "fan_out": 10.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.034777
+    },
+    "8": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1324,
+      "cluster_proportion": 0.0208,
+      "cluster_features": {
+        "tcp_flags": 25.80211480362538,
+        "out_bytes": 278564.92824773415,
+        "min_ttl": 30.976586102719033,
+        "packets_per_second": 0.08745678176810753,
+        "direction_ratio": 30.216558990500406,
+        "fan_out": 10.0,
+        "fan_in": 10.0
+      },
+      "p_gmm": 0.02085
     },
     "9": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 0.22051340596520594,
-      "p_llm": 0.8,
-      "reasoning": "The traffic pattern shows a high volume of outbound packets and bytes, which is indicative of a command and control server sending commands or receiving data. The very short duration and inbound heavy traffic direction further suggest a control server quickly sending commands or receiving data.",
-      "summary_text": "=== Cluster 9 Summary ===\nSize: 93488 flows (41.0% of dataset)\n\nTop Distinguishing Features:\n  - MIN_TTL: BELOW global average (effect=-0.61, cluster=-0.614, global=-0.000)\n  - MIN_IP_PKT_LEN: ABOVE global average (effect=+0.48, cluster=0.476, global=-0.000)\n  - DST_TO_SRC_AVG_THROUGHPUT: ABOVE global average (effect=+0.43, cluster=0.425, global=-0.000)\n  - OUT_BYTES: ABOVE global average (effect=+0.40, cluster=0.402, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: ABOVE global average (effect=+0.40, cluster=0.396, global=0.000)\n  - OUT_PKTS: ABOVE global average (effect=+0.35, cluster=0.346, global=0.000)\n  - NUM_PKTS_UP_TO_128_BYTES: ABOVE global average (effect=+0.32, cluster=0.315, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 9\n  - Unique destinations: 9\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 10387.6\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.1797\n  - OUT_BYTES: 0.2141\n  - OUT_PKTS: 0.3219\n  - FLOW_DURATION_MS: 3.5346\n  - DURATION_IN: 3.3202\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6143",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 0.0010718113612004291,
+        "port_scanning": 0.21007502679528403,
+        "service_probing": 0.03858520900321544,
+        "exploitation": 0.21007502679528403,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.1543408360128618,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.03858520900321544,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.3472668810289389
+      },
+      "primary_behaviour": "periodic_comm",
+      "tactic_scores": {
+        "None": 0.0010718113612004291,
+        "Reconnaissance": 0.2332261521972133,
+        "Discovery": 0.015434083601286175,
+        "Execution": 0.12604501607717042,
+        "Initial Access": 0.23837084673097542,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.03858520900321544,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.3472668810289389,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Command and Control",
+      "cluster_size": 2607,
+      "cluster_proportion": 0.041,
+      "cluster_features": {
+        "tcp_flags": 19.775220560030686,
+        "out_bytes": 477.6198695818949,
+        "min_ttl": 227.7077100115075,
+        "packets_per_second": 0,
+        "direction_ratio": 0.6366457801263419,
+        "fan_out": 9.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.041048
+    },
+    "10": {
+      "behaviour_scores": {
+        "normal_activity": 0.001568050177605683,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.7200230407373036,
+        "volumetric_flood": 0.028800921629492146,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.012800409613107622,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.15680501776056832,
+        "data_transfer": 0.05120163845243049,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.028800921629492146
+      },
+      "primary_behaviour": "exploitation",
+      "tactic_scores": {
+        "None": 0.001568050177605683,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.4320138244423822,
+        "Initial Access": 0.30080962590802907,
+        "Impact": 0.028800921629492146,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.15680501776056832,
+        "Exfiltration": 0.05120163845243049,
+        "Command and Control": 0.028800921629492146,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Execution",
+      "cluster_size": 5538,
+      "cluster_proportion": 0.0872,
+      "cluster_features": {
+        "tcp_flags": 22.41982665222102,
+        "out_bytes": 22061.364933188877,
+        "min_ttl": 160.91224268689058,
+        "packets_per_second": 0,
+        "direction_ratio": 10.911819882570244,
+        "fan_out": 9.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.087152
+    },
+    "11": {
+      "behaviour_scores": {
+        "normal_activity": 0.0006472491909385114,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.8388349514563108,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.010355987055016183,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.1268608414239482,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.02330097087378641
+      },
+      "primary_behaviour": "exploitation",
+      "tactic_scores": {
+        "None": 0.0006472491909385114,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.5033009708737864,
+        "Initial Access": 0.34588996763754054,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.1268608414239482,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.02330097087378641,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Execution",
+      "cluster_size": 1735,
+      "cluster_proportion": 0.0273,
+      "cluster_features": {
+        "tcp_flags": 22.05763688760807,
+        "out_bytes": 2739.4374639769453,
+        "min_ttl": 178.8599423631124,
+        "packets_per_second": 0,
+        "direction_ratio": 0.04521133574466216,
+        "fan_out": 9.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.027301
+    },
+    "12": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1004,
+      "cluster_proportion": 0.0158,
+      "cluster_features": {
+        "tcp_flags": 26.987051792828684,
+        "out_bytes": 33594.74701195219,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 10.047440159881464,
+        "fan_out": 10.0,
+        "fan_in": 1.0
+      },
+      "p_gmm": 0.015831
     },
     "13": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 4.820882518305158e-05,
-      "p_llm": 0.8,
-      "reasoning": "The network traffic shows a high amount of outbound data and a distributed connectivity pattern, which is typical for command and control servers. Additionally, the above-average throughput and duration suggest persistent communication with multiple destinations.",
-      "summary_text": "=== Cluster 13 Summary ===\nSize: 10 flows (0.0% of dataset)\n\nTop Distinguishing Features:\n  - TCP_WIN_MAX_OUT: ABOVE global average (effect=+3.71, cluster=3.712, global=-0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+2.41, cluster=2.406, global=0.000)\n  - SRC_TO_DST_AVG_THROUGHPUT: ABOVE global average (effect=+1.82, cluster=1.821, global=0.000)\n  - IN_PKTS: ABOVE global average (effect=+1.52, cluster=1.523, global=0.000)\n  - DURATION_OUT: ABOVE global average (effect=+1.41, cluster=1.406, global=0.000)\n  - DURATION_IN: ABOVE global average (effect=+1.32, cluster=1.316, global=-0.000)\n  - FLOW_DURATION_MS: ABOVE global average (effect=+1.24, cluster=1.244, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: OUTBOUND_HEAVY\n  - Duration: MEDIUM\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 3\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 10.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 2.0305\n  - OUT_BYTES: 0.5272\n  - OUT_PKTS: 1.3392\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6352",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 0.00011551938800395334,
+        "port_scanning": 0.04620775520158133,
+        "service_probing": 0.0,
+        "exploitation": 0.10396744920355798,
+        "volumetric_flood": 0.12835487555994815,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.12835487555994815,
+        "backdoor_comm": 0.005134195022397927,
+        "worm_spreading": 0.3709455903682501,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.2169197396963124
+      },
+      "primary_behaviour": "worm_spreading",
+      "tactic_scores": {
+        "None": 0.00011551938800395334,
+        "Reconnaissance": 0.04620775520158133,
+        "Discovery": 0.0,
+        "Execution": 0.06238046952213479,
+        "Initial Access": 0.16994185524137134,
+        "Impact": 0.12835487555994815,
+        "Persistence": 0.005134195022397927,
+        "Lateral Movement": 0.3709455903682501,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.2169197396963124,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Lateral Movement",
+      "cluster_size": 897,
+      "cluster_proportion": 0.0141,
+      "cluster_features": {
+        "tcp_flags": 10.451505016722408,
+        "out_bytes": 56339.357859531774,
+        "min_ttl": 206.2118171683389,
+        "packets_per_second": 0.055824224604881956,
+        "direction_ratio": 1.616576442444504,
+        "fan_out": 1.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.014126
+    },
+    "14": {
+      "behaviour_scores": {
+        "normal_activity": 0.00020040526397826716,
+        "port_scanning": 0.5700416397604045,
+        "service_probing": 0.020040526397826715,
+        "exploitation": 0.00890690062125632,
+        "volumetric_flood": 0.020040526397826715,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.18036473758044042,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.020040526397826715,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.18036473758044042
+      },
+      "primary_behaviour": "port_scanning",
+      "tactic_scores": {
+        "None": 0.00020040526397826716,
+        "Reconnaissance": 0.5820659555991005,
+        "Discovery": 0.008016210559130687,
+        "Execution": 0.005344140372753791,
+        "Initial Access": 0.18392749782894294,
+        "Impact": 0.020040526397826715,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.020040526397826715,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.18036473758044042,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 2395,
+      "cluster_proportion": 0.0377,
+      "cluster_features": {
+        "tcp_flags": 11.293528183716075,
+        "out_bytes": 128.27098121085595,
+        "min_ttl": 203.9240083507307,
+        "packets_per_second": 0,
+        "direction_ratio": 1.0442963103971066,
+        "fan_out": 9.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.037697
+    },
+    "15": {
+      "behaviour_scores": {
+        "normal_activity": 0.00116144018583043,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.22764227642276422,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.16724738675958195,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.22764227642276422,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.3763066202090592
+      },
+      "primary_behaviour": "periodic_comm",
+      "tactic_scores": {
+        "None": 0.00116144018583043,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.13658536585365852,
+        "Initial Access": 0.25830429732868765,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.22764227642276422,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.3763066202090592,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Command and Control",
+      "cluster_size": 1857,
+      "cluster_proportion": 0.0292,
+      "cluster_features": {
+        "tcp_flags": 20.983306408185246,
+        "out_bytes": 1384.5971997845988,
+        "min_ttl": 194.75605815831986,
+        "packets_per_second": 0.005153645029731714,
+        "direction_ratio": 1.5335552076343846,
+        "fan_out": 9.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.029198
     },
     "16": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 0.0013498055915857063,
-      "p_llm": 0.8,
-      "reasoning": "The cluster shows a high outbound traffic pattern with above-average throughput, suggesting the presence of a command and control server. The distributed connectivity pattern and multiple unique sources and destinations also align with C2 communication.",
-      "summary_text": "=== Cluster 16 Summary ===\nSize: 307 flows (0.1% of dataset)\n\nTop Distinguishing Features:\n  - TCP_WIN_MAX_OUT: ABOVE global average (effect=+2.14, cluster=2.143, global=-0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+1.37, cluster=1.369, global=0.000)\n  - SRC_TO_DST_AVG_THROUGHPUT: ABOVE global average (effect=+1.05, cluster=1.053, global=0.000)\n  - IN_PKTS: ABOVE global average (effect=+0.68, cluster=0.682, global=0.000)\n  - DURATION_OUT: ABOVE global average (effect=+0.68, cluster=0.677, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: OUTBOUND_HEAVY\n  - Duration: SHORT\n\nNetwork Topology:\n  - Unique sources: 10\n  - Unique destinations: 10\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 30.7\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 3.5704\n  - OUT_BYTES: 1.1080\n  - OUT_PKTS: 2.6181\n  - FLOW_DURATION_MS: 3.5346\n  - DURATION_IN: 5.2859\n  - DURATION_OUT: 5.5814\n  - MIN_TTL: -0.6352",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 0.0001621358698589418,
+        "port_scanning": 0.1459222828730476,
+        "service_probing": 0.08827397358986831,
+        "exploitation": 0.18015096650993534,
+        "volumetric_flood": 0.01621358698589418,
+        "syn_flooding": 0.2179826694770218,
+        "fuzzing": 0.2179826694770218,
+        "backdoor_comm": 0.08827397358986831,
+        "worm_spreading": 0.02882415464158966,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.01621358698589418
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "None": 0.0001621358698589418,
+        "Reconnaissance": 0.19888666702696858,
+        "Discovery": 0.03530958943594733,
+        "Execution": 0.1080905799059612,
+        "Initial Access": 0.29004305608099595,
+        "Impact": 0.23419625646291597,
+        "Persistence": 0.08827397358986831,
+        "Lateral Movement": 0.02882415464158966,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.01621358698589418,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "Initial Access",
+      "cluster_size": 3102,
+      "cluster_proportion": 0.0488,
+      "cluster_features": {
+        "tcp_flags": 0.524822695035461,
+        "out_bytes": 140.77691811734366,
+        "min_ttl": 231.65538362346874,
+        "packets_per_second": 0.01707911526109417,
+        "direction_ratio": 0.06761916854545004,
+        "fan_out": 3.4615384615384617,
+        "fan_in": 3.0
+      },
+      "p_gmm": 0.048833
+    },
+    "17": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 3395,
+      "cluster_proportion": 0.0534,
+      "cluster_features": {
+        "tcp_flags": 26.986745213549337,
+        "out_bytes": 31913.485714285714,
+        "min_ttl": 31.0,
+        "packets_per_second": 21.17835570184619,
+        "direction_ratio": 10.493297182595928,
+        "fan_out": 10.0,
+        "fan_in": 6.0
+      },
+      "p_gmm": 0.05341
     },
     "18": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 3.944157618001015e-05,
-      "p_llm": 0.8,
-      "reasoning": "The traffic pattern is outbound heavy with high throughput, which is typical of Command and Control (C2) communication. The distributed connectivity pattern and the short duration of the flows also suggest C2 activity.",
-      "summary_text": "=== Cluster 18 Summary ===\nSize: 8 flows (0.0% of dataset)\n\nTop Distinguishing Features:\n  - TCP_WIN_MAX_OUT: ABOVE global average (effect=+2.91, cluster=2.910, global=-0.000)\n  - SRC_TO_DST_AVG_THROUGHPUT: ABOVE global average (effect=+1.85, cluster=1.849, global=0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+1.83, cluster=1.832, global=0.000)\n  - LONGEST_FLOW_PKT: ABOVE global average (effect=+1.18, cluster=1.183, global=-0.000)\n  - IN_PKTS: ABOVE global average (effect=+0.87, cluster=0.869, global=0.000)\n  - SHORTEST_FLOW_PKT: ABOVE global average (effect=+0.86, cluster=0.856, global=-0.000)\n\nBehavioural Pattern:\n  - Traffic direction: OUTBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 2\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 8.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.7709\n  - OUT_BYTES: 0.2719\n  - OUT_PKTS: 0.6967\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6352",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 62,
+      "cluster_proportion": 0.001,
+      "cluster_features": {
+        "tcp_flags": 23.596774193548388,
+        "out_bytes": 4967.322580645161,
+        "min_ttl": 28.532258064516128,
+        "packets_per_second": 0.3115294173526775,
+        "direction_ratio": 0.04206339461403782,
+        "fan_out": 4.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.000991
+    },
+    "19": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1511,
+      "cluster_proportion": 0.0238,
+      "cluster_features": {
+        "tcp_flags": 26.209133024487095,
+        "out_bytes": 26287.966909331568,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 9.117215352113838,
+        "fan_out": 10.0,
+        "fan_in": 1.0
+      },
+      "p_gmm": 0.023798
     },
     "20": {
-      "tactic": "Reconnaissance",
-      "tactic_id": "TA0043",
-      "p_gmm": 0.3991668225513964,
-      "p_llm": 0.7,
-      "reasoning": "The traffic pattern shows a high number of unique sources and destinations with very short duration, which is indicative of scanning or probing activities. The below-average packet length and throughput also suggest that the traffic is not associated with normal data transfer but rather with reconnaissance activities.",
-      "summary_text": "=== Cluster 20 Summary ===\nSize: 91417 flows (40.1% of dataset)\n\nTop Distinguishing Features:\n  - MIN_TTL: ABOVE global average (effect=+0.92, cluster=0.919, global=-0.000)\n  - MIN_IP_PKT_LEN: BELOW global average (effect=-0.71, cluster=-0.710, global=-0.000)\n  - DST_TO_SRC_AVG_THROUGHPUT: BELOW global average (effect=-0.64, cluster=-0.636, global=-0.000)\n  - OUT_BYTES: BELOW global average (effect=-0.60, cluster=-0.602, global=0.000)\n  - DST_TO_SRC_BYTES_SEC: BELOW global average (effect=-0.59, cluster=-0.594, global=0.000)\n  - OUT_PKTS: BELOW global average (effect=-0.52, cluster=-0.519, global=0.000)\n  - NUM_PKTS_UP_TO_128_BYTES: BELOW global average (effect=-0.47, cluster=-0.471, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: INBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 24\n  - Unique destinations: 24\n  - Connectivity pattern: DISTRIBUTED\n  - Avg fan-out: 3809.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.4954\n  - OUT_BYTES: 1.1165\n  - OUT_PKTS: 0.8441\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.2910",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1743,
+      "cluster_proportion": 0.0274,
+      "cluster_features": {
+        "tcp_flags": 24.265060240963855,
+        "out_bytes": 1806.433734939759,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 1.3796283354051473,
+        "fan_out": 10.0,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.027427
     },
     "21": {
-      "tactic": "Command and Control",
-      "tactic_id": "TA0011",
-      "p_gmm": 2.6290055687171112e-05,
-      "p_llm": 0.8,
-      "reasoning": "The outbound heavy traffic with above-average throughput and bytes per second suggests C2 communication. The one-to-one connectivity pattern indicates a targeted or tunneled connection, which is typical in command and control scenarios.",
-      "summary_text": "=== Cluster 21 Summary ===\nSize: 5 flows (0.0% of dataset)\n\nTop Distinguishing Features:\n  - TCP_WIN_MAX_OUT: ABOVE global average (effect=+1.94, cluster=1.944, global=-0.000)\n  - SRC_TO_DST_AVG_THROUGHPUT: ABOVE global average (effect=+1.18, cluster=1.176, global=0.000)\n  - SRC_TO_DST_BYTES_SEC: ABOVE global average (effect=+1.09, cluster=1.089, global=0.000)\n\nBehavioural Pattern:\n  - Traffic direction: OUTBOUND_HEAVY\n  - Duration: VERY_SHORT\n\nNetwork Topology:\n  - Unique sources: 1\n  - Unique destinations: 1\n  - Connectivity pattern: ONE_TO_ONE (targeted/tunnel)\n  - Avg fan-out: 5.0\n\nRepresentative Sample (nearest to centroid):\n  - IN_PKTS: 0.1301\n  - OUT_BYTES: -0.0117\n  - OUT_PKTS: 0.1614\n  - FLOW_DURATION_MS: -0.2829\n  - DURATION_IN: -0.2755\n  - DURATION_OUT: -0.2675\n  - MIN_TTL: -0.6352",
-      "fusion_weights": [
-        0.6,
-        0.4
-      ]
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1520,
+      "cluster_proportion": 0.0239,
+      "cluster_features": {
+        "tcp_flags": 26.99078947368421,
+        "out_bytes": 75538.11578947368,
+        "min_ttl": 31.0,
+        "packets_per_second": 38.48136503081769,
+        "direction_ratio": 3.0554208269870515,
+        "fan_out": 10.0,
+        "fan_in": 10.0
+      },
+      "p_gmm": 0.02397
+    },
+    "22": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 548,
+      "cluster_proportion": 0.0086,
+      "cluster_features": {
+        "tcp_flags": 1.532846715328467,
+        "out_bytes": 213.70255474452554,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 0.8521790384433464,
+        "fan_out": 10.0,
+        "fan_in": 1.0
+      },
+      "p_gmm": 0.00863
+    },
+    "23": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 3241,
+      "cluster_proportion": 0.051,
+      "cluster_features": {
+        "tcp_flags": 3.314100586238815,
+        "out_bytes": 322.45294662141316,
+        "min_ttl": 30.97130515273064,
+        "packets_per_second": 0,
+        "direction_ratio": 1.2010945893451084,
+        "fan_out": 8.714285714285714,
+        "fan_in": 6.1
+      },
+      "p_gmm": 0.050965
+    },
+    "24": {
+      "behaviour_scores": {
+        "normal_activity": 1.0,
+        "port_scanning": 0.0,
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.0,
+        "syn_flooding": 0.0,
+        "fuzzing": 0.0,
+        "backdoor_comm": 0.0,
+        "worm_spreading": 0.0,
+        "data_transfer": 0.0,
+        "connection_attempts": 0.0,
+        "periodic_comm": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.0,
+        "Impact": 0.0,
+        "Persistence": 0.0,
+        "Lateral Movement": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 2117,
+      "cluster_proportion": 0.0333,
+      "cluster_features": {
+        "tcp_flags": 26.9891355692017,
+        "out_bytes": 32290.341993386868,
+        "min_ttl": 31.0,
+        "packets_per_second": 0,
+        "direction_ratio": 10.21498727733848,
+        "fan_out": 10.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.033237
     }
   }
 }

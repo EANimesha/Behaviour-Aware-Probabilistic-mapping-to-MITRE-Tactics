@@ -117,10 +117,17 @@ class Preprocessor:
       - Stratified train/test split
     """
 
-    def __init__(self):
+    def __init__(self, clip_extremes=False):
+        """
+        Args:
+            clip_extremes: if True, clip to 0.1th/99.9th percentile.
+                           Needed for CIC-IDS2018/UNSW (overflow prevention).
+                           Not for BoT-IoT (extreme values are the signal).
+        """
         self.scaler = StandardScaler()
         self.fitted = False
         self.final_feature_names = []
+        self._clip_extremes = clip_extremes
 
     def preprocess_dataset(self, df, test_size=0.2, stratify_col='Attack',
                            random_state=42):
@@ -186,6 +193,8 @@ class Preprocessor:
             'dst_test': dst_ips[idx_test],
             'feature_names': self.final_feature_names,
             'scaler': self.scaler,
+            'train_indices': idx_train,
+            'test_indices': idx_test,
         }
 
     def transform_new(self, df):
@@ -287,6 +296,12 @@ class Preprocessor:
         # Combine all parts
         X = pd.concat(parts, axis=1)
 
+        # Safety check: ensure no dropped features leaked through
+        leaked = [c for c in X.columns if c in ALL_DROPS]
+        if leaked:
+            logger.warning(f"Dropping leaked features: {leaked}")
+            X = X.drop(columns=leaked)
+
         # Ensure float32
         X = X.astype(np.float32)
 
@@ -328,6 +343,42 @@ class Preprocessor:
                 X[col] = np.log1p(np.clip(X[col].values, 0, None))
         return X
 
+    # def _fit_transform_scale(self, X_df):
+    #     """Fit scaler on training data and transform.
+    #     Handles inf/nan and extreme values from large datasets.
+    #     """
+    #     X = X_df.values.astype(np.float64)  # float64 to avoid overflow
+    #
+    #     # Replace inf with nan
+    #     X = np.where(np.isinf(X), np.nan, X)
+    #
+    #     # Replace nan with column median
+    #     for col in range(X.shape[1]):
+    #         mask = np.isnan(X[:, col])
+    #         if mask.any():
+    #             median = np.nanmedian(X[:, col])
+    #             X[mask, col] = median if np.isfinite(median) else 0.0
+    #
+    #     # Clip extreme values (per column, 0.1th and 99.9th percentile)
+    #     for col in range(X.shape[1]):
+    #         lo = np.percentile(X[:, col], 0.1)
+    #         hi = np.percentile(X[:, col], 99.9)
+    #         X[:, col] = np.clip(X[:, col], lo, hi)
+    #
+    #     self.scaler.fit(X)
+    #     self.fitted = True
+    #     return self.scaler.transform(X).astype(np.float32)
+    #
+    # def _transform_scale(self, X_df):
+    #     """Transform using already-fitted scaler."""
+    #     X = X_df.values.astype(np.float64)
+    #     X = np.where(np.isinf(X), np.nan, X)
+    #     for col in range(X.shape[1]):
+    #         mask = np.isnan(X[:, col])
+    #         if mask.any():
+    #             median = np.nanmedian(X[:, col])
+    #             X[mask, col] = median if np.isfinite(median) else 0.0
+    #     return self.scaler.transform(X).astype(np.float32)
     def _fit_transform_scale(self, X_df):
         """Fit scaler on training data and transform."""
         self.scaler.fit(X_df.values)
@@ -337,3 +388,42 @@ class Preprocessor:
     def _transform_scale(self, X_df):
         """Transform using already-fitted scaler."""
         return self.scaler.transform(X_df.values).astype(np.float32)
+    # def _fit_transform_scale(self, X_df):
+    #     """Fit scaler on training data and transform.
+    #     Handles inf/nan for all datasets. Clipping only when enabled.
+    #     """
+    #     X = X_df.values.astype(np.float64)  # float64 to avoid overflow
+    #
+    #     # Replace inf with nan (needed for ALL datasets)
+    #     X = np.where(np.isinf(X), np.nan, X)
+    #
+    #     # Replace nan with column median (needed for ALL datasets)
+    #     for col in range(X.shape[1]):
+    #         mask = np.isnan(X[:, col])
+    #         if mask.any():
+    #             median = np.nanmedian(X[:, col])
+    #             X[mask, col] = median if np.isfinite(median) else 0.0
+    #
+    #     # Clip extreme values ONLY if enabled
+    #     # BoT-IoT: no clipping needed (extreme values ARE the signal)
+    #     # CIC-IDS2018/UNSW: clipping prevents overflow in StandardScaler
+    #     if self._clip_extremes:
+    #         for col in range(X.shape[1]):
+    #             lo = np.percentile(X[:, col], 0.1)
+    #             hi = np.percentile(X[:, col], 99.9)
+    #             X[:, col] = np.clip(X[:, col], lo, hi)
+    #
+    #     self.scaler.fit(X)
+    #     self.fitted = True
+    #     return self.scaler.transform(X).astype(np.float32)
+    #
+    # def _transform_scale(self, X_df):
+    #     """Transform using already-fitted scaler."""
+    #     X = X_df.values.astype(np.float64)
+    #     X = np.where(np.isinf(X), np.nan, X)
+    #     for col in range(X.shape[1]):
+    #         mask = np.isnan(X[:, col])
+    #         if mask.any():
+    #             median = np.nanmedian(X[:, col])
+    #             X[mask, col] = median if np.isfinite(median) else 0.0
+    #     return self.scaler.transform(X).astype(np.float32)

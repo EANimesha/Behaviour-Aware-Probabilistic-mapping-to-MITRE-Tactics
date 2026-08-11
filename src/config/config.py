@@ -40,8 +40,8 @@ WINDOW_SIZE = 1000
 STREAMING_LR = 0.01  # Online EM learning rate
 
 # ── Fusion ──
-DEFAULT_W1_GMM = 0.6  # Default GMM weight in Bayesian fusion
-DEFAULT_W2_LLM = 0.4  # Default LLM weight
+DEFAULT_W1_GMM = 0.5  # Default GMM weight in Bayesian fusion
+DEFAULT_W2_LLM = 0.5  # Default LLM weight
 
 # ── LLM ──
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")

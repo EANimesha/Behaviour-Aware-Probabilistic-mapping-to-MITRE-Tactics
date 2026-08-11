@@ -53,9 +53,14 @@ ATTACK_TO_MITRE = {
 
 # ── Data Balancing ──
 # UNSW-NB15 is 96% benign — needs balancing for GMM to find attack clusters
-BENIGN_RATIO = 2.0  # Target benign:attack ratio
+BENIGN_RATIO = 1.0  # Target benign:attack ratio
 MIN_SAMPLES_PER_CLASS = 200  # Boost rare classes (Worms=164) above this
-MAX_TOTAL_SAMPLES = 500_000  # Hard cap for memory/GPU
+MAX_TOTAL_SAMPLES = 120000  # Hard cap for memory/GPU
+
+# FastChronologicalBalancer params
+MAX_BENIGN_SAMPLES = 30_000
+MAX_ATTACK_PER_CLASS = 12_000
+MIN_ATTACK_PER_CLASS = 1_000
 
 # ── Encoder ──
 FEATURE_OUTPUT_DIM = 32
