@@ -1,0 +1,17 @@
+\begin{tabular}{lcccccc}
+\toprule
+Method & Supervision & Output & Tactic Acc. & Macro F1 & Weighted F1 & Attack AUC \\
+\midrule
+Isolation Forest (all-train) & N & Binary & -- & -- & -- & 0.003 $\pm$ 0.000 \\
+Isolation Forest (benign-only) & Benign & Binary & -- & -- & -- & 0.216 $\pm$ 0.005 \\
+Plain Autoencoder (all-train) & N & Binary & -- & -- & -- & 0.057 $\pm$ 0.023 \\
+Plain Autoencoder (benign-only) & Benign & Binary & -- & -- & -- & 0.684 $\pm$ 0.006 \\
+K-Means ($K=5n_t$) + majority$^\dagger$ & Oracle & Cluster & 0.837 $\pm$ 0.018 & 0.611 $\pm$ 0.015 & 0.818 $\pm$ 0.018 & -- \\
+Random Forest & Y & Tactic & 0.997 $\pm$ 0.000 & 0.996 $\pm$ 0.000 & 0.997 $\pm$ 0.000 & 1.000 $\pm$ 0.000 \\
+MLP Classifier & Y & Tactic & 0.979 $\pm$ 0.007 & 0.959 $\pm$ 0.030 & 0.980 $\pm$ 0.006 & 1.000 $\pm$ 0.000 \\
+E-GraphSAGE & Y & Tactic & 0.358 $\pm$ 0.057 & 0.199 $\pm$ 0.089 & 0.234 $\pm$ 0.087 & 0.891 $\pm$ 0.017 \\
+Proposed (rules) & N & Behaviour/Tactic & 0.888 & 0.661 & 0.874 & 0.104 \\
+Proposed (LLM) & N & Behaviour/Tactic & 0.911 & 0.682 & 0.897 & 0.104 \\
+Proposed (fused, w=0.7) & N & Behaviour/Tactic & 0.893 & 0.665 & 0.879 & 0.104 \\
+\bottomrule
+\end{tabular}

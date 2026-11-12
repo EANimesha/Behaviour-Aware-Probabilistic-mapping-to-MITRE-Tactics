@@ -1,0 +1,13 @@
+cluster,n_test,true_mix,pred_rules
+0,811,Reconnaissance 100%,Reconnaissance
+1,3453,"Impact 91%, None 9%",Impact
+2,77,None 100%,None
+4,1637,"None 85%, Impact 12%, Reconnaissance 2%",None
+8,326,Reconnaissance 100%,Reconnaissance
+9,159,None 100%,None
+12,201,None 100%,None
+13,65,Reconnaissance 100%,None
+14,65,None 100%,None
+15,222,Exfiltration 100%,Reconnaissance
+17,405,Reconnaissance 100%,Reconnaissance
+18,37,"Reconnaissance 84%, None 14%, Exfiltration 3%",Impact

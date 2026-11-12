@@ -236,6 +236,7 @@ class FastChronologicalBalancer:
         max_benign_samples=30_000,
         max_attack_per_class=12_000,
         min_attack_per_class=1_000,
+        allow_oversample=True,
         random_state=42,
     ):
         self.attack_col = attack_col
@@ -244,6 +245,7 @@ class FastChronologicalBalancer:
         self.max_benign_samples = max_benign_samples
         self.max_attack_per_class = max_attack_per_class
         self.min_attack_per_class = min_attack_per_class
+        self.allow_oversample = allow_oversample
         self.random_state = random_state
 
     def _chronological_sample(self, group, n):
@@ -253,44 +255,124 @@ class FastChronologicalBalancer:
         positions = np.linspace(0, len(group) - 1, n, dtype=int)
         return group.iloc[positions]
 
-    def balance(self, df):
-        frames = []
+    # def balance(self, df):
+    #     frames = []
+    #     stats = {}
+    #
+    #     for label, group in df.groupby(self.attack_col, sort=False):
+    #         n_original = len(group)
+    #
+    #         if label == self.benign_label:
+    #             n_take = min(n_original, self.max_benign_samples)
+    #             sampled = self._chronological_sample(group, n_take)
+    #         else:
+    #             n_take = min(n_original, self.max_attack_per_class)
+    #             sampled = self._chronological_sample(group, n_take)
+    #
+    #             if len(sampled) < self.min_attack_per_class:
+    #                 n_needed = self.min_attack_per_class - len(sampled)
+    #                 extra = sampled.sample(
+    #                     n=n_needed,
+    #                     replace=True,
+    #                     random_state=self.random_state
+    #                 )
+    #                 sampled = pd.concat([sampled, extra], ignore_index=False)
+    #
+    #         frames.append(sampled)
+    #         stats[label] = {
+    #             "original": n_original,
+    #             "sampled": len(sampled),
+    #         }
+    #
+    #         logger.info(f"{label}: {n_original:,} -> {len(sampled):,}")
+    #
+    #     df_balanced = pd.concat(frames, ignore_index=False)
+    #
+    #     if len(df_balanced) > self.max_total_samples:
+    #         df_balanced = self._chronological_sample(df_balanced, self.max_total_samples)
+    #
+    #     df_balanced = df_balanced.sort_index().reset_index(drop=True)
+    #
+    #     logger.info(f"Balanced total: {len(df_balanced):,}")
+    #
+    #     return df_balanced, stats
+    def _target_sizes(self, class_sizes):
+        """Per-class target sizes, scaled down to fit max_total_samples."""
+        targets = {}
+        for label, n_original in class_sizes.items():
+            cap = self.max_benign_samples if label == self.benign_label else self.max_attack_per_class
+            n_take = min(n_original, cap)
+            if label != self.benign_label and self.allow_oversample:
+                n_take = max(n_take, self.min_attack_per_class)
+            targets[label] = n_take
+
+        total = sum(targets.values())
+        if self.max_total_samples is not None and total > self.max_total_samples:
+            # Shrink classes proportionally, but never push an attack class
+            # below its minimum (that would undo the top-up): reserve the
+            # minimums first and scale only the part above them.
+            floors = {
+                label: 0 if label == self.benign_label else min(n_take, self.min_attack_per_class)
+                for label, n_take in targets.items()
+            }
+            budget = max(0, self.max_total_samples - sum(floors.values()))
+            excess = total - sum(floors.values())
+            factor = budget / excess if excess > 0 else 0.0
+            for label, n_take in targets.items():
+                targets[label] = floors[label] + int((n_take - floors[label]) * factor)
+
+        return targets
+
+    def select(self, df):
+        """
+        Choose which rows to use, without changing the timeline.
+
+        Args:
+            df: DataFrame in chronological order whose index is the time
+                position of each row in the full dataset.
+
+        Returns:
+            selected: sorted array of index labels (time positions). Rows of
+                oversampled classes appear more than once.
+            stats: {label: {'original': n, 'sampled': n, 'duplicated': n}}
+        """
+        class_sizes = df[self.attack_col].value_counts(sort=False).to_dict()
+        targets = self._target_sizes(class_sizes)
+
+        selected = []
         stats = {}
 
         for label, group in df.groupby(self.attack_col, sort=False):
             n_original = len(group)
+            n_target = targets[label]
 
-            if label == self.benign_label:
-                n_take = min(n_original, self.max_benign_samples)
-                sampled = self._chronological_sample(group, n_take)
-            else:
-                n_take = min(n_original, self.max_attack_per_class)
-                sampled = self._chronological_sample(group, n_take)
+            sampled = self._chronological_sample(group, min(n_original, n_target))
+            picked = sampled.index.to_numpy()
+            n_dup = 0
 
-                if len(sampled) < self.min_attack_per_class:
-                    n_needed = self.min_attack_per_class - len(sampled)
-                    extra = sampled.sample(
-                        n=n_needed,
-                        replace=True,
-                        random_state=self.random_state
-                    )
-                    sampled = pd.concat([sampled, extra], ignore_index=False)
+            if len(sampled) < n_target and self.allow_oversample:
+                n_dup = n_target - len(sampled)
+                rng = np.random.default_rng(self.random_state)
+                picked = np.concatenate([picked, rng.choice(picked, size=n_dup, replace=True)])
 
-            frames.append(sampled)
+            selected.append(picked)
             stats[label] = {
                 "original": n_original,
-                "sampled": len(sampled),
+                "sampled": len(picked),
+                "duplicated": n_dup,
             }
 
-            logger.info(f"{label}: {n_original:,} -> {len(sampled):,}")
+            logger.info(f"{label}: {n_original:,} -> {len(picked):,} ({n_dup:,} duplicated)")
 
-        df_balanced = pd.concat(frames, ignore_index=False)
+        # Sorting time positions restores chronological order
+        # (duplicates sit next to the row they copy).
+        selected = np.sort(np.concatenate(selected), kind="stable")
 
-        if len(df_balanced) > self.max_total_samples:
-            df_balanced = self._chronological_sample(df_balanced, self.max_total_samples)
+        logger.info(f"Balanced total: {len(selected):,}")
 
-        df_balanced = df_balanced.sort_index().reset_index(drop=True)
+        return selected, stats
 
-        logger.info(f"Balanced total: {len(df_balanced):,}")
-
-        return df_balanced, stats
+    def balance(self, df):
+        """Same as select(), but returns the balanced rows as a DataFrame."""
+        selected, stats = self.select(df)
+        return df.loc[selected].reset_index(drop=True), stats

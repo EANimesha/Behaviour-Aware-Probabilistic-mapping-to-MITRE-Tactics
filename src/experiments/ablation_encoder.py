@@ -54,7 +54,7 @@ EVAL_DIR = os.path.join(CHECKPOINT_DIR, "ablation_results")
 os.makedirs(EVAL_DIR, exist_ok=True)
 
 AE_EPOCHS = 30
-AE_BATCH = 256
+AE_BATCH = 512
 AE_LR = 1e-3
 
 

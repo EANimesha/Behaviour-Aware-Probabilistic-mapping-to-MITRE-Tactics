@@ -245,7 +245,9 @@ class GroundTruthMapper:
         elif dataset == 'unsw_nb15':
             self.mapping = UNSW_NB15_MAPPING
         elif dataset == 'cicids2018':
-            self.mapping = CICIDS2018_MAPPING
+            self.mapping = {**CICIDS2018_MAPPING,
+                            **{k.replace(' ', '_'): v for k, v in CICIDS2018_MAPPING.items()}}
+            # self.mapping = CICIDS2018_MAPPING
         else:
             raise ValueError(f"Unknown dataset: {dataset}. "
                              f"Use 'bot_iot', 'unsw_nb15', or 'cicids2018'.")

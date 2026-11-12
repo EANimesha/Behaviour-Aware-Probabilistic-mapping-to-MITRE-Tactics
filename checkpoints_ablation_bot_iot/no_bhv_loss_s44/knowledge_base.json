@@ -1,0 +1,685 @@
+{
+  "metadata": {
+    "n_clusters": 20,
+    "n_labeled": 20,
+    "dataset": ""
+  },
+  "entries": {
+    "0": {
+      "behaviour_scores": {
+        "syn_flooding": 0.9558156298456362,
+        "port_scanning": 0.005216540575357433,
+        "data_transfer": 0.0,
+        "normal_activity": 0.0389678295790064
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.9558156298456362,
+        "Reconnaissance": 0.005216540575357433,
+        "Exfiltration": 0.0,
+        "None": 0.0389678295790064,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 425,
+      "cluster_proportion": 0.0106,
+      "cluster_features": {
+        "tcp_flags": 0.0,
+        "out_bytes": 0.0,
+        "min_ttl": 62.19294117647059,
+        "packets_per_second": 0.42074673004980173,
+        "direction_ratio": 0.0,
+        "fan_out": 7.952941176470588,
+        "fan_in": 1.5
+      },
+      "p_gmm": 0.010649
+    },
+    "1": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 3174,
+      "cluster_proportion": 0.0793,
+      "cluster_features": {
+        "tcp_flags": 20.455576559546312,
+        "out_bytes": 38.81789540012603,
+        "min_ttl": 15.38027725267801,
+        "packets_per_second": 10.198495569838405,
+        "direction_ratio": 0.5427187031979561,
+        "fan_out": 9.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.07936
+    },
+    "2": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 7654,
+      "cluster_proportion": 0.1913,
+      "cluster_features": {
+        "tcp_flags": 22.901358766657957,
+        "out_bytes": 100263.43114711263,
+        "min_ttl": 9.490462503266267,
+        "packets_per_second": 105.64728166206379,
+        "direction_ratio": 283.2817840836229,
+        "fan_out": 10.091455448131695,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.191351
+    },
+    "3": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 3201,
+      "cluster_proportion": 0.08,
+      "cluster_features": {
+        "tcp_flags": 9.373945641986879,
+        "out_bytes": 29.924398625429554,
+        "min_ttl": 64.0,
+        "packets_per_second": 0.37391157154481447,
+        "direction_ratio": 0.07364115810999892,
+        "fan_out": 10.312714776632303,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.080037
+    },
+    "4": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 3417,
+      "cluster_proportion": 0.0854,
+      "cluster_features": {
+        "tcp_flags": 4.059116183786948,
+        "out_bytes": 5.46678372841674,
+        "min_ttl": 64.0,
+        "packets_per_second": 0.18222456260997782,
+        "direction_ratio": 0.012224330868398664,
+        "fan_out": 9.898448931811531,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.085433
+    },
+    "5": {
+      "behaviour_scores": {
+        "syn_flooding": 0.005555735599109418,
+        "port_scanning": 0.012944824553613137,
+        "data_transfer": 0.5100919832399066,
+        "normal_activity": 0.47140745660737077
+      },
+      "primary_behaviour": "data_transfer",
+      "tactic_scores": {
+        "Impact": 0.005555735599109419,
+        "Reconnaissance": 0.01294482455361314,
+        "Exfiltration": 0.5100919832399067,
+        "None": 0.4714074566073709,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Exfiltration",
+      "cluster_size": 1206,
+      "cluster_proportion": 0.0301,
+      "cluster_features": {
+        "tcp_flags": 23.397180762852404,
+        "out_bytes": 5168.42039800995,
+        "min_ttl": 15.814262023217248,
+        "packets_per_second": 101.64516982398183,
+        "direction_ratio": 0.007016584597912413,
+        "fan_out": 86.23714759535655,
+        "fan_in": 3.0
+      },
+      "p_gmm": 0.030168
+    },
+    "6": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 1733,
+      "cluster_proportion": 0.0433,
+      "cluster_features": {
+        "tcp_flags": 1.1898442008078476,
+        "out_bytes": 0.12694748990190421,
+        "min_ttl": 64.0,
+        "packets_per_second": 0.19763046930683267,
+        "direction_ratio": 0.00023564493877516044,
+        "fan_out": 9.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.043337
+    },
+    "7": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 260,
+      "cluster_proportion": 0.0065,
+      "cluster_features": {
+        "tcp_flags": 0.19230769230769232,
+        "out_bytes": 131.70384615384614,
+        "min_ttl": 126.51538461538462,
+        "packets_per_second": 10.554685754988725,
+        "direction_ratio": 0.0002467194483790331,
+        "fan_out": 5.6461538461538465,
+        "fan_in": 3.0
+      },
+      "p_gmm": 0.006523
+    },
+    "8": {
+      "behaviour_scores": {
+        "syn_flooding": 0.9036520587304582,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.09634794126954177
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.9036520587304582,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.09634794126954177,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 1495,
+      "cluster_proportion": 0.0374,
+      "cluster_features": {
+        "tcp_flags": 13.812709030100335,
+        "out_bytes": 41.8809364548495,
+        "min_ttl": 64.0,
+        "packets_per_second": 0.30105483311385145,
+        "direction_ratio": 0.09658172394644289,
+        "fan_out": 9.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.037385
+    },
+    "9": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 441,
+      "cluster_proportion": 0.011,
+      "cluster_features": {
+        "tcp_flags": 0.12244897959183673,
+        "out_bytes": 102.31746031746032,
+        "min_ttl": 0.29024943310657597,
+        "packets_per_second": 34.11937054014461,
+        "direction_ratio": 1.1844909959573686,
+        "fan_out": 9.507936507936508,
+        "fan_in": 2.2
+      },
+      "p_gmm": 0.011045
+    },
+    "10": {
+      "behaviour_scores": {
+        "syn_flooding": 0.005414881170368116,
+        "port_scanning": 0.8472118618022951,
+        "data_transfer": 0.0,
+        "normal_activity": 0.14737325702733664
+      },
+      "primary_behaviour": "port_scanning",
+      "tactic_scores": {
+        "Impact": 0.005414881170368117,
+        "Reconnaissance": 0.8472118618022952,
+        "Exfiltration": 0.0,
+        "None": 0.14737325702733667,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 5257,
+      "cluster_proportion": 0.1314,
+      "cluster_features": {
+        "tcp_flags": 22.301502758227127,
+        "out_bytes": 67.55887388244246,
+        "min_ttl": 3.8835837930378543,
+        "packets_per_second": 127.57021691400877,
+        "direction_ratio": 1.0338938150992392,
+        "fan_out": 9.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.131382
+    },
+    "11": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 772,
+      "cluster_proportion": 0.0193,
+      "cluster_features": {
+        "tcp_flags": 0.0,
+        "out_bytes": 0.0,
+        "min_ttl": 0.08290155440414508,
+        "packets_per_second": 20.398138572905896,
+        "direction_ratio": 0.0,
+        "fan_out": 9.5,
+        "fan_in": 4.0
+      },
+      "p_gmm": 0.019313
+    },
+    "12": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1659,
+      "cluster_proportion": 0.0415,
+      "cluster_features": {
+        "tcp_flags": 21.390596745027125,
+        "out_bytes": 333784.25497287523,
+        "min_ttl": 7.934297769740808,
+        "packets_per_second": 37.20058137884439,
+        "direction_ratio": 333.13465244084017,
+        "fan_out": 10.359855334538878,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.041475
+    },
+    "13": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 344,
+      "cluster_proportion": 0.0086,
+      "cluster_features": {
+        "tcp_flags": 1.944767441860465,
+        "out_bytes": 623870.726744186,
+        "min_ttl": 100.53779069767442,
+        "packets_per_second": 27.965692907191052,
+        "direction_ratio": 0.35240494313892934,
+        "fan_out": 2.5930232558139537,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.008618
+    },
+    "14": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 2469,
+      "cluster_proportion": 0.0617,
+      "cluster_features": {
+        "tcp_flags": 5.791008505467801,
+        "out_bytes": 8.136087484811664,
+        "min_ttl": 64.0,
+        "packets_per_second": 0.1342288351709431,
+        "direction_ratio": 0.015299314546839301,
+        "fan_out": 9.806804374240583,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.061694
+    },
+    "15": {
+      "behaviour_scores": {
+        "syn_flooding": 0.3668294231139061,
+        "port_scanning": 0.0,
+        "data_transfer": 0.3304573587609277,
+        "normal_activity": 0.3027132181251662
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.3668294231139061,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.3304573587609277,
+        "None": 0.3027132181251662,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 421,
+      "cluster_proportion": 0.0105,
+      "cluster_features": {
+        "tcp_flags": 6.27790973871734,
+        "out_bytes": 480044.75771971495,
+        "min_ttl": 41.45605700712589,
+        "packets_per_second": 19.9270514453905,
+        "direction_ratio": 1.0100684660912003,
+        "fan_out": 98.0,
+        "fan_in": 1.0
+      },
+      "p_gmm": 0.010539
+    },
+    "16": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "primary_behaviour": "normal_activity",
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "None",
+      "cluster_size": 1571,
+      "cluster_proportion": 0.0393,
+      "cluster_features": {
+        "tcp_flags": 1.2966263526416295,
+        "out_bytes": 168247.38192234247,
+        "min_ttl": 1.6982813494589433,
+        "packets_per_second": 12.250223637803622,
+        "direction_ratio": 634.6747274648226,
+        "fan_out": 9.436664544875875,
+        "fan_in": 3.6666666666666665
+      },
+      "p_gmm": 0.039255
+    },
+    "17": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 1156,
+      "cluster_proportion": 0.0289,
+      "cluster_features": {
+        "tcp_flags": 4.802768166089965,
+        "out_bytes": 7.197231833910035,
+        "min_ttl": 64.0,
+        "packets_per_second": 0.15082302031978168,
+        "direction_ratio": 0.014122759369907659,
+        "fan_out": 9.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.028883
+    },
+    "18": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 1583,
+      "cluster_proportion": 0.0396,
+      "cluster_features": {
+        "tcp_flags": 6.59886291850916,
+        "out_bytes": 14.074542008843967,
+        "min_ttl": 64.0,
+        "packets_per_second": 0.16653757806938244,
+        "direction_ratio": 0.051499209482511535,
+        "fan_out": 9.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.039532
+    },
+    "19": {
+      "behaviour_scores": {
+        "syn_flooding": 0.884151229232871,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.115848770767129
+      },
+      "primary_behaviour": "syn_flooding",
+      "tactic_scores": {
+        "Impact": 0.884151229232871,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.115848770767129,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_tactic": "Impact",
+      "cluster_size": 1764,
+      "cluster_proportion": 0.0441,
+      "cluster_features": {
+        "tcp_flags": 0.0,
+        "out_bytes": 0.0,
+        "min_ttl": 64.0,
+        "packets_per_second": 0.8155281825551453,
+        "direction_ratio": 0.0,
+        "fan_out": 9.0,
+        "fan_in": 2.0
+      },
+      "p_gmm": 0.044023
+    }
+  }
+}

@@ -214,6 +214,10 @@ import torch.nn.functional as F
 import torch
 from torch import nn
 import torch.nn.functional as F
+import os
+
+# Ablation: full | feature | feature_context | feature_temporal | no_bhv_loss | raw
+ABLATION = os.getenv("ABLATION", "full")
 
 
 class Encoder(nn.Module):
@@ -252,132 +256,6 @@ class Decoder(nn.Module):
 
     def forward(self, z):
         return self.net(z)
-#
-# class JointEncoder(nn.Module):
-#     """Fuses three tracks via concatenation + AE for latent space learning.
-#
-#     Architecture:
-#         h_f (32d) + h_c (64d) + h_b (32d) -> h_fusion (128d)
-#         h_fusion -> Encoder -> z (64d)
-#         z -> Decoder -> h_fusion_reconstructed (128d)
-#
-#     Loss: MSE(h_fusion, h_recon) — reconstruction only, no KL.
-#     """
-#
-#     def __init__(self, feature_encoder, context_encoder, behaviour_encoder,
-#                  feature_output_dim=32, context_output_dim=32,
-#                  behaviour_output_dim=32, z_dim=64, **kwargs):
-#         super().__init__()
-#
-#         self.feature_encoder = feature_encoder
-#         self.context_encoder = context_encoder
-#         self.behaviour_encoder = behaviour_encoder
-#
-#         # Fusion input: concat of all three tracks
-#         # Context gives 2 * context_output_dim because we concat src + dst
-#         self.fusion_input_dim = (feature_output_dim +
-#                                  2 * context_output_dim +
-#                                  behaviour_output_dim)
-#
-#         # AE components
-#         self.encoder = Encoder(
-#             input_dim=self.fusion_input_dim,
-#             hidden_dim=self.fusion_input_dim * 2,
-#             z_dim=z_dim
-#         )
-#         self.decoder = Decoder(
-#             z_dim=z_dim,
-#             hidden_dim=self.fusion_input_dim * 2,
-#             output_dim=self.fusion_input_dim
-#         )
-#
-#         print(f"JointEncoder (AE): {self.fusion_input_dim} "
-#               f"-> Encoder(z={z_dim}) -> reconstruct {self.fusion_input_dim}")
-#
-#     def encode(self, graph, flow_features, node_features, context_embeddings,
-#                temporal_sequences, temporal_mask=None):
-#         """Run the three-track encoder + AE encoder.
-#
-#         Returns:
-#             z: (batch, z_dim) latent embeddings
-#             h_fusion: (batch, fusion_input_dim) fused input (reconstruction target)
-#         """
-#         device = next(self.parameters()).device
-#
-#         flow_features = flow_features.to(device)
-#         context_embeddings = context_embeddings.to(device)
-#         temporal_sequences = temporal_sequences.to(device)
-#         if temporal_mask is not None:
-#             temporal_mask = temporal_mask.to(device)
-#
-#         # Track 1: Feature encoding
-#         h_f = self.feature_encoder(flow_features)  # (batch, 32)
-#
-#         # Track 2: Context (already computed as src||dst embeddings)
-#         h_c = context_embeddings  # (batch, 64)
-#
-#         # Track 3: Behaviour encoding
-#         h_b = self.behaviour_encoder(temporal_sequences, temporal_mask)  # (batch, 32)
-#
-#         # Fuse: h_fusion = [h_f || h_c || h_b]
-#         h_fusion = torch.cat([h_f, h_c, h_b], dim=1)  # (batch, 128)
-#
-#         # Encode to latent
-#         z = self.encoder(h_fusion)  # (batch, z_dim)
-#
-#         return z, h_fusion
-#
-#     def decode(self, z):
-#         """Decode latent z back to fused representation."""
-#         return self.decoder(z)
-#
-#     def forward(self, graph, flow_features, node_features, context_embeddings,
-#                 temporal_sequences, temporal_mask=None):
-#         """Full forward pass: encode + decode.
-#
-#         Returns:
-#             z: (batch, z_dim) latent embeddings
-#             h_fusion: (batch, fusion_dim) original fused input
-#             h_recon: (batch, fusion_dim) reconstructed fused input
-#         """
-#         z, h_fusion = self.encode(
-#             graph, flow_features, node_features,
-#             context_embeddings, temporal_sequences, temporal_mask
-#         )
-#         h_recon = self.decode(z)
-#         return z, h_fusion, h_recon
-#
-#     def compute_loss(self, h_fusion, h_recon):
-#         """Compute AE loss = reconstruction MSE only.
-#
-#         Args:
-#             h_fusion: (batch, fusion_dim) original fused input
-#             h_recon: (batch, fusion_dim) reconstructed fused input
-#
-#         Returns:
-#             loss: scalar
-#         """
-#         return F.mse_loss(h_recon, h_fusion, reduction='mean')
-#
-#     def get_embeddings(self, graph, flow_features, node_features,
-#                        context_embeddings, temporal_sequences,
-#                        temporal_mask=None):
-#         """Inference mode: return z embeddings."""
-#         self.eval()
-#         with torch.no_grad():
-#             z, _ = self.encode(
-#                 graph, flow_features, node_features,
-#                 context_embeddings, temporal_sequences, temporal_mask
-#             )
-#         return z
-
-
-
-
-
-
-
-
 
 class BehaviourHead(nn.Module):
     """Auxiliary head: z -> predicted behaviour scores.
@@ -431,6 +309,11 @@ class JointEncoder(nn.Module):
                                  2 * context_output_dim +
                                  behaviour_output_dim)
 
+        # # Per-track normalization to balance contributions
+        # self.norm_f = nn.LayerNorm(feature_output_dim)
+        # self.norm_c = nn.LayerNorm(2 * context_output_dim)
+        # self.norm_b = nn.LayerNorm(behaviour_output_dim)
+
         # AE components
         self.encoder = Encoder(
             input_dim=self.fusion_input_dim,
@@ -466,9 +349,23 @@ class JointEncoder(nn.Module):
         if temporal_mask is not None:
             temporal_mask = temporal_mask.to(device)
 
+        if ABLATION == 'raw':
+            # Baseline: cluster the scaled flow features directly
+            return flow_features, None
+
         h_f = self.feature_encoder(flow_features)
         h_c = context_embeddings
         h_b = self.behaviour_encoder(temporal_sequences, temporal_mask)
+        # Removed tracks are zeroed so the fusion size stays the same
+        if ABLATION in ('feature', 'feature_temporal'):
+            h_c = torch.zeros_like(h_c)
+        if ABLATION in ('feature', 'feature_context'):
+            h_b = torch.zeros_like(h_b)
+
+        # # Normalize each track before fusion (prevents context domination)
+        # h_f = self.norm_f(h_f)
+        # h_c = self.norm_c(h_c)
+        # h_b = self.norm_b(h_b)
 
         h_fusion = torch.cat([h_f, h_c, h_b], dim=1)
         z = self.encoder(h_fusion)
@@ -492,6 +389,8 @@ class JointEncoder(nn.Module):
             graph, flow_features, node_features,
             context_embeddings, temporal_sequences, temporal_mask
         )
+        if ABLATION == 'raw':
+            return z, None, None, None
         h_recon = self.decode(z)
         pred_behaviour = self.predict_behaviour(z)
         return z, h_fusion, h_recon, pred_behaviour

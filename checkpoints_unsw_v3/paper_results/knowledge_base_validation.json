@@ -1,0 +1,511 @@
+{
+  "metadata": {
+    "n_clusters": 0,
+    "n_labeled": 0,
+    "dataset": ""
+  },
+  "entries": {
+    "0": {
+      "behaviour_scores": {
+        "service_probing": 0.2488654957478006,
+        "exploitation": 0.26977820485099896,
+        "volumetric_flood": 0.0,
+        "fuzzing": 0.1461256181715272,
+        "worm_spreading": 0.0,
+        "normal_activity": 0.015727898646860302,
+        "backdoor_comm": 0.08077729754363855,
+        "port_scanning": 0.23872548503917426
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.33827168333829455,
+        "Discovery": 0.1493192974486804,
+        "Execution": 0.1618669229105994,
+        "Initial Access": 0.25403690011192687,
+        "Impact": 0.0,
+        "Lateral Movement": 0.0,
+        "None": 0.015727898646860305,
+        "Persistence": 0.08077729754363856,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "exploitation",
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 2910,
+      "cluster_proportion": 0.07116132345389187
+    },
+    "1": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 2174,
+      "cluster_proportion": 0.05316313305455701
+    },
+    "3": {
+      "behaviour_scores": {
+        "service_probing": 0.03679651301359434,
+        "exploitation": 0.48852847797138527,
+        "volumetric_flood": 0.1048563726706622,
+        "fuzzing": 0.0,
+        "worm_spreading": 0.3558567745593294,
+        "normal_activity": 0.007198053890660272,
+        "backdoor_comm": 0.006763807894368518,
+        "port_scanning": 0.0
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.014718605205437737,
+        "Discovery": 0.022077907808156605,
+        "Execution": 0.2931170867828312,
+        "Initial Access": 0.19541139118855413,
+        "Impact": 0.10485637267066221,
+        "Lateral Movement": 0.35585677455932946,
+        "None": 0.007198053890660273,
+        "Persistence": 0.006763807894368519,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "exploitation",
+      "primary_tactic": "Lateral Movement",
+      "cluster_size": 4577,
+      "cluster_proportion": 0.1119262465458636
+    },
+    "4": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 4106,
+      "cluster_proportion": 0.10040838285281099
+    },
+    "5": {
+      "behaviour_scores": {
+        "service_probing": 0.0,
+        "exploitation": 0.0990208509254407,
+        "volumetric_flood": 0.6637565279770979,
+        "fuzzing": 0.01342981857895624,
+        "worm_spreading": 0.0,
+        "normal_activity": 0.01129680563887847,
+        "backdoor_comm": 0.0990208509254407,
+        "port_scanning": 0.1134751459541859
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.11347514595418591,
+        "Discovery": 0.0,
+        "Execution": 0.059412510555264426,
+        "Initial Access": 0.05303815894913253,
+        "Impact": 0.663756527977098,
+        "Lateral Movement": 0.0,
+        "None": 0.011296805638878471,
+        "Persistence": 0.09902085092544072,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "volumetric_flood",
+      "primary_tactic": "Impact",
+      "cluster_size": 2118,
+      "cluster_proportion": 0.05179370552417284
+    },
+    "6": {
+      "behaviour_scores": {
+        "service_probing": 0.4382045350911605,
+        "exploitation": 0.40246093729934274,
+        "volumetric_flood": 0.07655184676374148,
+        "fuzzing": 0.007742410310277553,
+        "worm_spreading": 0.0,
+        "normal_activity": 0.00823948396041556,
+        "backdoor_comm": 0.06680078657506239,
+        "port_scanning": 0.0
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.17528181403646417,
+        "Discovery": 0.2629227210546962,
+        "Execution": 0.24147656237960557,
+        "Initial Access": 0.16872678523001464,
+        "Impact": 0.07655184676374147,
+        "Lateral Movement": 0.0,
+        "None": 0.008239483960415558,
+        "Persistence": 0.06680078657506237,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "service_probing",
+      "primary_tactic": "Discovery",
+      "cluster_size": 2179,
+      "cluster_proportion": 0.05328540336976989
+    },
+    "7": {
+      "behaviour_scores": {
+        "service_probing": 0.0,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.7761862155269266,
+        "fuzzing": 0.020820047129601837,
+        "worm_spreading": 0.0,
+        "normal_activity": 0.02707491365164678,
+        "backdoor_comm": 0.0,
+        "port_scanning": 0.17591882369182493
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.1759188236918249,
+        "Discovery": 0.0,
+        "Execution": 0.0,
+        "Initial Access": 0.020820047129601834,
+        "Impact": 0.7761862155269263,
+        "Lateral Movement": 0.0,
+        "None": 0.027074913651646774,
+        "Persistence": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "volumetric_flood",
+      "primary_tactic": "Impact",
+      "cluster_size": 1411,
+      "cluster_proportion": 0.03450468295307265
+    },
+    "8": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 3433,
+      "cluster_proportion": 0.08395079842515835
+    },
+    "9": {
+      "behaviour_scores": {
+        "service_probing": 0.4273923985334416,
+        "exploitation": 0.0,
+        "volumetric_flood": 0.1277499139803473,
+        "fuzzing": 0.006998430082883354,
+        "worm_spreading": 0.25561808874567815,
+        "normal_activity": 0.0,
+        "backdoor_comm": 0.06919586095566144,
+        "port_scanning": 0.11304530770198824
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.28400226711536486,
+        "Discovery": 0.25643543912006495,
+        "Execution": 0.0,
+        "Initial Access": 0.006998430082883354,
+        "Impact": 0.1277499139803473,
+        "Lateral Movement": 0.25561808874567815,
+        "None": 0.0,
+        "Persistence": 0.06919586095566144,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "service_probing",
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 2757,
+      "cluster_proportion": 0.06741985180837796
+    },
+    "10": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 108,
+      "cluster_proportion": 0.0026410388085980484
+    },
+    "12": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 1565,
+      "cluster_proportion": 0.03827060866162913
+    },
+    "13": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 1259,
+      "cluster_proportion": 0.030787665370601326
+    },
+    "14": {
+      "behaviour_scores": {
+        "service_probing": 0.0,
+        "exploitation": 0.09186549529917037,
+        "volumetric_flood": 0.8831235695310293,
+        "fuzzing": 0.010872309748179751,
+        "worm_spreading": 0.0,
+        "normal_activity": 0.014138625421620445,
+        "backdoor_comm": 0.0,
+        "port_scanning": 0.0
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.0,
+        "Discovery": 0.0,
+        "Execution": 0.05511929717950223,
+        "Initial Access": 0.04761850786784791,
+        "Impact": 0.8831235695310294,
+        "Lateral Movement": 0.0,
+        "None": 0.014138625421620447,
+        "Persistence": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "volumetric_flood",
+      "primary_tactic": "Impact",
+      "cluster_size": 4344,
+      "cluster_proportion": 0.10622844985694373
+    },
+    "15": {
+      "behaviour_scores": {
+        "service_probing": 0.4728637713578372,
+        "exploitation": 0.2619050527670366,
+        "volumetric_flood": 0.059244138200277005,
+        "fuzzing": 0.059244138200277005,
+        "worm_spreading": 0.04697399830873132,
+        "normal_activity": 0.0062480755124121184,
+        "backdoor_comm": 0.0,
+        "port_scanning": 0.09352082565342874
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.2826663341965637,
+        "Discovery": 0.28371826281470236,
+        "Execution": 0.15714303166022198,
+        "Initial Access": 0.16400615930709167,
+        "Impact": 0.05924413820027701,
+        "Lateral Movement": 0.04697399830873133,
+        "None": 0.006248075512412119,
+        "Persistence": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "service_probing",
+      "primary_tactic": "Discovery",
+      "cluster_size": 1349,
+      "cluster_proportion": 0.032988531044433035
+    },
+    "16": {
+      "behaviour_scores": {
+        "service_probing": 0.0,
+        "exploitation": 0.1071128038727664,
+        "volumetric_flood": 0.5415880799394086,
+        "fuzzing": 0.0,
+        "worm_spreading": 0.0,
+        "normal_activity": 0.012219977060155379,
+        "backdoor_comm": 0.0,
+        "port_scanning": 0.33907913912766957
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.33907913912766957,
+        "Discovery": 0.0,
+        "Execution": 0.06426768232365983,
+        "Initial Access": 0.04284512154910656,
+        "Impact": 0.5415880799394086,
+        "Lateral Movement": 0.0,
+        "None": 0.012219977060155379,
+        "Persistence": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "volumetric_flood",
+      "primary_tactic": "Impact",
+      "cluster_size": 590,
+      "cluster_proportion": 0.01442789719511897
+    },
+    "19": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 926,
+      "cluster_proportion": 0.02264446237742401
+    },
+    "20": {
+      "behaviour_scores": {
+        "service_probing": 0.5022112238971121,
+        "exploitation": 0.11382372681384834,
+        "volumetric_flood": 0.0361116969225052,
+        "fuzzing": 0.0361116969225052,
+        "worm_spreading": 0.049889356323973,
+        "normal_activity": 0.006635851253902706,
+        "backdoor_comm": 0.0,
+        "port_scanning": 0.25521644786615333
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.45610093742499824,
+        "Discovery": 0.30132673433826734,
+        "Execution": 0.06829423608830901,
+        "Initial Access": 0.08164118764804455,
+        "Impact": 0.03611169692250521,
+        "Lateral Movement": 0.049889356323973004,
+        "None": 0.006635851253902707,
+        "Persistence": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "service_probing",
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 530,
+      "cluster_proportion": 0.012960653412564497
+    },
+    "22": {
+      "behaviour_scores": {
+        "service_probing": 0.3632536132688262,
+        "exploitation": 0.45508726044303255,
+        "volumetric_flood": 0.0,
+        "fuzzing": 0.08656186724440855,
+        "worm_spreading": 0.0,
+        "normal_activity": 0.00931688975375238,
+        "backdoor_comm": 0.07553574556050335,
+        "port_scanning": 0.010244623729476848
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.15554606903700738,
+        "Discovery": 0.21795216796129574,
+        "Execution": 0.2730523562658196,
+        "Initial Access": 0.26859677142162164,
+        "Impact": 0.0,
+        "Lateral Movement": 0.0,
+        "None": 0.009316889753752382,
+        "Persistence": 0.07553574556050337,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "exploitation",
+      "primary_tactic": "Execution",
+      "cluster_size": 4330,
+      "cluster_proportion": 0.10588609297434769
+    },
+    "24": {
+      "behaviour_scores": {
+        "service_probing": 0.3102345253597676,
+        "exploitation": 0.2596334291687146,
+        "volumetric_flood": 0.0,
+        "fuzzing": 0.14063069089004418,
+        "worm_spreading": 0.044616469953836765,
+        "normal_activity": 0.015136464643456563,
+        "backdoor_comm": 0.0,
+        "port_scanning": 0.22974841998418016
+      },
+      "tactic_scores": {
+        "Reconnaissance": 0.35384223012808724,
+        "Discovery": 0.18614071521586056,
+        "Execution": 0.1557800575012288,
+        "Initial Access": 0.24448406255753005,
+        "Impact": 0.0,
+        "Lateral Movement": 0.04461646995383677,
+        "None": 0.015136464643456565,
+        "Persistence": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Credential Access": 0.0
+      },
+      "primary_behaviour": "service_probing",
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 227,
+      "cluster_proportion": 0.005551072310664417
+    }
+  }
+}

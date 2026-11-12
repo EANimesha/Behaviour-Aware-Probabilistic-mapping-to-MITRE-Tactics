@@ -1,0 +1,20 @@
+cluster,size,proportion,dominant_behaviour,dominant_tactic,dominant_attack_gt,purity
+0,2910,0.0712,exploitation,Reconnaissance,Backdoor,0.201
+1,2174,0.0532,normal_activity,None,Benign,0.9388
+3,4577,0.1119,exploitation,Lateral Movement,Exploits,0.2041
+4,4106,0.1004,normal_activity,None,Benign,0.6732
+5,2118,0.0518,volumetric_flood,Impact,Generic,0.2115
+6,2179,0.0533,service_probing,Discovery,Exploits,0.1918
+7,1411,0.0345,volumetric_flood,Impact,Reconnaissance,0.2147
+8,3433,0.084,normal_activity,None,Benign,0.972
+9,2757,0.0674,service_probing,Reconnaissance,Backdoor,0.2459
+10,108,0.0026,normal_activity,None,Benign,1.0
+12,1565,0.0383,normal_activity,None,Benign,1.0
+13,1259,0.0308,normal_activity,None,Benign,1.0
+14,4344,0.1062,volumetric_flood,Impact,Generic,0.5739
+15,1349,0.033,service_probing,Discovery,Exploits,0.3773
+16,590,0.0144,volumetric_flood,Impact,Reconnaissance,0.4576
+19,926,0.0226,normal_activity,None,Benign,1.0
+20,530,0.013,service_probing,Reconnaissance,Exploits,0.3358
+22,4330,0.1059,exploitation,Execution,Fuzzers,0.1873
+24,227,0.0056,service_probing,Reconnaissance,Fuzzers,0.4185

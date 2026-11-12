@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Cluster ablation on NF-bot_iot-v3 (chronological split, rules-only, mean $\pm$ std over 3 seeds).}
+\label{tab:ablation_cluster_v3}
+\small
+\begin{tabular}{lccccccc}
+\toprule
+Variant & Tactic macro-F1 & Per-flow acc. & W50 Top-1 & Mean purity & Weighted purity & NMI (tactic) & Active $K$ \\
+\midrule
+DP-GMM ($K_{max}=20$) & 0.493 $\pm$ 0.146 & 0.769 $\pm$ 0.103 & 0.794 $\pm$ 0.107 & 0.850 $\pm$ 0.055 & 0.612 $\pm$ 0.084 & 0.664 $\pm$ 0.079 & 7.333 $\pm$ 1.528 \\
+DP-GMM ($K_{max}=30$) & 0.425 $\pm$ 0.157 & 0.654 $\pm$ 0.158 & 0.694 $\pm$ 0.147 & 0.877 $\pm$ 0.031 & 0.616 $\pm$ 0.068 & 0.505 $\pm$ 0.153 & 8.333 $\pm$ 0.577 \\
+\bottomrule
+\end{tabular}
+\end{table}

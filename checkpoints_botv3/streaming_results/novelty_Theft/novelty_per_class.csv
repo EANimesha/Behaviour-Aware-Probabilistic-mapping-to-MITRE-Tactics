@@ -1,0 +1,6 @@
+attack,n,flag_rate,held_out
+Benign,2209,0.9502037120869171,False
+DDoS,1669,0.0,False
+DoS,1669,0.11144397843019772,False
+Reconnaissance,1669,1.0,False
+Theft,242,1.0,True

@@ -1,0 +1,20 @@
+cluster,n_test,true_mix,pred_rules,pred_llm,pred_fused
+0,405,"Initial Access 34%, Impact 29%, Execution 19%",Reconnaissance,Lateral Movement,Reconnaissance
+1,411,"None 93%, Execution 4%, Impact 1%",None,None,None
+3,550,"Impact 43%, Execution 25%, Initial Access 24%",Lateral Movement,Reconnaissance,Lateral Movement
+4,810,"None 74%, Execution 8%, Impact 6%",None,None,None
+5,166,"Impact 43%, Reconnaissance 36%, Execution 17%",Impact,Reconnaissance,Impact
+6,509,"Execution 41%, Reconnaissance 24%, Impact 22%",Discovery,Lateral Movement,Execution
+7,149,"Reconnaissance 50%, Execution 30%, Impact 13%",Impact,Reconnaissance,Impact
+8,646,"None 98%, Impact 1%, Persistence 1%",None,None,None
+9,915,"Persistence 23%, Impact 21%, Initial Access 17%",Reconnaissance,Execution,Lateral Movement
+10,23,None 100%,None,None,None
+12,238,None 100%,None,None,None
+13,199,None 100%,None,None,None
+14,616,"Impact 25%, Initial Access 22%, Persistence 20%",Impact,Reconnaissance,Impact
+15,335,"Impact 45%, Execution 32%, Persistence 18%",Discovery,None,None
+16,281,"Reconnaissance 62%, Execution 31%, Impact 4%",Impact,Reconnaissance,Reconnaissance
+19,170,None 100%,None,None,None
+20,129,"Impact 51%, Execution 34%, Persistence 14%",Reconnaissance,None,None
+22,457,"Initial Access 35%, Impact 20%, Execution 18%",Execution,Execution,Execution
+24,6,"Reconnaissance 67%, Execution 17%, Impact 17%",Reconnaissance,Execution,Initial Access

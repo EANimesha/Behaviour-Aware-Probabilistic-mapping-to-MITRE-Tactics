@@ -1,0 +1,136 @@
+=== cluster 1 ===
+Behaviour: syn_flooding. Tactic: Impact.
+Evidence (rules derived from the training split):
+  - min_ttl = 64.0 (meets > 36.8; weight 1.05)
+  - iat_max = 7,713.5 (meets > 2925; weight 0.81)
+  - tcp_flags = 3.0 (meets < 9.6; weight 0.76)
+  - iat_avg = 6,115.0 (meets > 1186; weight 0.75)
+  - tcp_win_in = 512.0 (meets < 881; weight 0.70)
+  - pps = 0.3 (meets < 2553; weight 0.40)
+  - duration = 14,575.9 (meets > 12714; weight 0.29)
+  - iat_std = 1,288.6 (meets > 667; weight 0.24)
+
+=== cluster 3 ===
+Behaviour: port_scanning. Tactic: Reconnaissance.
+Evidence (rules derived from the training split):
+  - min_ttl = 3.3 (meets < 9.1; weight 1.05)
+  - iat_max = 4.0 (meets < 61; weight 0.81)
+  - iat_avg = 1.5 (meets < 22; weight 0.75)
+  - dst_port = 7,096.1 (does not meet > 11432; weight 0.44)
+  - duration = 7.7 (meets < 308; weight 0.29)
+  - iat_std = 1.8 (meets < 13; weight 0.24)
+
+=== cluster 4 ===
+Behaviour: syn_flooding. Tactic: Impact.
+Evidence (rules derived from the training split):
+  - min_ttl = 64.0 (meets > 36.8; weight 1.05)
+  - iat_max = 2,593.2 (does not meet > 2925; weight 0.81)
+  - tcp_flags = 0.0 (meets < 9.6; weight 0.76)
+  - iat_avg = 1,653.9 (meets > 1186; weight 0.75)
+  - tcp_win_in = 0.0 (meets < 881; weight 0.70)
+  - pps = 0.7 (meets < 2553; weight 0.40)
+  - duration = 16,021.2 (meets > 12714; weight 0.29)
+  - iat_std = 343.8 (does not meet > 667; weight 0.24)
+
+=== cluster 6 ===
+Behaviour: syn_flooding. Tactic: Impact.
+Evidence (rules derived from the training split):
+  - min_ttl = 64.0 (meets > 36.8; weight 1.05)
+  - iat_max = 5,004.3 (meets > 2925; weight 0.81)
+  - tcp_flags = 0.0 (meets < 9.6; weight 0.76)
+  - iat_avg = 5,004.3 (meets > 1186; weight 0.75)
+  - tcp_win_in = 0.0 (meets < 881; weight 0.70)
+  - pps = 0.4 (meets < 2553; weight 0.40)
+  - duration = 5,004.3 (does not meet > 12714; weight 0.29)
+  - iat_std = 0.0 (does not meet > 667; weight 0.24)
+
+=== cluster 8 ===
+Behaviour: syn_flooding. Tactic: Impact.
+Evidence (rules derived from the training split):
+  - min_ttl = 64.0 (meets > 36.8; weight 1.05)
+  - iat_max = 7,674.1 (meets > 2925; weight 0.81)
+  - tcp_flags = 0.0 (meets < 9.6; weight 0.76)
+  - iat_avg = 5,034.6 (meets > 1186; weight 0.75)
+  - tcp_win_in = 0.0 (meets < 881; weight 0.70)
+  - pps = 0.2 (meets < 2553; weight 0.40)
+  - duration = 27,180.5 (meets > 12714; weight 0.29)
+  - iat_std = 1,305.5 (meets > 667; weight 0.24)
+
+=== cluster 9 ===
+Behaviour: syn_flooding. Tactic: Impact.
+Evidence (rules derived from the training split):
+  - min_ttl = 64.0 (meets > 36.8; weight 1.05)
+  - iat_max = 18,446.8 (meets > 2925; weight 0.81)
+  - tcp_flags = 10.4 (does not meet < 9.6; weight 0.76)
+  - iat_avg = 16,067.2 (meets > 1186; weight 0.75)
+  - tcp_win_in = 520.0 (meets < 881; weight 0.70)
+  - pps = 0.1 (meets < 2553; weight 0.40)
+  - duration = 46,137.2 (meets > 12714; weight 0.29)
+  - iat_std = 1,935.8 (meets > 667; weight 0.24)
+
+=== cluster 11 ===
+Behaviour: syn_flooding. Tactic: Impact.
+Evidence (rules derived from the training split):
+  - min_ttl = 64.0 (meets > 36.8; weight 1.05)
+  - iat_max = 13,025.0 (meets > 2925; weight 0.81)
+  - tcp_flags = 14.4 (does not meet < 9.6; weight 0.76)
+  - iat_avg = 6,352.0 (meets > 1186; weight 0.75)
+  - tcp_win_in = 512.0 (meets < 881; weight 0.70)
+  - pps = 0.3 (meets < 2553; weight 0.40)
+  - duration = 20,993.0 (meets > 12714; weight 0.29)
+  - iat_std = 4,800.1 (meets > 667; weight 0.24)
+
+=== cluster 12 ===
+Behaviour: port_scanning. Tactic: Reconnaissance.
+Evidence (rules derived from the training split):
+  - min_ttl = 0.0 (meets < 9.1; weight 1.05)
+  - iat_max = 0.0 (meets < 61; weight 0.81)
+  - iat_avg = 0.0 (meets < 22; weight 0.75)
+  - dst_port = 52.3 (does not meet > 11432; weight 0.44)
+  - duration = 171.5 (meets < 308; weight 0.29)
+  - iat_std = 0.0 (meets < 13; weight 0.24)
+
+=== cluster 14 ===
+Behaviour: port_scanning. Tactic: Reconnaissance.
+Evidence (rules derived from the training split):
+  - min_ttl = 5.4 (meets < 9.1; weight 1.05)
+  - iat_max = 18.8 (meets < 61; weight 0.81)
+  - iat_avg = 15.1 (meets < 22; weight 0.75)
+  - dst_port = 29,427.2 (meets > 11432; weight 0.44)
+  - duration = 44.8 (meets < 308; weight 0.29)
+  - iat_std = 1.6 (meets < 13; weight 0.24)
+
+=== cluster 16 ===
+Behaviour: port_scanning. Tactic: Reconnaissance.
+Evidence (rules derived from the training split):
+  - min_ttl = 57.9 (does not meet < 9.1; weight 1.05)
+  - iat_max = 0.0 (meets < 61; weight 0.81)
+  - iat_avg = 0.0 (meets < 22; weight 0.75)
+  - dst_port = 47,192.6 (meets > 11432; weight 0.44)
+  - duration = 0.0 (meets < 308; weight 0.29)
+  - iat_std = 0.0 (meets < 13; weight 0.24)
+
+=== cluster 17 ===
+Behaviour: syn_flooding. Tactic: Impact.
+Evidence (rules derived from the training split):
+  - min_ttl = 93.6 (meets > 36.8; weight 1.05)
+  - iat_max = 5,212.6 (meets > 2925; weight 0.81)
+  - tcp_flags = 12.8 (does not meet < 9.6; weight 0.76)
+  - iat_avg = 1,163.3 (does not meet > 1186; weight 0.75)
+  - tcp_win_in = 2,168.8 (does not meet < 881; weight 0.70)
+  - pps = 20.4 (meets < 2553; weight 0.40)
+  - duration = 118,682.0 (meets > 12714; weight 0.29)
+  - iat_std = 1,390.0 (meets > 667; weight 0.24)
+
+=== cluster 18 ===
+Behaviour: syn_flooding. Tactic: Impact.
+Evidence (rules derived from the training split):
+  - min_ttl = 64.0 (meets > 36.8; weight 1.05)
+  - iat_max = 18,144.3 (meets > 2925; weight 0.81)
+  - tcp_flags = 6.6 (meets < 9.6; weight 0.76)
+  - iat_avg = 13,673.5 (meets > 1186; weight 0.75)
+  - tcp_win_in = 512.0 (meets < 881; weight 0.70)
+  - pps = 0.1 (meets < 2553; weight 0.40)
+  - duration = 39,856.6 (meets > 12714; weight 0.29)
+  - iat_std = 3,329.0 (meets > 667; weight 0.24)
+

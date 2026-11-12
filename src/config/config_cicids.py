@@ -5,7 +5,7 @@ Configuration — NF-CSE-CIC-IDS2018-v2 (Sampled)
 import os
 
 # Dataset
-DATA_PATH = 'data/NF-CIC-IDS2018-v2-sampled.csv'
+DATA_PATH = '/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/data/NF-CIC-IDS2018-v2-sampled.csv'
 SAMPLE_SIZE = None  # Already sampled
 
 # Encoder dimensions

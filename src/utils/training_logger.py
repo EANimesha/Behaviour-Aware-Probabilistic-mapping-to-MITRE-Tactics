@@ -64,23 +64,39 @@ class TrainingLogger:
         print(f"  Training curves saved: {self.save_dir}/")
 
     def _plot_loss_curves(self):
-        fig, axes = plt.subplots(1, 3, figsize=(15, 4))
-        axes[0].plot(self.epochs, self.total_loss, 'b-', linewidth=1.5)
-        axes[0].set_title('Total Loss'); axes[0].set_xlabel('Epoch')
-        axes[0].set_ylabel('Loss'); axes[0].grid(True, alpha=0.3)
+        # fig, axes = plt.subplots(1, 3, figsize=(15, 4))
+        # axes[0].plot(self.epochs, self.total_loss, 'b-', linewidth=1.5)
+        # axes[0].set_title('Total Loss'); axes[0].set_xlabel('Epoch')
+        # axes[0].set_ylabel('Loss'); axes[0].grid(True, alpha=0.3)
+        #
+        # axes[1].plot(self.epochs, self.recon_loss, 'r-', label='Reconstruction', linewidth=1.5)
+        # axes[1].plot(self.epochs, self.bhv_loss, 'g-', label='Behaviour', linewidth=1.5)
+        # axes[1].set_title('Loss Components'); axes[1].set_xlabel('Epoch')
+        # axes[1].set_ylabel('MSE'); axes[1].legend(fontsize=9); axes[1].grid(True, alpha=0.3)
+        #
+        # axes[2].semilogy(self.epochs, self.total_loss, 'b-', label='Total', linewidth=1.5)
+        # axes[2].semilogy(self.epochs, self.recon_loss, 'r--', label='Recon', linewidth=1)
+        # axes[2].semilogy(self.epochs, self.bhv_loss, 'g--', label='Behaviour', linewidth=1)
+        # axes[2].set_title('Loss (log scale)'); axes[2].set_xlabel('Epoch')
+        # axes[2].legend(fontsize=9); axes[2].grid(True, alpha=0.3)
+        #
+        # fig.suptitle('Training Loss Convergence', fontsize=13)
+        # fig.tight_layout()
+        # fig.savefig(os.path.join(self.save_dir, 'loss_curves.png'), dpi=150, bbox_inches='tight')
+        # plt.close(fig)
+        fig, ax = plt.subplots(figsize=(8, 5))
 
-        axes[1].plot(self.epochs, self.recon_loss, 'r-', label='Reconstruction', linewidth=1.5)
-        axes[1].plot(self.epochs, self.bhv_loss, 'g-', label='Behaviour', linewidth=1.5)
-        axes[1].set_title('Loss Components'); axes[1].set_xlabel('Epoch')
-        axes[1].set_ylabel('MSE'); axes[1].legend(fontsize=9); axes[1].grid(True, alpha=0.3)
+        # Log-scale plot with clear separation
+        ax.semilogy(self.epochs, self.total_loss, 'b-', label='Total Loss', linewidth=2)
+        ax.semilogy(self.epochs, self.recon_loss, 'r--', label='Reconstruction', linewidth=1.5)
+        ax.semilogy(self.epochs, self.bhv_loss, 'g--', label='Behaviour', linewidth=1.5)
 
-        axes[2].semilogy(self.epochs, self.total_loss, 'b-', label='Total', linewidth=1.5)
-        axes[2].semilogy(self.epochs, self.recon_loss, 'r--', label='Recon', linewidth=1)
-        axes[2].semilogy(self.epochs, self.bhv_loss, 'g--', label='Behaviour', linewidth=1)
-        axes[2].set_title('Loss (log scale)'); axes[2].set_xlabel('Epoch')
-        axes[2].legend(fontsize=9); axes[2].grid(True, alpha=0.3)
+        ax.set_title('Training Loss Convergence', fontsize=14, fontweight='bold')
+        ax.set_xlabel('Epoch', fontsize=13)
+        ax.set_ylabel('Loss (log scale)', fontsize=13)  # ← ADDED
+        ax.legend(fontsize=12, loc='upper right')
+        ax.grid(True, alpha=0.3)
 
-        fig.suptitle('Training Loss Convergence', fontsize=13)
         fig.tight_layout()
         fig.savefig(os.path.join(self.save_dir, 'loss_curves.png'), dpi=150, bbox_inches='tight')
         plt.close(fig)

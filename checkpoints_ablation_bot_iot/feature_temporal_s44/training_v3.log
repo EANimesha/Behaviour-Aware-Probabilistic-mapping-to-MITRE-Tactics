@@ -1,0 +1,379 @@
+INFO:src.data.preprocess:Feature config /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/data/features_NF-BoT-IoT-v3.json: 16 numeric, 14 log, L7 buckets [0.0, 7.0]
+INFO:src.data.preprocess:Cleaned: 50,000 -> 50,000 rows
+INFO:src.data.balancer:Benign: 12,000 -> 12,000 (0 duplicated)
+INFO:src.data.balancer:Reconnaissance: 8,903 -> 8,903 (0 duplicated)
+INFO:src.data.balancer:DoS: 8,904 -> 8,904 (0 duplicated)
+INFO:src.data.balancer:DDoS: 8,903 -> 8,903 (0 duplicated)
+INFO:src.data.balancer:Theft: 1,292 -> 1,292 (0 duplicated)
+INFO:src.data.balancer:Balanced total: 40,002
+INFO:src.data.balancer:Benign: 2,209 -> 2,209 (0 duplicated)
+INFO:src.data.balancer:Reconnaissance: 1,669 -> 1,669 (0 duplicated)
+INFO:src.data.balancer:DoS: 1,669 -> 1,669 (0 duplicated)
+INFO:src.data.balancer:DDoS: 1,669 -> 1,669 (0 duplicated)
+INFO:src.data.balancer:Theft: 242 -> 242 (0 duplicated)
+INFO:src.data.balancer:Balanced total: 7,458
+INFO:src.data.preprocess:Final feature count: 33
+INFO:src.data.preprocess:Features: ['IN_BYTES', 'OUT_PKTS', 'FLOW_DURATION_MILLISECONDS', 'MIN_TTL', 'SHORTEST_FLOW_PKT', 'MIN_IP_PKT_LEN', 'SRC_TO_DST_SECOND_BYTES', 'DST_TO_SRC_SECOND_BYTES', 'SRC_TO_DST_AVG_THROUGHPUT', 'DST_TO_SRC_AVG_THROUGHPUT', 'NUM_PKTS_UP_TO_128_BYTES', 'NUM_PKTS_128_TO_256_BYTES', 'TCP_WIN_MAX_IN', 'TCP_WIN_MAX_OUT', 'SRC_TO_DST_IAT_MIN', 'SRC_TO_DST_IAT_STDDEV', 'TCP_FLAGS', 'CLIENT_TCP_FLAGS', 'SERVER_TCP_FLAGS', 'SRC_PORT_WELL_KNOWN', 'SRC_PORT_REGISTERED', 'SRC_PORT_EPHEMERAL', 'DST_PORT_WELL_KNOWN', 'DST_PORT_REGISTERED', 'DST_PORT_EPHEMERAL', 'PROTO_TCP', 'PROTO_UDP', 'PROTO_ICMP', 'PROTO_OTHER', 'L7_0', 'L7_7', 'L7_OTHER', 'ICMP_ACTIVE']
+INFO:src.data.graph_builder:Graph has 120 unique IP nodes, 40002 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([120, 10])
+INFO:src.encoder.GraphSAGE:SAGEConv: 10 -> 32 (aggregator=mean)
+INFO:src.encoder.GraphSAGE:SAGEConv: 32 -> 32 (aggregator=mean)
+INFO:src.encoder.GraphSAGE:GraphSAGE: 2 layers, 10 -> 32 -> 32
+WARNING:src.encoder.behaviour_scorer:BehaviourScorer: 3 feature(s) not in the feature set, their terms are 0: ['OUT_BYTES', 'IN_PKTS', 'LONGEST_FLOW_PKT']
+INFO:src.encoder.behaviour_scorer:Behaviour scores computed for 40002 flows:
+INFO:src.encoder.behaviour_scorer:        scan: mean=0.482, std=0.191, range=[0.006, 1.000]
+INFO:src.encoder.behaviour_scorer:       flood: mean=0.506, std=0.364, range=[0.017, 1.000]
+INFO:src.encoder.behaviour_scorer:       exfil: mean=0.502, std=0.107, range=[0.000, 1.000]
+INFO:src.encoder.behaviour_scorer:      beacon: mean=0.480, std=0.183, range=[0.000, 0.993]
+INFO:src.encoder.behaviour_scorer:     lateral: mean=0.477, std=0.218, range=[0.034, 0.999]
+/home/nimesha/myenv/lib/python3.8/site-packages/torch/nn/modules/transformer.py:409: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at ../aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(output, src_key_padding_mask.logical_not(), mask_check=False)
+INFO:src.streaming.streaming_gmm:Fitting DP-GMM on 40002 samples
+INFO:src.streaming.streaming_gmm:Training log-likelihood: mean=38.03, std=79.05, range=[-253.58, 211.22]
+INFO:src.streaming.streaming_gmm:Novelty threshold: -199.13 (mean - 3.0σ), flagged 12/40002 training samples (0.03%)
+INFO:src.streaming.streaming_gmm:Fitted: 17 active clusters out of 20
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+WARNING:src.mapping.soft_cluster_scorer:bot_iot_v3 scorer: missing ['dir_ratio', 'fan_out', 'out_bytes', 'pps'] (summarizer needs df_raw with NF-v3 columns); rules skipped
+INFO:src.clustering.summarizer:Summarizing 20 clusters...
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 0: 7581 flows (19.0%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 1: 1382 flows (3.5%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 2: 451 flows (1.1%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 3: 1400 flows (3.5%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 4: 865 flows (2.2%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 5: 2767 flows (6.9%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 6: 165 flows (0.4%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 7: 2175 flows (5.4%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 8: 247 flows (0.6%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 9: 2296 flows (5.7%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 10: 4775 flows (11.9%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 11: 2289 flows (5.7%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 12: 2009 flows (5.0%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 13: 2029 flows (5.1%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 14: 1237 flows (3.1%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 15: 2038 flows (5.1%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 16: 83 flows (0.2%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 17: 2163 flows (5.4%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 18: 1270 flows (3.2%)
+/home/nimesha/Downloads/PythonProject1_updated/PythonProject1/src/clustering/summarizer.py:1082: RuntimeWarning: overflow encountered in expm1
+  original[idx] = np.expm1(max(original[idx], 0))
+INFO:src.clustering.summarizer:Cluster 19: 2780 flows (6.9%)
+INFO:src.clustering.summarizer:Generated 20 cluster summaries
+WARNING:src.llm.reasoning:OpenAI not available: no OPENAI_API_KEY set. Using mock labeler.
+INFO:src.evaluation.ground_truth:GroundTruthMapper(bot_iot): 5 attack types -> 4 tactics ['Exfiltration', 'Impact', 'None', 'Reconnaissance']
+Ablation: feature_temporal | seed 44 | lambda_bhv 1.0
+Device: cuda | dataset: 'bot-iot'| checkpoints: /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/checkpoints_ablation_bot_iot/feature_temporal_s44
+
+============================================================
+STAGE 1: Load & Preprocess
+============================================================
+Loading /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/data/NF-BoT-IoT-v3-sample.csv ...
+  Loaded 50,000 rows, 56 columns
+  Split: train 40,002, gap (dropped) 2,499, test 7,499
+  Removed 41 test flows identical to a train flow
+  Balancing train split...
+  Balancing test split...
+  Class counts after split:
+                train  test
+Attack                     
+Benign          12000  2209
+DDoS             8903  1669
+DoS              8904  1669
+Reconnaissance   8903  1669
+Theft            1292   242
+Train: 40,002 flows, Test: 7,458 flows, Timeline: 50,000 flows, Features: 33
+  Features: 33, Samples: 40002
+  Raw DataFrame: 40002 rows
+  Source-IP overlap (test flows whose src IP was seen in train):
+    Benign: 99.9% of 2,209 flows
+    DDoS: 100.0% of 1,669 flows
+    DoS: 100.0% of 1,669 flows
+    Reconnaissance: 100.0% of 1,669 flows
+    Theft: 100.0% of 242 flows
+    Overall: 100.0%
+Data Loading Time: 0.3215s
+
+============================================================
+STAGE 2: Graph + Temporal
+============================================================
+ContextEncoder (DGL GraphSAGE): 10 -> 32 -> 32
+Graph Construction Time: 0.6883s
+
+============================================================
+STAGE 3: Compute Behaviour Scores
+============================================================
+Compute Behaviour Scores Time: 0.0305s
+TransformerBehaviourEncoder: 33 -> Transformer(64, 2 layers) -> 32
+JointEncoder (Behaviour-Aware AE): 128 -> z(64) -> recon(128) + behaviour(5)
+  lambda_bhv=1.0
+
+============================================================
+STAGE 4: Training Behaviour-Aware Autoencoder
+============================================================
+  Epoch   1/30 | Total: 0.033675 | Recon: 0.015866 | Bhv: 0.017808 | Sil: 0.0584
+  Epoch   5/30 | Total: 0.001881 | Recon: 0.000641 | Bhv: 0.001240 | Sil: 0.0577
+  Epoch  10/30 | Total: 0.001079 | Recon: 0.000316 | Bhv: 0.000763 | Sil: 0.0595
+  Epoch  15/30 | Total: 0.000819 | Recon: 0.000203 | Bhv: 0.000616 | Sil: 0.0527
+  Epoch  20/30 | Total: 0.000687 | Recon: 0.000148 | Bhv: 0.000539 | Sil: 0.0480
+  Epoch  25/30 | Total: 0.000608 | Recon: 0.000127 | Bhv: 0.000481 | Sil: 0.0556
+  Epoch  30/30 | Total: 0.000560 | Recon: 0.000116 | Bhv: 0.000444 | Sil: 0.0587
+  Done. total=0.000560
+VE train Time: 22.9321s
+
+============================================================
+STAGE 5: Extract z + DP-GMM Clustering
+============================================================
+  Z_train: (40002, 64)
+  Active clusters: 20
+GMM train Time: 36.9980s
+    Cluster 0: 7,581 flows (w=0.1895)
+    Cluster 1: 1,382 flows (w=0.0346)
+    Cluster 2: 451 flows (w=0.0113)
+    Cluster 3: 1,400 flows (w=0.0350)
+    Cluster 4: 865 flows (w=0.0216)
+    Cluster 5: 2,767 flows (w=0.0692)
+    Cluster 6: 165 flows (w=0.0041)
+    Cluster 7: 2,175 flows (w=0.0543)
+    Cluster 8: 247 flows (w=0.0062)
+    Cluster 9: 2,296 flows (w=0.0574)
+    Cluster 10: 4,775 flows (w=0.1193)
+    Cluster 11: 2,289 flows (w=0.0572)
+    Cluster 12: 2,009 flows (w=0.0502)
+    Cluster 13: 2,029 flows (w=0.0508)
+    Cluster 14: 1,237 flows (w=0.0309)
+    Cluster 15: 2,038 flows (w=0.0509)
+    Cluster 16: 83 flows (w=0.0021)
+    Cluster 17: 2,163 flows (w=0.0540)
+    Cluster 18: 1,270 flows (w=0.0317)
+    Cluster 19: 2,780 flows (w=0.0694)
+
+============================================================
+STAGE 6: Benign Detection
+============================================================
+  C 0: n= 7,581 benign=  7.7% | TTL=   0.08 TCP= 21.93 | benign_s=0.34 attack_s=1.00 ttl_other=0.00 win1024=0.85 syn=0.00 fan_out=9.6 | prop=0.190
+  C 1: n= 1,382 benign= 28.8% | TTL=  64.00 TCP=  0.00 | benign_s=0.00 attack_s=1.00 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=9.3 | prop=0.035
+  C 2: n=   451 benign=  0.0% | TTL=  64.00 TCP=  6.21 | benign_s=0.00 attack_s=1.00 ttl_other=0.00 win1024=0.00 syn=0.79 fan_out=10.0 | prop=0.011
+  C 3: n= 1,400 benign= 44.7% | TTL=  64.00 TCP= 27.95 | benign_s=0.60 attack_s=1.00 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=10.2 | prop=0.035
+  C 4: n=   865 benign=  0.0% | TTL=   0.00 TCP= 22.00 | benign_s=0.18 attack_s=1.00 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=94.1 | prop=0.022
+  C 5: n= 2,767 benign=  0.0% | TTL=  50.19 TCP=  2.00 | benign_s=0.07 attack_s=0.94 ttl_other=0.00 win1024=0.00 syn=1.00 fan_out=9.4 | prop=0.069
+  C 6: n=   165 benign=100.0% | TTL= 127.00 TCP=  0.00 | benign_s=0.36 attack_s=0.61 ttl_other=1.00 win1024=0.50 syn=0.00 fan_out=7.0 | prop=0.004
+  Cluster 6: 165 (0.4%) — BENIGN (TTL fingerprint: 100% of flows TTL not 0/64)
+  C 7: n= 2,175 benign= 77.1% | TTL=  22.28 TCP= 21.14 | benign_s=1.00 attack_s=0.00 ttl_other=0.00 win1024=0.20 syn=0.00 fan_out=9.4 | prop=0.054
+  Cluster 7: 2,175 (5.4%) — BENIGN (v3 benign score=1.00 > attack=0.00)
+  C 8: n=   247 benign=100.0% | TTL= 127.00 TCP=  0.00 | benign_s=0.36 attack_s=0.61 ttl_other=1.00 win1024=0.67 syn=0.00 fan_out=1.7 | prop=0.006
+  Cluster 8: 247 (0.6%) — BENIGN (TTL fingerprint: 100% of flows TTL not 0/64)
+  C 9: n= 2,296 benign=  0.0% | TTL=  64.00 TCP= 22.00 | benign_s=0.18 attack_s=0.83 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=9.7 | prop=0.057
+  C10: n= 4,775 benign= 90.6% | TTL=   0.00 TCP= 22.00 | benign_s=0.18 attack_s=0.88 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=9.5 | prop=0.119
+  Cluster 10: 4,775 (11.9%) — BENIGN (TTL 0 without scan window (win1024=0%))
+  C11: n= 2,289 benign=  0.0% | TTL=  64.00 TCP=  0.00 | benign_s=0.19 attack_s=0.77 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=9.3 | prop=0.057
+  C12: n= 2,009 benign=  0.0% | TTL=  64.00 TCP=  0.00 | benign_s=0.00 attack_s=1.00 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=9.4 | prop=0.050
+  C13: n= 2,029 benign= 53.2% | TTL=  47.00 TCP= 11.83 | benign_s=0.69 attack_s=0.29 ttl_other=0.07 win1024=0.07 syn=0.02 fan_out=37.4 | prop=0.051
+  Cluster 13: 2,029 (5.1%) — BENIGN (v3 benign score=0.69 > attack=0.29)
+  C14: n= 1,237 benign=100.0% | TTL=   0.00 TCP= 22.00 | benign_s=0.18 attack_s=0.88 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=9.6 | prop=0.031
+  Cluster 14: 1,237 (3.1%) — BENIGN (TTL 0 without scan window (win1024=0%))
+  C15: n= 2,038 benign=  0.0% | TTL=  64.00 TCP=  2.00 | benign_s=0.00 attack_s=1.00 ttl_other=0.00 win1024=0.00 syn=1.00 fan_out=9.5 | prop=0.051
+  C16: n=    83 benign=100.0% | TTL= 127.00 TCP=  0.00 | benign_s=0.36 attack_s=0.61 ttl_other=1.00 win1024=0.00 syn=0.00 fan_out=1.0 | prop=0.002
+  Cluster 16: 83 (0.2%) — BENIGN (TTL fingerprint: 100% of flows TTL not 0/64)
+  C17: n= 2,163 benign= 73.0% | TTL=   0.00 TCP=  0.20 | benign_s=0.00 attack_s=1.00 ttl_other=0.00 win1024=0.10 syn=0.10 fan_out=9.5 | prop=0.054
+  Cluster 17: 2,163 (5.4%) — BENIGN (TTL 0 without scan window (win1024=10%))
+  C18: n= 1,270 benign=  0.0% | TTL=  64.00 TCP= 22.00 | benign_s=0.18 attack_s=0.83 ttl_other=0.00 win1024=0.00 syn=0.00 fan_out=9.4 | prop=0.032
+  C19: n= 2,780 benign=  0.0% | TTL=  64.00 TCP=  2.00 | benign_s=0.00 attack_s=1.00 ttl_other=0.00 win1024=0.00 syn=1.00 fan_out=9.7 | prop=0.069
+  Total benign clusters: 8
+
+  Rule attribution:
+    C 6:   165/   165 benign (100.0%)
+    C 7: 1,678/ 2,175 benign ( 77.1%)
+    C 8:   247/   247 benign (100.0%)
+    C10: 4,328/ 4,775 benign ( 90.6%)
+    C13: 1,079/ 2,029 benign ( 53.2%)
+    C14: 1,237/ 1,237 benign (100.0%)
+    C16:    83/    83 benign (100.0%)
+    C17: 1,579/ 2,163 benign ( 73.0%)
+
+============================================================
+STAGE 7: Cluster Summarization + LLM Behaviour Labeling
+============================================================
+INFO:src.mapping.soft_cluster_scorer:Cluster 0: [port_scanning:0.85, normal_activity:0.15, syn_flooding:0.01] → Reconnaissance
+INFO:src.mapping.soft_cluster_scorer:Cluster 1: [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 2: [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 3: [normal_activity:0.63, data_transfer:0.25, syn_flooding:0.13] → None
+INFO:src.mapping.soft_cluster_scorer:Cluster 4: [port_scanning:0.56, data_transfer:0.42, normal_activity:0.02] → Reconnaissance
+INFO:src.mapping.soft_cluster_scorer:Cluster 5: [syn_flooding:0.96, normal_activity:0.04, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 6: [syn_flooding:0.68, normal_activity:0.32, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 7: [normal_activity:0.99, syn_flooding:0.01, port_scanning:0.00] → None
+INFO:src.mapping.soft_cluster_scorer:Cluster 8: [syn_flooding:0.68, normal_activity:0.32, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 9: [syn_flooding:0.90, normal_activity:0.10, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 10: [port_scanning:0.89, normal_activity:0.09, syn_flooding:0.02] → Reconnaissance
+INFO:src.mapping.soft_cluster_scorer:Cluster 11: [syn_flooding:0.88, normal_activity:0.12, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 12: [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 13: [normal_activity:0.52, data_transfer:0.31, syn_flooding:0.17] → None
+INFO:src.mapping.soft_cluster_scorer:Cluster 14: [port_scanning:0.89, normal_activity:0.09, syn_flooding:0.02] → Reconnaissance
+INFO:src.mapping.soft_cluster_scorer:Cluster 15: [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 16: [syn_flooding:0.66, normal_activity:0.31, data_transfer:0.02] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 17: [port_scanning:0.87, syn_flooding:0.12, normal_activity:0.01] → Reconnaissance
+INFO:src.mapping.soft_cluster_scorer:Cluster 18: [syn_flooding:0.90, normal_activity:0.10, port_scanning:0.00] → Impact
+INFO:src.mapping.soft_cluster_scorer:Cluster 19: [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] → Impact
+INFO:src.knowledge_base.kb:KB: Cluster 0 (7,581) [port_scanning:0.85, normal_activity:0.15, syn_flooding:0.01] -> Reconnaissance
+INFO:src.knowledge_base.kb:KB: Cluster 1 (1,382) [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+INFO:src.knowledge_base.kb:KB: Cluster 2 (451) [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+INFO:src.knowledge_base.kb:KB: Cluster 3 (1,400) [normal_activity:0.63, data_transfer:0.25, syn_flooding:0.13] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 4 (865) [port_scanning:0.56, data_transfer:0.42, normal_activity:0.02] -> Reconnaissance
+INFO:src.knowledge_base.kb:KB: Cluster 5 (2,767) [syn_flooding:0.96, normal_activity:0.04, port_scanning:0.00] -> Impact
+INFO:src.knowledge_base.kb:KB: Cluster 6 (165) [normal_activity:1.00] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 7 (2,175) [normal_activity:1.00] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 8 (247) [normal_activity:1.00] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 9 (2,296) [syn_flooding:0.90, normal_activity:0.10, port_scanning:0.00] -> Impact
+INFO:src.knowledge_base.kb:KB: Cluster 10 (4,775) [normal_activity:1.00] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 11 (2,289) [syn_flooding:0.88, normal_activity:0.12, port_scanning:0.00] -> Impact
+INFO:src.knowledge_base.kb:KB: Cluster 12 (2,009) [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+INFO:src.knowledge_base.kb:KB: Cluster 13 (2,029) [normal_activity:1.00] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 14 (1,237) [normal_activity:1.00] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 15 (2,038) [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+INFO:src.knowledge_base.kb:KB: Cluster 16 (83) [normal_activity:1.00] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 17 (2,163) [normal_activity:1.00] -> None
+INFO:src.knowledge_base.kb:KB: Cluster 18 (1,270) [syn_flooding:0.90, normal_activity:0.10, port_scanning:0.00] -> Impact
+INFO:src.knowledge_base.kb:KB: Cluster 19 (2,780) [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+INFO:src.evaluation.ground_truth:GroundTruthMapper(bot_iot): 5 attack types -> 4 tactics ['Exfiltration', 'Impact', 'None', 'Reconnaissance']
+INFO:src.knowledge_base.kb:KB saved: /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/checkpoints_ablation_bot_iot/feature_temporal_s44/knowledge_base.json (20 clusters)
+  LLM reference profiles (training split):
+  Impact (syn_flooding / volumetric_flood), n=17,807: duration 21,027 ms; bytes 392.0/0.0; pkts 4.0/0.0; pkt gap max 7,934 ms; TCP window 512.0; dst port 80.0; SYN-only share 0.45; UDP share 0.34; TTL share 0/64/other 0.05/0.95/0.00; fan-out 9.0
+  Reconnaissance (port_scanning / service_probing), n=8,903: duration 1.0 ms; bytes 44.0/40.0; pkts 1.0/1.0; pkt gap max 0.0 ms; TCP window 1,024; dst port 9,415; SYN-only share 0.03; UDP share 0.00; TTL share 0/64/other 0.93/0.07/0.00; fan-out 9.0
+  Exfiltration (data_transfer), n=1,292: duration 0.0 ms; bytes 60.0/40.0; pkts 1.0/1.0; pkt gap max 0.0 ms; TCP window 29,200; dst port 4,433; SYN-only share 0.00; UDP share 0.00; TTL share 0/64/other 0.66/0.33/0.01; fan-out 98.0
+  None (normal_activity), n=12,000: duration 0.0 ms; bytes 40.0/40.0; pkts 1.0/1.0; pkt gap max 0.0 ms; TCP window 512.0; dst port 3,504; SYN-only share 0.00; UDP share 0.23; TTL share 0/64/other 0.77/0.18/0.05; fan-out 9.0
+  Cluster 0: [normal_browsing] conf=0.75 → None (mock)
+  Cluster 1: [syn_flooding] conf=0.80 → Impact (mock)
+  Cluster 2: [service_probing] conf=0.65 → Reconnaissance (mock)
+  Cluster 3: [service_probing] conf=0.65 → Reconnaissance (mock)
+  Cluster 4: [normal_browsing] conf=0.75 → None (mock)
+  Cluster 5: [syn_flooding] conf=0.80 → Impact (mock)
+  Cluster 6: [normal_activity] (auto-detected benign)
+  Cluster 7: [normal_activity] (auto-detected benign)
+  Cluster 8: [normal_activity] (auto-detected benign)
+  Cluster 9: [normal_browsing] conf=0.85 → None (mock)
+  Cluster 10: [normal_activity] (auto-detected benign)
+  Cluster 11: [syn_flooding] conf=0.80 → Impact (mock)
+  Cluster 12: [syn_flooding] conf=0.80 → Impact (mock)
+  Cluster 13: [normal_activity] (auto-detected benign)
+  Cluster 14: [normal_activity] (auto-detected benign)
+  Cluster 15: [syn_flooding] conf=0.80 → Impact (mock)
+  Cluster 16: [normal_activity] (auto-detected benign)
+  Cluster 17: [normal_activity] (auto-detected benign)
+  Cluster 18: [service_probing] conf=0.65 → Reconnaissance (mock)
+  Cluster 19: [syn_flooding] conf=0.80 → Impact (mock)
+
+  Labeling: Mock mode, 20 clusters labeled
+LLM/Mock Labeling + Summarization Time: 0.4220s
+  Cluster labelling mode: rules (0 clusters with LLM scores)
+
+  KB: 20 entries
+KnowledgeBase(20 clusters)
+  Cluster   0 ( 7,581): [port_scanning:0.85, normal_activity:0.15, syn_flooding:0.01] -> Reconnaissance
+  Cluster   1 ( 1,382): [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+  Cluster   2 (   451): [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+  Cluster   3 ( 1,400): [normal_activity:0.63, data_transfer:0.25, syn_flooding:0.13] -> None
+  Cluster   4 (   865): [port_scanning:0.56, data_transfer:0.42, normal_activity:0.02] -> Reconnaissance
+  Cluster   5 ( 2,767): [syn_flooding:0.96, normal_activity:0.04, port_scanning:0.00] -> Impact
+  Cluster   6 (   165): [normal_activity:1.00] -> None
+  Cluster   7 ( 2,175): [normal_activity:1.00] -> None
+  Cluster   8 (   247): [normal_activity:1.00] -> None
+  Cluster   9 ( 2,296): [syn_flooding:0.90, normal_activity:0.10, port_scanning:0.00] -> Impact
+  Cluster  10 ( 4,775): [normal_activity:1.00] -> None
+  Cluster  11 ( 2,289): [syn_flooding:0.88, normal_activity:0.12, port_scanning:0.00] -> Impact
+  Cluster  12 ( 2,009): [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+  Cluster  13 ( 2,029): [normal_activity:1.00] -> None
+  Cluster  14 ( 1,237): [normal_activity:1.00] -> None
+  Cluster  15 ( 2,038): [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+  Cluster  16 (    83): [normal_activity:1.00] -> None
+  Cluster  17 ( 2,163): [normal_activity:1.00] -> None
+  Cluster  18 ( 1,270): [syn_flooding:0.90, normal_activity:0.10, port_scanning:0.00] -> Impact
+  Cluster  19 ( 2,780): [syn_flooding:0.99, normal_activity:0.01, port_scanning:0.00] -> Impact
+
+  Per-cluster ground truth:
+    Cluster  0:  7,581 | [port_scanning            ] | True: Reconnaissance  (92%) ✓
+    Cluster  1:  1,382 | [syn_flooding             ] | True: DoS             (70%) ✓
+    Cluster  2:    451 | [syn_flooding             ] | True: DoS             (93%) ✓
+    Cluster  3:  1,400 | [normal_activity          ] | True: Benign          (45%) ✓
+    Cluster  4:    865 | [port_scanning            ] | True: Theft           (96%) ✗
+    Cluster  5:  2,767 | [syn_flooding             ] | True: DDoS            (65%) ✓
+    Cluster  6:    165 | [normal_activity          ] | True: Benign          (100%) ✓
+    Cluster  7:  2,175 | [normal_activity          ] | True: Benign          (77%) ✓
+    Cluster  8:    247 | [normal_activity          ] | True: Benign          (100%) ✓
+    Cluster  9:  2,296 | [syn_flooding             ] | True: DDoS            (53%) ✓
+    Cluster 10:  4,775 | [normal_activity          ] | True: Benign          (91%) ✓
+    Cluster 11:  2,289 | [syn_flooding             ] | True: DDoS            (100%) ✓
+    Cluster 12:  2,009 | [syn_flooding             ] | True: DoS             (100%) ✓
+    Cluster 13:  2,029 | [normal_activity          ] | True: Benign          (53%) ✓
+    Cluster 14:  1,237 | [normal_activity          ] | True: Benign          (100%) ✓
+    Cluster 15:  2,038 | [syn_flooding             ] | True: DoS             (85%) ✓
+    Cluster 16:     83 | [normal_activity          ] | True: Benign          (100%) ✓
+    Cluster 17:  2,163 | [normal_activity          ] | True: Benign          (73%) ✓
+    Cluster 18:  1,270 | [syn_flooding             ] | True: DoS             (80%) ✓
+    Cluster 19:  2,780 | [syn_flooding             ] | True: DDoS            (91%) ✓
+
+    Mean cluster purity:     0.8312
+    Weighted cluster purity: 0.8201
+
+============================================================
+STAGE 8: Save Checkpoint
+============================================================
+  Saved: /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/checkpoints_ablation_bot_iot/feature_temporal_s44/model_checkpoint.pt, /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/checkpoints_ablation_bot_iot/feature_temporal_s44/knowledge_base.json
+
+============================================================
+TRAINING COMPLETE
+============================================================
+Total time taken:  61.693993177002994

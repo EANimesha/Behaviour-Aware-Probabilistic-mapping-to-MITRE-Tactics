@@ -347,12 +347,12 @@ class SoftTacticEvaluator:
                 metrics[f'{tactic}_recall'] = m['recall']
                 metrics[f'{tactic}_f1'] = m['f1']
 
-        # ── Plots ──
-        if save_dir:
-            os.makedirs(save_dir, exist_ok=True)
-            df.to_csv(os.path.join(save_dir, 'soft_eval_windows.csv'),
-                      index=False)
-            self._plot_results(df, ml_metrics, metrics, save_dir)
+        # # ── Plots ──
+        # if save_dir:
+        #     os.makedirs(save_dir, exist_ok=True)
+        #     df.to_csv(os.path.join(save_dir, 'soft_eval_windows.csv'),
+        #               index=False)
+        #     self._plot_results(df, ml_metrics, metrics, save_dir)
 
         return metrics, df
 

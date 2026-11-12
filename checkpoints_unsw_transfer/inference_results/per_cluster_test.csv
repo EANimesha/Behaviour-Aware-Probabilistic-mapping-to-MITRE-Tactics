@@ -1,0 +1,23 @@
+cluster,n_test,true_mix,pred_rules,pred_llm,pred_fused
+0,42,"Reconnaissance 62%, Impact 26%, Execution 12%",Reconnaissance,Reconnaissance,Reconnaissance
+1,161,None 100%,Reconnaissance,None,None
+2,153,"Initial Access 31%, Impact 29%, Reconnaissance 24%",Reconnaissance,None,None
+5,154,"Execution 33%, Persistence 31%, Reconnaissance 21%",Impact,None,Impact
+6,146,"Impact 45%, Reconnaissance 40%, Execution 14%",Impact,Reconnaissance,Impact
+7,456,"Impact 43%, Execution 34%, Persistence 17%",Exfiltration,None,None
+8,7,"Reconnaissance 86%, Impact 14%",Impact,Reconnaissance,Impact
+9,80,"Reconnaissance 70%, Impact 11%, Persistence 10%",Impact,Reconnaissance,Impact
+10,535,"Execution 39%, Reconnaissance 26%, Impact 22%",Reconnaissance,Reconnaissance,Reconnaissance
+11,700,"None 92%, Persistence 3%, Execution 2%",Reconnaissance,None,None
+12,754,"Impact 24%, Discovery 24%, Initial Access 22%",Reconnaissance,None,None
+13,88,None 100%,Exfiltration,Exfiltration,Exfiltration
+14,235,None 100%,Reconnaissance,None,None
+15,22,None 100%,Impact,None,None
+16,387,None 100%,Impact,None,Impact
+17,518,None 100%,Reconnaissance,None,None
+18,453,"Impact 40%, Initial Access 29%, Execution 25%",Reconnaissance,Reconnaissance,Reconnaissance
+19,940,"Execution 27%, Reconnaissance 23%, Impact 22%",Impact,Reconnaissance,Impact
+20,189,None 100%,Reconnaissance,Reconnaissance,Reconnaissance
+21,362,"Execution 36%, Impact 30%, Persistence 20%",Reconnaissance,None,Reconnaissance
+23,38,"Reconnaissance 95%, Execution 5%",Impact,Reconnaissance,Impact
+24,595,"Initial Access 38%, Impact 22%, Persistence 13%",Reconnaissance,None,None

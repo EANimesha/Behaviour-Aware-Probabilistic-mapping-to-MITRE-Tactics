@@ -657,24 +657,24 @@ src_ip,n_flows,pred_primary,pred_tactics,pred_dist,true_primary,true_tactics,tru
 59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.8,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
 59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
-59.166.0.8,20,None,None,"None:0.95, Execution:0.02, Initial Access:0.02",None,None,None:1.00,1.0,0.9049041421561157,0.9995765291389552,0.051210768836161394,True,True
+59.166.0.8,20,None,None,"None:0.90, Unknown:0.05, Execution:0.02, Initial Access:0.02",None,None,None:1.00,1.0,0.8572815386022127,0.9995282083535942,0.10527340555326585,True,True
 59.166.0.8,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767964,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.8,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767963,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.8,20,None,None,"None:0.90, Initial Access:0.03, Execution:0.03, Impact:0.01",None,None,None:1.00,1.0,0.8183248200106064,0.998771503755131,0.10526439883011504,True,True
-59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
-59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+59.166.0.8,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
+59.166.0.8,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
 59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.8,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767963,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
-59.166.0.8,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
+59.166.0.8,20,None,None,"None:0.85, Unknown:0.05, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.7727534024468138,0.9986164580992528,0.16249985487147808,True,True
 59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.8,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767963,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.8,20,None,None,"None:0.95, Execution:0.02, Initial Access:0.02",None,None,None:1.00,1.0,0.9049041421561157,0.9995765291389552,0.051210768836161394,True,True
 59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.8,20,None,None,"None:0.95, Execution:0.02, Initial Access:0.02",None,None,None:1.00,1.0,0.9049041421561157,0.9995765291389552,0.051210768836161394,True,True
-59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
-59.166.0.8,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+59.166.0.8,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
+59.166.0.8,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
 59.166.0.8,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767964,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.8,19,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.2,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
@@ -738,7 +738,7 @@ src_ip,n_flows,pred_primary,pred_tactics,pred_dist,true_primary,true_tactics,tru
 59.166.0.6,12,None,"Lateral Movement, None","None:0.67, Lateral Movement:0.11, Initial Access:0.07, Command and Control:0.06, Execution:0.05, Impact:0.03, Reconnaissance:0.01",None,None,None:1.00,0.5,0.5001795160134551,0.9751309211976913,0.405225810699371,True,True
 59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
-59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+59.166.0.7,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
 59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.7,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767964,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.7,20,None,None,"None:0.90, Initial Access:0.03, Execution:0.03, Impact:0.01",None,None,None:1.00,1.0,0.8183248200106064,0.998771503755131,0.10526439883011504,True,True
@@ -747,12 +747,12 @@ src_ip,n_flows,pred_primary,pred_tactics,pred_dist,true_primary,true_tactics,tru
 59.166.0.7,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767964,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.7,20,None,None,"None:0.90, Execution:0.04, Initial Access:0.03, Lateral Movement:0.02",None,None,None:1.00,1.0,0.8184410369810002,0.9981171570353427,0.10518630303621486,True,True
 59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
-59.166.0.7,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
+59.166.0.7,20,None,None,"None:0.85, Unknown:0.05, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.7727534024468138,0.9986164580992528,0.16249985487147808,True,True
 59.166.0.7,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767963,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.7,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767963,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.7,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
-59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+59.166.0.7,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
 59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.7,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767964,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.7,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767964,0.9997226338682272,0.05128476095712564,True,True
@@ -761,7 +761,7 @@ src_ip,n_flows,pred_primary,pred_tactics,pred_dist,true_primary,true_tactics,tru
 59.166.0.7,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767963,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.7,20,None,None,"None:0.85, Initial Access:0.04, Impact:0.04, Reconnaissance:0.03, Execution:0.02, Persistence:0.01",None,None,None:1.00,1.0,0.7391672149638123,0.9968951382464075,0.16249031769476832,True,True
-59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+59.166.0.7,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
 59.166.0.7,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.7,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
 59.166.0.7,20,None,None,"None:0.95, Execution:0.02, Initial Access:0.02",None,None,None:1.00,1.0,0.9049041421561156,0.9995765291389552,0.0512107688361616,True,True
@@ -776,11 +776,11 @@ src_ip,n_flows,pred_primary,pred_tactics,pred_dist,true_primary,true_tactics,tru
 59.166.0.9,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
 59.166.0.9,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.9,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
+59.166.0.9,20,None,None,"None:0.85, Unknown:0.05, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.7727534024468137,0.9986164580992528,0.16249985487147828,True,True
+59.166.0.9,20,None,None,"None:0.90, Unknown:0.05, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.8571571957998766,0.9996909743146447,0.10535150815006834,True,True
 59.166.0.9,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
-59.166.0.9,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767963,0.9997226338682272,0.05128476095712564,True,True
 59.166.0.9,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
-59.166.0.9,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
-59.166.0.9,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+59.166.0.9,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
 59.166.0.9,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.9,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.9,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767963,0.9997226338682272,0.05128476095712564,True,True
@@ -791,10 +791,10 @@ src_ip,n_flows,pred_primary,pred_tactics,pred_dist,true_primary,true_tactics,tru
 59.166.0.9,20,None,None,"None:0.90, Initial Access:0.03, Impact:0.02, Reconnaissance:0.02, Execution:0.01",None,None,None:1.00,1.0,0.8182086178941679,0.9987656355701134,0.10534250072344534,True,True
 59.166.0.9,20,None,None,"None:0.95, Execution:0.02, Initial Access:0.02",None,None,None:1.00,1.0,0.9049041421561156,0.9995765291389552,0.0512107688361616,True,True
 59.166.0.9,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
-59.166.0.9,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+59.166.0.9,20,None,None,"None:0.95, Unknown:0.05",None,None,None:1.00,1.0,0.9500000000000001,1.0,0.05129329438755048,True,True
 59.166.0.9,20,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 59.166.0.9,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767964,0.9997226338682272,0.05128476095712564,True,True
-59.166.0.9,20,None,None,"None:0.95, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.9047766110767964,0.9997226338682272,0.05128476095712564,True,True
+59.166.0.9,20,None,None,"None:0.90, Unknown:0.05, Initial Access:0.01, Impact:0.01",None,None,None:1.00,1.0,0.8571571957998765,0.9996909743146447,0.10535150815006855,True,True
 59.166.0.9,15,None,None,"None:0.93, Initial Access:0.02, Impact:0.02, Reconnaissance:0.01",None,None,None:1.00,1.0,0.8750190004897909,0.9994893188212872,0.06898129042045079,True,True
 149.171.126.1,4,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
 149.171.126.2,5,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True

@@ -996,6 +996,27 @@ FEATURE_UNITS = {
 }
 
 
+def flow_ratio_means(df_raw):
+    """Mean over flows of packets/s, bytes/packet and direction ratio, computed
+    per flow exactly as compute_derived_features() in analyse_clusters.py."""
+    def col(c, fill=0.0):
+        return (df_raw[c].to_numpy(dtype=float) if c in df_raw.columns
+                else np.full(len(df_raw), fill))
+    if len(df_raw) == 0:
+        return {}
+    pkts = col('IN_PKTS') + col('OUT_PKTS')
+    nbytes = col('IN_BYTES') + col('OUT_BYTES')
+    dur_sec = np.maximum(col('FLOW_DURATION_MILLISECONDS', 1.0) / 1000.0, 0.0001)
+    src_bps, dst_bps = col('SRC_TO_DST_SECOND_BYTES'), col('DST_TO_SRC_SECOND_BYTES')
+    ratio = np.where(dst_bps > 0.01, src_bps / np.where(dst_bps > 0.01, dst_bps, 1.0),
+                     np.where(src_bps > 0.01, 999.0, 1.0)).clip(0, 999)
+    return {
+        'avg_pps_flow': float(np.mean(pkts / dur_sec)),
+        'avg_bpp_flow': float(np.mean(np.where(pkts > 0, nbytes / np.maximum(pkts, 1), 0))),
+        'avg_dir_ratio_flow': float(np.mean(ratio)),
+    }
+
+
 class ClusterSummarizer:
     """Generate rich text summaries for each DP-GMM cluster.
 
@@ -1112,10 +1133,34 @@ class ClusterSummarizer:
                 # Additional features for direction/throughput
                 'avg_longest_pkt_bytes':  'LONGEST_FLOW_PKT',
                 'avg_shortest_pkt_bytes': 'SHORTEST_FLOW_PKT',
+                # NF-v3 only (skipped when the column is absent, e.g. v2)
+                'avg_iat_max':    'SRC_TO_DST_IAT_MAX',
+                'avg_iat_avg':    'SRC_TO_DST_IAT_AVG',
+                'avg_iat_std':    'SRC_TO_DST_IAT_STDDEV',
+                'avg_tcp_win_in': 'TCP_WIN_MAX_IN',
+                'avg_iat_in_avg': 'DST_TO_SRC_IAT_AVG',
+                'avg_iat_in_std': 'DST_TO_SRC_IAT_STDDEV',
             }
             for bhv_key, raw_col in raw_overrides.items():
                 if raw_col in df_raw.columns:
                     behaviour[bhv_key] = float(df_raw[raw_col].mean())
+                    # median too, so facts are comparable with the median-based
+                    # reference profiles (same training rows, no new data)
+                    behaviour["med_" + bhv_key[4:]] = float(df_raw[raw_col].median())
+
+            # Shares of flows (means hide bimodal values such as TTL 0 / 64)
+            if 'MIN_TTL' in df_raw.columns:
+                ttl = df_raw['MIN_TTL']
+                behaviour['share_ttl_0'] = float((ttl == 0).mean())
+                behaviour['share_ttl_64'] = float((ttl == 64).mean())
+                behaviour['share_ttl_other'] = float((~ttl.isin([0, 64])).mean())
+            if 'TCP_FLAGS' in df_raw.columns:
+                behaviour['share_syn_only'] = float((df_raw['TCP_FLAGS'] == 2).mean())
+            if 'PROTOCOL' in df_raw.columns:
+                behaviour['share_udp'] = float((df_raw['PROTOCOL'] == 17).mean())
+            if 'L4_DST_PORT' in df_raw.columns:
+                behaviour['n_unique_dst_ports'] = int(df_raw['L4_DST_PORT'].nunique())
+                behaviour['median_dst_port'] = float(df_raw['L4_DST_PORT'].median())
 
             # Also get IN_BYTES for direction ratio
             in_bytes_raw = 0

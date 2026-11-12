@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "n_clusters": 0,
+    "n_labeled": 0,
+    "dataset": ""
+  },
+  "entries": {
+    "0": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 5301,
+      "cluster_proportion": 0.13251837408129594
+    },
+    "1": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "syn_flooding",
+      "primary_tactic": "Impact",
+      "cluster_size": 4035,
+      "cluster_proportion": 0.1008699565021749
+    },
+    "2": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 3286,
+      "cluster_proportion": 0.08214589270536474
+    },
+    "3": {
+      "behaviour_scores": {
+        "syn_flooding": 0.004606100647946586,
+        "port_scanning": 0.5555118567156365,
+        "data_transfer": 0.4229025972528862,
+        "normal_activity": 0.016979445383530644
+      },
+      "tactic_scores": {
+        "Impact": 0.004606100647946587,
+        "Reconnaissance": 0.5555118567156366,
+        "Exfiltration": 0.42290259725288626,
+        "None": 0.016979445383530647,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "port_scanning",
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 937,
+      "cluster_proportion": 0.02342382880855957
+    },
+    "4": {
+      "behaviour_scores": {
+        "syn_flooding": 0.884151229232871,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.115848770767129
+      },
+      "tactic_scores": {
+        "Impact": 0.884151229232871,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.115848770767129,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "syn_flooding",
+      "primary_tactic": "Impact",
+      "cluster_size": 3143,
+      "cluster_proportion": 0.07857107144642768
+    },
+    "5": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 250,
+      "cluster_proportion": 0.006249687515624219
+    },
+    "6": {
+      "behaviour_scores": {
+        "syn_flooding": 0.9558156298456362,
+        "port_scanning": 0.005216540575357433,
+        "data_transfer": 0.0,
+        "normal_activity": 0.0389678295790064
+      },
+      "tactic_scores": {
+        "Impact": 0.9558156298456362,
+        "Reconnaissance": 0.005216540575357433,
+        "Exfiltration": 0.0,
+        "None": 0.0389678295790064,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "syn_flooding",
+      "primary_tactic": "Impact",
+      "cluster_size": 398,
+      "cluster_proportion": 0.009949502524873756
+    },
+    "7": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 701,
+      "cluster_proportion": 0.017524123793810308
+    },
+    "8": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "syn_flooding",
+      "primary_tactic": "Impact",
+      "cluster_size": 2607,
+      "cluster_proportion": 0.06517174141292935
+    },
+    "9": {
+      "behaviour_scores": {
+        "syn_flooding": 0.9036520587304582,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.09634794126954177
+      },
+      "tactic_scores": {
+        "Impact": 0.9036520587304582,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.09634794126954177,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "syn_flooding",
+      "primary_tactic": "Impact",
+      "cluster_size": 2588,
+      "cluster_proportion": 0.06469676516174191
+    },
+    "10": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 1353,
+      "cluster_proportion": 0.03382330883455827
+    },
+    "11": {
+      "behaviour_scores": {
+        "syn_flooding": 0.9036520587304582,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.09634794126954177
+      },
+      "tactic_scores": {
+        "Impact": 0.9036520587304582,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.09634794126954177,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "syn_flooding",
+      "primary_tactic": "Impact",
+      "cluster_size": 2944,
+      "cluster_proportion": 0.0735963201839908
+    },
+    "12": {
+      "behaviour_scores": {
+        "syn_flooding": 0.12224714372244819,
+        "port_scanning": 0.6790832377326972,
+        "data_transfer": 0.19866961854485468,
+        "normal_activity": 0.0
+      },
+      "tactic_scores": {
+        "Impact": 0.12224714372244819,
+        "Reconnaissance": 0.6790832377326972,
+        "Exfiltration": 0.19866961854485468,
+        "None": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "port_scanning",
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 230,
+      "cluster_proportion": 0.005749712514374282
+    },
+    "13": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 771,
+      "cluster_proportion": 0.01927403629818509
+    },
+    "14": {
+      "behaviour_scores": {
+        "syn_flooding": 0.005414881170368116,
+        "port_scanning": 0.8472118618022951,
+        "data_transfer": 0.0,
+        "normal_activity": 0.14737325702733664
+      },
+      "tactic_scores": {
+        "Impact": 0.005414881170368117,
+        "Reconnaissance": 0.8472118618022952,
+        "Exfiltration": 0.0,
+        "None": 0.14737325702733667,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "port_scanning",
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 4537,
+      "cluster_proportion": 0.11341932903354832
+    },
+    "15": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 2273,
+      "cluster_proportion": 0.0568221588920554
+    },
+    "16": {
+      "behaviour_scores": {
+        "syn_flooding": 0.24336563820267051,
+        "port_scanning": 0.6558863097523135,
+        "data_transfer": 0.0,
+        "normal_activity": 0.10074805204501588
+      },
+      "tactic_scores": {
+        "Impact": 0.24336563820267051,
+        "Reconnaissance": 0.6558863097523135,
+        "Exfiltration": 0.0,
+        "None": 0.10074805204501588,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "port_scanning",
+      "primary_tactic": "Reconnaissance",
+      "cluster_size": 137,
+      "cluster_proportion": 0.003424828758562072
+    },
+    "17": {
+      "behaviour_scores": {
+        "syn_flooding": 0.42285578064271845,
+        "port_scanning": 0.0,
+        "data_transfer": 0.3072934759637982,
+        "normal_activity": 0.2698507433934834
+      },
+      "tactic_scores": {
+        "Impact": 0.42285578064271845,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.3072934759637982,
+        "None": 0.2698507433934834,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "syn_flooding",
+      "primary_tactic": "Impact",
+      "cluster_size": 170,
+      "cluster_proportion": 0.004249787510624469
+    },
+    "18": {
+      "behaviour_scores": {
+        "syn_flooding": 0.985061610211647,
+        "port_scanning": 0.0,
+        "data_transfer": 0.0,
+        "normal_activity": 0.014938389788353108
+      },
+      "tactic_scores": {
+        "Impact": 0.985061610211647,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "None": 0.014938389788353108,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "syn_flooding",
+      "primary_tactic": "Impact",
+      "cluster_size": 1150,
+      "cluster_proportion": 0.028748562571871406
+    },
+    "19": {
+      "behaviour_scores": {
+        "normal_activity": 1.0
+      },
+      "tactic_scores": {
+        "None": 1.0,
+        "Impact": 0.0,
+        "Reconnaissance": 0.0,
+        "Exfiltration": 0.0,
+        "Command and Control": 0.0,
+        "Discovery": 0.0,
+        "Credential Access": 0.0,
+        "Initial Access": 0.0,
+        "Execution": 0.0,
+        "Lateral Movement": 0.0,
+        "Persistence": 0.0
+      },
+      "primary_behaviour": "normal_activity",
+      "primary_tactic": "None",
+      "cluster_size": 3191,
+      "cluster_proportion": 0.07977101144942753
+    }
+  }
+}

@@ -28,7 +28,7 @@
 #     Produces structured tactic assignments for the Knowledge Base.
 #     """
 #
-#     def __init__(self, api_key=None, model='gpt-4'):
+#     def __init__(self, api_key=None, model='gpt-6-luna'):
 #         self.api_key = api_key or os.getenv('OPENAI_API_KEY')
 #         self.model = model
 #         self.client = None
@@ -585,15 +585,237 @@ BEHAVIOUR_LIST = [
 ]
 
 
+LLM_MAX_COMPLETION_TOKENS = 4000  # room for hidden reasoning + the JSON answer
+LLM_MAX_RETRIES = 3
+
+# Behaviour names used by SoftClusterScorer / BEHAVIOUR_TACTIC_WEIGHTS.
+# The soft LLM path uses these names so its scores map straight to tactics.
+SCORER_BEHAVIOURS = [
+    'syn_flooding', 'volumetric_flood', 'port_scanning', 'service_probing',
+    'data_transfer', 'periodic_comm', 'normal_activity', 'connection_attempts',
+]
+# Old LLM names -> scorer names (accepted in responses for safety)
+LLM_TO_SCORER = {
+    'volumetric_flooding': 'volumetric_flood',
+    'periodic_communication': 'periodic_comm',
+    'normal_browsing': 'normal_activity',
+}
+
+# Definitions only: no dataset thresholds, no decision steps.
+BEHAVIOUR_DEFINITIONS = """\
+  syn_flooding:        many connection openings (SYN without completing the handshake)
+                       against one service to exhaust it; little or no payload. Can be
+                       fast, or slow-rate with long gaps between packets.
+  volumetric_flood:    very high packet or byte rate towards a target, mostly one-way.
+  port_scanning:       very short flows of one or two tiny packets, spread over many
+                       destination ports or hosts, to find what is open.
+  service_probing:     short connections to known service ports that exchange small
+                       payloads to identify the service or its version.
+  data_transfer:       sustained, outbound-heavy flows moving large amounts of data,
+                       possibly to many destinations.
+  periodic_comm:       small, regular exchanges with one or a few peers over time
+                       (command-and-control style check-ins).
+  normal_activity:     ordinary client/server traffic: completed sessions, normal
+                       request/response sizes, everyday UDP services (DNS, NTP, etc.).
+  connection_attempts: repeated unanswered or failed connection attempts to a few
+                       destinations."""
+
+
+# NF-UNSW-NB15-v3 (V3_DATASET=unsw_nb15): one behaviour per UNSW tactic, the
+# names used by V3_RULES_UNSW / BEHAVIOUR_TACTIC_WEIGHTS_UNSW. Written before
+# any UNSW test result.
+SCORER_BEHAVIOURS_UNSW = [
+    'normal_activity', 'port_scanning', 'service_probing', 'volumetric_flood',
+    'fuzzing', 'exploitation', 'backdoor_comm', 'worm_spreading',
+]
+BEHAVIOUR_DEFINITIONS_UNSW = """\
+  normal_activity:  ordinary client/server traffic: completed sessions, normal
+                    request/response sizes, everyday services.
+  port_scanning:    short flows with few, small packets spread over many ports or
+                    hosts, to find what is open.
+  service_probing:  connections to known services that send crafted requests and
+                    read the replies to analyse or fingerprint the service
+                    (e.g. HTTP/web probing, banner grabbing).
+  volumetric_flood: many requests or packets at a high rate against a target to
+                    exhaust it (denial of service), often repetitive.
+  fuzzing:          many malformed or randomised inputs sent to a service to make it
+                    misbehave or crash; small, varied requests at a steady rate.
+  exploitation:     delivering an exploit or shellcode to a vulnerable service to run
+                    code on it; payload-carrying requests to specific service ports.
+  backdoor_comm:    traffic to or from a backdoor on a compromised host: an attacker
+                    connecting in to a non-standard port, with longer, interactive
+                    exchanges.
+  worm_spreading:   self-propagating malware copying itself to other hosts: larger
+                    outbound payloads to service ports, one-way heavy."""
+
+SCORER_BEHAVIOURS_CIC = [
+    'normal_activity', 'volumetric_flood', 'brute_force', 'bot_beaconing',
+    'internal_spreading', 'web_exploitation',
+]
+BEHAVIOUR_DEFINITIONS_CIC = """\
+  normal_activity:    ordinary client/server traffic: completed sessions, normal
+                      request/response sizes, everyday services.
+  volumetric_flood:   denial of service: many requests, packets or connections
+                      against one target service to exhaust it, either at a high
+                      rate or as many slow, held-open connections.
+  brute_force:        repeated login attempts against an authentication service
+                      (e.g. FTP, SSH, a web login form): many short, similar
+                      sessions to the same service port.
+  bot_beaconing:      an infected host contacting its command-and-control server:
+                      small, regular, automated exchanges, often to an unusual port.
+  internal_spreading: a compromised internal host moving through the network:
+                      contacting many internal hosts and services, scanning and
+                      transferring tools or data.
+  web_exploitation:   malicious input sent to a public web application (e.g. SQL
+                      injection, cross-site scripting): crafted HTTP requests with
+                      larger payloads to a web port."""
+
+# DATASET = 'cicids_2018'
+# if DATASET== 'cicids_2018':
+#     SCORER_BEHAVIOURS = SCORER_BEHAVIOURS_CIC
+#     BEHAVIOUR_DEFINITIONS = BEHAVIOUR_DEFINITIONS_CIC
+
+# DATASET = 'unsw_nb15'
+# if DATASET== 'unsw_nb15':
+#     SCORER_BEHAVIOURS = SCORER_BEHAVIOURS_UNSW
+#     BEHAVIOUR_DEFINITIONS = BEHAVIOUR_DEFINITIONS_UNSW
+
+def _fmt(v, nd=1):
+    if v is None:
+        return 'n/a'
+    if isinstance(v, (int, np.integer)) or abs(v) >= 1000:
+        return f"{v:,.0f}"
+    return f"{v:.{nd}f}"
+
+
+def build_cluster_facts(cluster_summary, cluster_weight):
+    """Plain feature values for the prompt: no interpretation or hints.
+    Per-flow values are shown as median (mean) so they can be compared
+    directly with the median-based reference profiles."""
+    stats = cluster_summary.get('stats', {})
+    b = stats.get('behaviour', {})
+    g = stats.get('graph_properties', {})
+
+    def mm(key, nd=1):
+        med = b.get('med_' + key)
+        avg = b.get('avg_' + key)
+        if med is None:
+            return f"{_fmt(avg, nd)} (mean only)"
+        return f"{_fmt(med, nd)} ({_fmt(avg, nd)})"
+
+    rows = [
+        ("Share of all flows", f"{stats.get('proportion', 0) * 100:.1f}%"),
+        ("Flow duration, ms", mm('duration_ms')),
+        ("Bytes src->dst", mm('in_bytes')),
+        ("Bytes dst->src", mm('out_bytes')),
+        ("Packets src->dst", mm('in_pkts')),
+        ("Packets dst->src", mm('out_pkts')),
+        ("Longest packet, bytes", mm('longest_pkt_bytes')),
+        ("Shortest packet, bytes", mm('shortest_pkt_bytes')),
+        ("Packet gap src->dst, mean per flow, ms", mm('iat_avg')),
+        ("Packet gap src->dst, max per flow, ms", mm('iat_max')),
+        ("Packet gap src->dst, std per flow, ms", mm('iat_std')),
+        ("TCP window max src->dst", mm('tcp_win_in')),
+        ("Min TTL", mm('min_ttl')),
+        ("Share of flows with min TTL 0 / 64 / other",
+         f"{_fmt(b.get('share_ttl_0'), 2)} / {_fmt(b.get('share_ttl_64'), 2)} / "
+         f"{_fmt(b.get('share_ttl_other'), 2)}"),
+        ("Share of SYN-only flows", _fmt(b.get('share_syn_only'), 2)),
+        ("Share of UDP flows", _fmt(b.get('share_udp'), 2)),
+        ("Packets per second (cluster total)", _fmt(b.get('packets_per_second'))),
+        ("Throughput ratio src/dst (cluster total)", _fmt(b.get('throughput_ratio'), 2)),
+        ("Destination port, median", _fmt(b.get('median_dst_port'))),
+        ("Number of distinct destination ports", _fmt(b.get('n_unique_dst_ports'))),
+        ("Fan-out of the cluster's sources (unique dsts per src, over all traffic, mean)",
+         _fmt(g.get('avg_fan_out'))),
+        ("Fan-in of the cluster's destinations (unique srcs per dst, over all traffic, mean)",
+         _fmt(g.get('avg_fan_in'))),
+        ("Distinct sources / destinations inside this cluster",
+         f"{_fmt(g.get('n_unique_sources'))} / {_fmt(g.get('n_unique_destinations'))}"),
+        ("Cluster weight (GMM)", f"{cluster_weight:.4f}"),
+    ]
+    return '\n'.join(f"  {k}: {v}" for k, v in rows)
+
+
+def _decode_flags(v):
+    v = int(round(v))
+    names = [(0x01, 'FIN'), (0x02, 'SYN'), (0x04, 'RST'), (0x08, 'PSH'),
+             (0x10, 'ACK'), (0x20, 'URG')]
+    on = [n for bit, n in names if v & bit]
+    return '+'.join(on) if on else 'none'
+
+# Tactic -> behaviours it covers (for the reference-profile header)
+_TACTIC_HINT = {
+    'Impact': 'syn_flooding / volumetric_flood',
+    'Reconnaissance': 'port_scanning / service_probing',
+    'Exfiltration': 'data_transfer',
+    'None': 'normal_activity',
+    # NF-UNSW-NB15-v3
+    'Discovery': 'service_probing',
+    'Execution': 'exploitation',
+    'Initial Access': 'fuzzing',
+    'Persistence': 'backdoor_comm',
+    'Lateral Movement': 'worm_spreading',
+}
+
+
+def build_reference_profiles(df_raw, tactics, fan_out=None):
+    """Per-tactic reference statistics from TRAINING rows and TRAINING labels only.
+
+    Gives the LLM the same kind of facts as a cluster, measured on each known
+    tactic of the training split (medians + shares, which are robust to the
+    bimodal values that made means misleading). No test data is used.
+    """
+    import pandas as pd
+    df = df_raw.reset_index(drop=True)
+    tactics = np.asarray(tactics)
+    lines = []
+    for t in [t for t in _TACTIC_HINT if t in set(tactics)]:
+        m = tactics == t
+        if not m.any():
+            continue
+        d = df[m]
+
+        def med(c):
+            return _fmt(float(d[c].median())) if c in d.columns else 'n/a'
+
+        def share(mask):
+            return f"{float(mask.mean()):.2f}"
+        ttl = d['MIN_TTL'] if 'MIN_TTL' in d.columns else None
+        parts = [
+            f"duration {med('FLOW_DURATION_MILLISECONDS')} ms",
+            f"bytes {med('IN_BYTES')}/{med('OUT_BYTES')}",
+            f"pkts {med('IN_PKTS')}/{med('OUT_PKTS')}",
+            f"pkt gap max {med('SRC_TO_DST_IAT_MAX')} ms",
+            f"TCP window {med('TCP_WIN_MAX_IN')}",
+            f"dst port {med('L4_DST_PORT')}",
+        ]
+        if 'TCP_FLAGS' in d.columns:
+            parts.append(f"SYN-only share {share(d['TCP_FLAGS'] == 2)}")
+        if 'PROTOCOL' in d.columns:
+            parts.append(f"UDP share {share(d['PROTOCOL'] == 17)}")
+        if ttl is not None:
+            parts.append(f"TTL share 0/64/other {share(ttl == 0)}/{share(ttl == 64)}/"
+                         f"{share(~ttl.isin([0, 64]))}")
+        if fan_out is not None:
+            parts.append(f"fan-out {_fmt(float(np.median(np.asarray(fan_out)[m])))}")
+        lines.append(f"  {t} ({_TACTIC_HINT[t]}), n={int(m.sum()):,}: " + '; '.join(parts))
+    return '\n'.join(lines)
+
+
 class LLMLabeler:
     """Labels clusters with behaviour names from predefined list."""
 
-    def __init__(self, api_key=None, model='gpt-4'):
+    def __init__(self, api_key=None, model='gpt-6-luna'):
         self.api_key = api_key or os.getenv('OPENAI_API_KEY')
         self.model = model
         self.client = None
+        # Optional training-split reference profiles (build_reference_profiles)
+        self.reference_profiles = None
 
         try:
+            if not self.api_key:
+                raise ValueError("no OPENAI_API_KEY set")
             from openai import OpenAI
             self.client = OpenAI(api_key=self.api_key)
             logger.info(f"LLMLabeler initialized with model={model}")
@@ -888,70 +1110,76 @@ Respond ONLY in JSON:
         Returns soft distribution instead of single hard label.
         Falls back to None if LLM unavailable (use SoftClusterScorer instead).
         """
-        summary_text = cluster_summary.get('text', '')
-        prompt = self._build_soft_prompt(summary_text, cluster_weight)
+        prompt = self._build_soft_prompt(cluster_summary, cluster_weight)
 
         if self.client is None:
             return None
 
-        try:
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=[
-                    {"role": "system",
-                     "content": "You are a network traffic behaviour analyst. "
-                                "Score how strongly each behaviour pattern matches "
-                                "the given cluster. Return scores as JSON."},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.2,
-                max_tokens=500,
-            )
-            return self._parse_soft_response(response.choices[0].message.content)
-        except Exception as e:
-            logger.error(f"LLM soft scoring error: {e}")
-            return None
+        messages = [
+            {"role": "system",
+             "content": "You are a network traffic behaviour analyst. "
+                        "Score how strongly each behaviour pattern matches "
+                        "the given cluster. Return scores as JSON."},
+            {"role": "user", "content": prompt},
+        ]
+        # Newer (reasoning) models spend part of the token budget on hidden
+        # reasoning: a small max_tokens returns an EMPTY answer. Use a large
+        # max_completion_tokens, no temperature, JSON mode, and retry.
+        for attempt in range(1, LLM_MAX_RETRIES + 1):
+            try:
+                response = self.client.chat.completions.create(
+                    model=self.model,
+                    messages=messages,
+                    max_completion_tokens=LLM_MAX_COMPLETION_TOKENS,
+                    response_format={"type": "json_object"},
+                )
+                choice = response.choices[0]
+                text = (choice.message.content or '').strip()
+                if not text:
+                    logger.warning(f"Empty LLM response (attempt {attempt}, "
+                                   f"finish_reason={choice.finish_reason})")
+                    continue
+                result = self._parse_soft_response(text)
+                if result is not None:
+                    return result
+            except Exception as e:
+                logger.error(f"LLM soft scoring error (attempt {attempt}): {e}")
+        logger.error(f"LLM gave no usable answer after {LLM_MAX_RETRIES} attempts")
+        return None
 
-    def _build_soft_prompt(self, summary_text, cluster_weight):
-        return f"""Analyze this network traffic cluster and score EACH behaviour
-from 0.0 to 1.0 based on how strongly the cluster matches that pattern.
-Scores should sum to approximately 1.0.
+    def _build_soft_prompt(self, cluster_summary, cluster_weight):
+        """Definitions-only prompt: behaviour definitions + raw cluster facts.
+        No dataset thresholds or decision steps, so the LLM reasons on its own."""
+        facts = build_cluster_facts(cluster_summary, cluster_weight)
+        ref_block = ''
+        if self.reference_profiles:
+            ref_block = ("REFERENCE PROFILES (per-flow medians and shares measured on LABELLED TRAINING "
+                         "traffic of this network; compare the cluster with them):\n"
+                         f"{self.reference_profiles}\n\n")
+        score_lines = ',\n'.join(f'        "{b}": <0.0-1.0>' for b in SCORER_BEHAVIOURS)
+        return f"""Score how strongly this cluster of network flows matches EACH behaviour,
+from 0.0 (no match) to 1.0 (clear match). Base the scores only on the
+definitions and the cluster facts below. Scores should sum to about 1.0.
 
 BEHAVIOUR DEFINITIONS:
-  syn_flooding:          SYN-only packets (TCP_FLAGS<4), zero payload, high direction ratio
-  volumetric_flooding:   High packet rate, normal TCP, high TTL (>50), extreme direction ratio
-  port_scanning:         Normal TCP, very low bytes (<200), high PPS, many destinations
-  service_probing:       Normal TCP, small payload (200-5000 bytes), moderate destinations
-  data_transfer:         Normal TCP, very high outbound bytes (>50K), moderate-high TTL
-  periodic_communication: Balanced bidirectional traffic, few peers, long duration, low PPS
-  normal_browsing:       Normal TCP, low TTL (<25), moderate bytes, ephemeral ports
-  connection_attempts:   SYN-only to few destinations, zero payload, small scale
+{BEHAVIOUR_DEFINITIONS}
 
-KEY THRESHOLDS (from dataset analysis):
-  MIN_TTL:   Benign=16, Recon=27, Exfil=39, Impact=61
-  TCP_FLAGS: Impact=2 (SYN-only), Exfil=16, Benign=19, Recon=21
-  OUT_BYTES: Impact=3, Recon=84, Benign=54507, Exfil=728310
+{ref_block}CLUSTER FACTS (NetFlow v3 features; per-flow values shown as median (mean)
+over the cluster's flows; the median is directly comparable with the
+reference profiles):
+{facts}
 
-=== CLUSTER TO ANALYZE ===
-
-{summary_text}
-
-Cluster weight: {cluster_weight:.4f}
+Notes on the features:
+  - "src" is the flow initiator.
+  - SYN-only = the only TCP flag seen in the flow is SYN.
 
 Respond ONLY in JSON:
-{{{{
-    "behaviour_scores": {{{{
-        "syn_flooding": <0.0-1.0>,
-        "volumetric_flooding": <0.0-1.0>,
-        "port_scanning": <0.0-1.0>,
-        "service_probing": <0.0-1.0>,
-        "data_transfer": <0.0-1.0>,
-        "periodic_communication": <0.0-1.0>,
-        "normal_browsing": <0.0-1.0>,
-        "connection_attempts": <0.0-1.0>
-    }}}},
-    "reasoning": "<brief explanation citing key features>"
-}}}}"""
+{{
+    "behaviour_scores": {{
+{score_lines}
+    }},
+    "reasoning": "<two sentences citing the facts you used>"
+}}"""
 
     def _parse_soft_response(self, response_text):
         """Parse LLM soft scoring response."""
@@ -968,16 +1196,19 @@ Respond ONLY in JSON:
             result = json.loads(text)
             scores = result.get('behaviour_scores', {})
 
-            valid_scores = {}
-            for bhv in BEHAVIOUR_LIST:
-                val = scores.get(bhv, 0.0)
-                valid_scores[bhv] = max(0.0, min(1.0, float(val)))
+            valid_scores = {bhv: 0.0 for bhv in SCORER_BEHAVIOURS}
+            for name, val in scores.items():
+                bhv = LLM_TO_SCORER.get(name, name)
+                if bhv in valid_scores:
+                    valid_scores[bhv] = max(0.0, min(1.0, float(val)))
+                else:
+                    logger.warning(f"Unknown behaviour in LLM response: {name}")
 
             total = sum(valid_scores.values())
             if total > 0:
                 valid_scores = {k: v / total for k, v in valid_scores.items()}
             else:
-                valid_scores = {'normal_browsing': 1.0}
+                valid_scores = {'normal_activity': 1.0}
 
             primary = max(valid_scores, key=valid_scores.get)
 

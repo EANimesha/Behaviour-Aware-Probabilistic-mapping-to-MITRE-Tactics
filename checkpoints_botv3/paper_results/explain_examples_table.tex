@@ -1,0 +1,13 @@
+\begin{tabular}{p{1.2cm} p{4.2cm} p{4cm} p{2.3cm} p{3.8cm}}
+\toprule
+\textbf{Cluster} & \textbf{Key Features (median)} & \textbf{Behaviour Distribution (fused)} & \textbf{Primary} & \textbf{LLM Reasoning (excerpt)} \\
+\midrule
+14 (4,537) & TCP\_FLAGS=22, IN\_BYTES=44, OUT\_BYTES=40, MIN\_TTL=0, DUR\_MS=29 & port\_scan: 0.85, normal: 0.12, svc\_probe: 0.02 & port\_scanning $\to$ Reconnaissance & The tiny flows (median 44/40 bytes and one packet in each direction) and 4,048 distinct destination ports strongly resemble reconnaissance, especially port scanning. \\
+\midrule
+1 (4,035) & TCP\_FLAGS=2, IN\_BYTES=420, OUT\_BYTES=0, MIN\_TTL=64, DUR\_MS=16,591 & syn\_flood: 0.95, conn\_attempts: 0.02, normal: 0.01 & syn\_flooding $\to$ Impact & The 95\% SYN-only share, zero median reply packets, destination port 80, and long median duration with sparse packet gaps strongly match slow-rate SYN flooding. \\
+\midrule
+3 (937) & TCP\_FLAGS=22, IN\_BYTES=60, OUT\_BYTES=40, MIN\_TTL=0, DUR\_MS=0 & data\_transfer: 0.51, port\_scan: 0.40, normal: 0.06 & data\_transfer $\to$ Exfiltration & The cluster closely matches the data-transfer reference profile: its median bytes, packet counts, duration, TCP window, destination port, and source fan-out are essentially identical. \\
+\midrule
+19 (3,191) & TCP\_FLAGS=22, IN\_BYTES=40, OUT\_BYTES=40, MIN\_TTL=0, DUR\_MS=0 & normal: 1.00 & normal\_activity $\to$ None & Auto-detected ... \\
+\bottomrule
+\end{tabular}

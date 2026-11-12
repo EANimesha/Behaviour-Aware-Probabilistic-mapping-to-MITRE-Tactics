@@ -1,0 +1,15 @@
+cluster,size,proportion,dominant_behaviour,dominant_tactic,dominant_attack_gt,purity
+0,1347,0.0397,port_scanning,Reconnaissance,DoS,0.5026
+3,714,0.021,periodic_comm,Command and Control,Reconnaissance,1.0
+4,967,0.0285,normal_activity,None,Benign,0.6691
+5,4117,0.1213,syn_flooding,Impact,DDoS,0.6942
+6,5100,0.1502,syn_flooding,Impact,DoS,0.9745
+7,4427,0.1304,syn_flooding,Impact,DDoS,0.8925
+8,1349,0.0397,service_probing,Reconnaissance,Reconnaissance,0.6471
+9,318,0.0094,syn_flooding,Impact,Theft,0.9937
+10,5467,0.1611,normal_activity,None,Reconnaissance,0.6843
+14,2974,0.0876,data_transfer,Exfiltration,Reconnaissance,0.4291
+15,287,0.0085,service_probing,Reconnaissance,Theft,0.7631
+16,485,0.0143,syn_flooding,Impact,DDoS,0.9979
+17,5230,0.1541,normal_activity,None,Benign,0.8013
+19,1162,0.0342,periodic_comm,Command and Control,Reconnaissance,0.901

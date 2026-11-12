@@ -1,0 +1,158 @@
+INFO:src.encoder.GraphSAGE:SAGEConv: 10 -> 32 (aggregator=mean)
+INFO:src.encoder.GraphSAGE:SAGEConv: 32 -> 32 (aggregator=mean)
+INFO:src.encoder.GraphSAGE:GraphSAGE: 2 layers, 10 -> 32 -> 32
+INFO:src.knowledge_base.kb:KB loaded: /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/checkpoints_ablation_bot_iot/feature_s42/knowledge_base.json (20 clusters)
+INFO:src.data.preprocess:Feature config /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/data/features_NF-BoT-IoT-v3.json: 16 numeric, 14 log, L7 buckets [0.0, 7.0]
+INFO:src.data.preprocess:Cleaned: 50,000 -> 50,000 rows
+INFO:src.data.balancer:Benign: 12,000 -> 12,000 (0 duplicated)
+INFO:src.data.balancer:Reconnaissance: 8,903 -> 8,903 (0 duplicated)
+INFO:src.data.balancer:DoS: 8,904 -> 8,904 (0 duplicated)
+INFO:src.data.balancer:DDoS: 8,903 -> 8,903 (0 duplicated)
+INFO:src.data.balancer:Theft: 1,292 -> 1,292 (0 duplicated)
+INFO:src.data.balancer:Balanced total: 40,002
+INFO:src.data.balancer:Benign: 2,209 -> 2,209 (0 duplicated)
+INFO:src.data.balancer:Reconnaissance: 1,669 -> 1,669 (0 duplicated)
+INFO:src.data.balancer:DoS: 1,669 -> 1,669 (0 duplicated)
+INFO:src.data.balancer:DDoS: 1,669 -> 1,669 (0 duplicated)
+INFO:src.data.balancer:Theft: 242 -> 242 (0 duplicated)
+INFO:src.data.balancer:Balanced total: 7,458
+INFO:src.data.preprocess:Final feature count: 33
+INFO:src.data.preprocess:Features: ['IN_BYTES', 'OUT_PKTS', 'FLOW_DURATION_MILLISECONDS', 'MIN_TTL', 'SHORTEST_FLOW_PKT', 'MIN_IP_PKT_LEN', 'SRC_TO_DST_SECOND_BYTES', 'DST_TO_SRC_SECOND_BYTES', 'SRC_TO_DST_AVG_THROUGHPUT', 'DST_TO_SRC_AVG_THROUGHPUT', 'NUM_PKTS_UP_TO_128_BYTES', 'NUM_PKTS_128_TO_256_BYTES', 'TCP_WIN_MAX_IN', 'TCP_WIN_MAX_OUT', 'SRC_TO_DST_IAT_MIN', 'SRC_TO_DST_IAT_STDDEV', 'TCP_FLAGS', 'CLIENT_TCP_FLAGS', 'SERVER_TCP_FLAGS', 'SRC_PORT_WELL_KNOWN', 'SRC_PORT_REGISTERED', 'SRC_PORT_EPHEMERAL', 'DST_PORT_WELL_KNOWN', 'DST_PORT_REGISTERED', 'DST_PORT_EPHEMERAL', 'PROTO_TCP', 'PROTO_UDP', 'PROTO_ICMP', 'PROTO_OTHER', 'L7_0', 'L7_7', 'L7_OTHER', 'ICMP_ACTIVE']
+INFO:src.data.graph_builder:Graph has 120 unique IP nodes, 21098 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([120, 10])
+INFO:src.data.graph_builder:ℹ️  Unseen IPs: 28 flows (using zero embeddings for new IPs)
+INFO:src.data.graph_builder:Graph has 125 unique IP nodes, 22975 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([125, 10])
+INFO:src.data.graph_builder:Graph has 125 unique IP nodes, 23721 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([125, 10])
+INFO:src.data.graph_builder:Graph has 125 unique IP nodes, 24467 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([125, 10])
+INFO:src.data.graph_builder:ℹ️  Unseen IPs: 160 flows (using zero embeddings for new IPs)
+INFO:src.data.graph_builder:Graph has 174 unique IP nodes, 29120 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([174, 10])
+INFO:src.data.graph_builder:Graph has 174 unique IP nodes, 35429 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([174, 10])
+INFO:src.data.graph_builder:Graph has 174 unique IP nodes, 36175 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([174, 10])
+INFO:src.data.graph_builder:ℹ️  Unseen IPs: 4 flows (using zero embeddings for new IPs)
+INFO:src.data.graph_builder:Graph has 175 unique IP nodes, 43051 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([175, 10])
+INFO:src.data.graph_builder:Graph has 175 unique IP nodes, 47137 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([175, 10])
+INFO:src.data.graph_builder:Graph has 175 unique IP nodes, 47882 directed edges
+INFO:src.data.graph_builder:Node features shape: torch.Size([175, 10])
+/home/nimesha/myenv/lib/python3.8/site-packages/torch/nn/modules/transformer.py:409: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at ../aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(output, src_key_padding_mask.logical_not(), mask_check=False)
+INFO:src.evaluation.ground_truth:GroundTruthMapper(bot_iot): 5 attack types -> 4 tactics ['Exfiltration', 'Impact', 'None', 'Reconnaissance']
+
+======================================================================
+INFERENCE — NF-BoT-IoT-v3 (leakage-safe)
+======================================================================
+ContextEncoder (DGL GraphSAGE): 10 -> 32 -> 32
+TransformerBehaviourEncoder: 33 -> Transformer(64, 2 layers) -> 32
+JointEncoder (Behaviour-Aware AE): 128 -> z(64) -> recon(128) + behaviour(5)
+  lambda_bhv=1.0
+  Loaded: encoder(z=64), GMM(18 clusters), KB(20 entries)
+Loading /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/data/NF-BoT-IoT-v3-sample.csv ...
+  Loaded 50,000 rows, 56 columns
+  Split: train 40,002, gap (dropped) 2,499, test 7,499
+  Removed 41 test flows identical to a train flow
+  Balancing train split...
+  Balancing test split...
+  Class counts after split:
+                train  test
+Attack                     
+Benign          12000  2209
+DDoS             8903  1669
+DoS              8904  1669
+Reconnaissance   8903  1669
+Theft            1292   242
+Train: 40,002 flows, Test: 7,458 flows, Timeline: 50,000 flows, Features: 33
+  Timeline: 50,000 flows | test: 7,458 (saved positions) | duplicates removed in training: 41
+  Causal graph: 10 windows, 2 test flows from source IPs not seen before their window (zero context)
+  Embeddings: (7458, 64) in 0.52s
+
+======================================================================
+SECTION 1: CLUSTERING QUALITY (test)
+======================================================================
+  mean_purity      0.9084
+  weighted_purity  0.7380
+  nmi_tactic       0.6878
+  sil_tactic       0.3338
+  WARNING: 14 clusters have mock (non-LLM) labels; excluded from LLM/fusion
+  No LLM scores in checkpoint: LLM and fusion skipped
+
+======================================================================
+PER-CLUSTER (test): true mix vs predicted tactic
+======================================================================
+    k      n  true tactic mix                                         rules
+    2  1,503  None 97%, Reconnaissance 2%, Exfiltration 0%             None
+    4    311  Reconnaissance 100%                            Reconnaissance
+    6     13  Reconnaissance 100%                            Reconnaissance
+    7     85  None 100%                                                None
+    8    270  Impact 69%, None 31%                                   Impact
+    9    222  Exfiltration 100%                              Reconnaissance
+   10  3,452  Impact 91%, None 9%                                    Impact
+   12     62  None 100%                                                None
+   14  1,195  Reconnaissance 100%                            Reconnaissance
+   15     65  None 100%                                                None
+   16    193  None 75%, Reconnaissance 18%, Exfiltration 7%            None
+   17     87  Reconnaissance 100%                                      None
+
+======================================================================
+SECTIONS 2-4: PER-FLOW + WINDOW (rules / LLM / fused)
+======================================================================
+
+  === RULES ===
+  Per-flow accuracy: 0.8946
+                precision    recall  f1-score   support
+
+  Exfiltration     0.0000    0.0000    0.0000       242
+        Impact     0.8955    0.9985    0.9442      3338
+          None     0.9123    0.8239    0.8658      2209
+Reconnaissance     0.8725    0.9101    0.8909      1669
+
+      accuracy                         0.8946      7458
+     macro avg     0.6701    0.6831    0.6752      7458
+  weighted avg     0.8663    0.8946    0.8784      7458
+
+
+  --- rules window size = 50 ---
+
+============================================================
+SOFT MULTI-TACTIC EVALUATION
+============================================================
+  Windows evaluated: 157
+
+  Distribution Metrics:
+    Top-1 Accuracy:     0.8981
+    Coverage (top-k):   0.9745
+    Mean Jaccard:       0.8036
+    Mean Soft Jaccard:  0.8070
+    Mean Cosine Sim:    0.9276
+    Mean KL Divergence: 0.4197
+
+  Multi-Label Per-Tactic Metrics:
+                Tactic     Prec   Recall       F1     TP     FP     FN
+  ------------------------------------------------------------
+                Impact   0.8046   1.0000   0.8917     70     17      0
+        Reconnaissance   0.8780   0.9474   0.9114     36      5      2
+          Exfiltration   1.0000   0.7143   0.8333      5      0      2
+                  None   0.6145   0.8793   0.7234     51     32      7
+
+======================================================================
+SECTION 5: ANOMALY DETECTION
+======================================================================
+      recon_error: AUC-ROC=0.0439, AUC-PR=0.4977
+   gmm_neg_loglik: AUC-ROC=0.0189, AUC-PR=0.4931
+         combined: AUC-ROC=0.0191, AUC-PR=0.4931
+  Novelty (lowest 5% log-lik): 373 flows {'Benign': 373}
+
+======================================================================
+SUMMARY
+======================================================================
+            flow acc  macro F1  W50 top1
+     rules    0.8946    0.6752    0.8981
+
+  Metrics saved: /home/nimesha/Downloads/PythonProject1_updated/PythonProject1/checkpoints_ablation_bot_iot/feature_s42/inference_results/inference_metrics.csv
+Total inference time: 2.32s

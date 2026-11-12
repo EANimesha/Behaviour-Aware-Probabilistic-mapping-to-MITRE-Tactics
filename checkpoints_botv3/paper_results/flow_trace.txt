@@ -1,0 +1,37 @@
+FLOW TRACE (training split, cluster 14, w_rules=0.7)
+
+1. Original flow (raw NetFlow fields):
+   TCP_FLAGS                    22
+   IN_BYTES                     44
+   OUT_BYTES                    40
+   MIN_TTL                      0
+   FLOW_DURATION_MILLISECONDS   29
+   IN_PKTS                      1
+   OUT_PKTS                     1
+   L4_DST_PORT                  12530
+   true attack: Reconnaissance  (tactic Reconnaissance)
+
+2. Heuristic behaviour targets (encoder training signal):
+   scan     0.411
+   flood    0.803
+   exfil    0.467
+   beacon   0.365
+   lateral  0.827
+
+3. Encoder + DP-GMM -> cluster 14 (4,537 training flows)
+
+4. Cluster-level behaviour distribution:
+   rules : port_scanning 0.85, normal_activity 0.15, syn_flooding 0.01
+   LLM   : port_scanning 0.85, service_probing 0.06, normal_activity 0.04, connection_attempts 0.04
+   fused : port_scanning 0.85, normal_activity 0.12, service_probing 0.02, connection_attempts 0.01
+
+5. Behaviour-to-tactic weights used:
+   port_scanning        -> {'Reconnaissance': 1.0}
+   normal_activity      -> {'None': 1.0}
+   service_probing      -> {'Reconnaissance': 0.6, 'Discovery': 0.4}
+   connection_attempts  -> {'Reconnaissance': 0.5, 'Impact': 0.5}
+
+6. Tactic distribution: Reconnaissance 0.86, None 0.12, Impact 0.01, Discovery 0.01
+   PRIMARY: port_scanning -> Reconnaissance
+
+7. LLM reasoning: The tiny flows (median 44/40 bytes and one packet in each direction) and 4,048 distinct destination ports strongly resemble reconnaissance, especially port scanning. The 29 ms median duration is slightly longer than the reconnaissance reference, but the small payloads and port diversity are a much weaker fit for normal activity, flooding, or data transfer.

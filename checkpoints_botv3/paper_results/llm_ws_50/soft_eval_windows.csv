@@ -1,0 +1,810 @@
+src_ip,n_flows,pred_primary,pred_tactics,pred_dist,true_primary,true_tactics,true_dist,jaccard,soft_jaccard,cosine,kl_div,top1_correct,coverage
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.84, None:0.10, Impact:0.03, Discovery:0.02",None,None,None:1.00,0.0,0.05030519890549368,0.11345194295277658,2.3455804562541065,False,False
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",None,None,None:1.00,0.0,0.04051661285282787,0.09065669695692095,2.5526133474642068,False,False
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.65, None:0.30, Impact:0.03, Discovery:0.02",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.60, None:0.40",1.0,0.8103448275862071,0.9856552095842006,0.07065748447863454,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,None,"None, Reconnaissance","None:0.65, Reconnaissance:0.32, Impact:0.01",None,"None, Reconnaissance","None:0.64, Reconnaissance:0.36",1.0,0.9303633390499738,0.9984856885088326,0.02768302378144371,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.77, None:0.16, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.96, None:0.04",1.0,0.6823915322444287,0.9851514367181587,0.15445395130399225,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.53, None:0.42, Impact:0.02, Discovery:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.36357311812995696,0.7817861638961108,0.6287362185781054,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.52, None:0.44, Impact:0.02, Discovery:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.3477237372833522,0.758124608610272,0.66161684111968,True,True
+192.168.100.148,50,None,None,"None:0.98, Reconnaissance:0.02",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.72, None:0.28",0.5,0.17530742136810235,0.37979613771043236,2.2925618181695597,False,False
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:0.99,None,None,None:1.00,1.0,0.9845575959933224,0.9999891684079768,0.007811715011870334,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.62, None:0.30, Impact:0.05, Discovery:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.74, None:0.26",1.0,0.7810050214948877,0.9900955763583283,0.09814608110426576,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685347,0.9913201667351286,0.20723864347454535,True,True
+192.168.100.148,50,None,"None, Reconnaissance","None:0.78, Reconnaissance:0.19, Impact:0.02",None,"None, Reconnaissance","None:0.76, Reconnaissance:0.24",1.0,0.9110306838745601,0.9977739467795482,0.03179140287936719,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,"None, Reconnaissance","None:0.78, Reconnaissance:0.20",None,"None, Reconnaissance","None:0.78, Reconnaissance:0.22",1.0,0.9596247960848286,0.9995833778224563,0.01684039764699193,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.84, None:0.10, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7209270244171608,0.9923010106631115,0.1769332939792165,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.52, None:0.41, Impact:0.04, Discovery:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.66, None:0.34",1.0,0.7552029229501733,0.9785516453571316,0.0891558542288682,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685347,0.9913201667351286,0.20723864347454535,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685347,0.9913201667351286,0.20723864347454535,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.148,50,None,None,"None:0.90, Reconnaissance:0.09",None,"None, Reconnaissance","None:0.90, Reconnaissance:0.10",0.5,0.9762027935851009,0.9998788182374746,0.01276118386713932,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.88, None:0.12",0.5,0.06382978723404255,0.1351132047333135,15.84327406340537,False,False
+192.168.100.148,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.148,50,None,None,None:1.00,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.86, None:0.14",0.5,0.07526881720430109,0.16067560208171103,15.436821954735096,False,False
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,"None, Reconnaissance","None:0.70, Reconnaissance:0.26, Impact:0.02",None,"None, Reconnaissance","None:0.70, Reconnaissance:0.30",1.0,0.9280719280719277,0.998379079810627,0.038284761336128535,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.72, None:0.19, Impact:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.5570554073143937,0.9635489587435145,0.33473986707247616,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.48, None:0.45, Impact:0.04, Discovery:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.3191259778796871,0.7303177392461674,0.7259915379305856,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685347,0.9913201667351286,0.20723864347454535,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.148,50,None,"None, Reconnaissance","None:0.54, Reconnaissance:0.43, Impact:0.02, Discovery:0.01",None,"None, Reconnaissance","None:0.52, Reconnaissance:0.48",1.0,0.9033846634878451,0.9970029900374516,0.037157921191833684,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.69, None:0.26, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.5231553495248802,0.9348354814654669,0.3755137140687092,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.82, None:0.11, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.6966458485781867,0.9893284986047588,0.19698419682742307,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.48, None:0.48, Impact:0.02, Discovery:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.3170133318954476,0.7073698510302875,0.7310308146140972,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.82, None:0.11, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.6966458485781869,0.9893284986047589,0.19698419682742307,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.70, None:0.24, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.5430174563591021,0.9452614994530598,0.35120651759034277,True,True
+192.168.100.148,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.75, None:0.19, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.6055750481025753,0.9698050401335473,0.2819115769272537,True,True
+192.168.100.148,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.44, Reconnaissance:0.42, None:0.11, Discovery:0.01, Exfiltration:0.01",Impact,"Impact, Reconnaissance","Impact:0.70, Reconnaissance:0.30",0.6666666666666666,0.584409411391904,0.9209572494730823,0.2269847535867258,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.61, Reconnaissance:0.23, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4343086632243259,0.9163077581821504,0.501535576858898,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.65, Reconnaissance:0.21, None:0.11, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4777597162701343,0.9386803468915342,0.4360274136908046,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.61, Reconnaissance:0.23, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.43430866322432593,0.9163077581821504,0.501535576858898,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.90, None:0.05, Reconnaissance:0.04, Exfiltration:0.01",Impact,Impact,Impact:1.00,1.0,0.8180165439505503,0.9977267160729449,0.10547163294223405,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.92, Reconnaissance:0.04, None:0.03",Impact,Impact,Impact:1.00,1.0,0.8460402436773125,0.998456445818681,0.08708410690711312,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.148,50,Impact,"Impact, Reconnaissance","Impact:0.75, Reconnaissance:0.15, None:0.08",Impact,Impact,Impact:1.00,0.5,0.6041065126724415,0.9763214208503042,0.2834244821991395,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.66, Reconnaissance:0.20, None:0.11, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4958863126402392,0.9462426939948564,0.4109802887962748,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.64, Reconnaissance:0.21, None:0.12, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4688601645123384,0.9346150000092674,0.44879023284653796,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.62, Reconnaissance:0.22, None:0.12, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.451378809869376,0.9258836375030642,0.47481518624295743,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.88, Reconnaissance:0.08, None:0.04",Impact,Impact,Impact:1.00,1.0,0.7796760989499912,0.9952591469342993,0.1321609036023388,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.148,50,Impact,"Impact, Reconnaissance","Impact:0.63, Reconnaissance:0.26, None:0.09, Discovery:0.01",Impact,Impact,Impact:1.00,0.5,0.46006716308950196,0.9179842002000046,0.46171804965896307,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Command and Control, Impact, None, Reconnaissance","Impact:0.38, Command and Control:0.23, None:0.20, Reconnaissance:0.18, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.23092072870507127,0.7285501215213323,0.9802960618500679,True,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.148,50,Impact,"Command and Control, Impact, None, Reconnaissance","Impact:0.56, Command and Control:0.15, Reconnaissance:0.14, None:0.14",Impact,Impact,Impact:1.00,0.25,0.3882140626084539,0.914526891526072,0.5810692771545953,True,True
+192.168.100.148,50,Impact,"Impact, Reconnaissance","Impact:0.83, Reconnaissance:0.12, None:0.04",Impact,Impact,Impact:1.00,0.5,0.7053206002728512,0.9880658638036788,0.18970877522797236,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8941187612463302,0.998918056501065,0.05752318624366615,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Impact, Reconnaissance","Impact:0.66, Reconnaissance:0.24, None:0.08, Discovery:0.01",Impact,Impact,Impact:1.00,0.5,0.4927601134497683,0.9348472795950734,0.4152124595630449,True,True
+192.168.100.148,50,Impact,"Impact, Reconnaissance","Impact:0.83, Reconnaissance:0.12, None:0.04",Impact,Impact,Impact:1.00,0.5,0.705320600272851,0.9880658638036788,0.18970877522797236,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.148,50,Impact,"Impact, None, Reconnaissance","Impact:0.57, Reconnaissance:0.30, None:0.11, Discovery:0.02",Impact,Impact,Impact:1.00,0.3333333333333333,0.39698948765410536,0.8728517666933182,0.5650178528494175,True,True
+192.168.100.148,50,Impact,"Impact, Reconnaissance","Impact:0.66, Reconnaissance:0.24, None:0.08, Discovery:0.01",Impact,Impact,Impact:1.00,0.5,0.4927601134497683,0.9348472795950734,0.4152124595630449,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.89, Reconnaissance:0.08, None:0.02",Impact,Impact,Impact:1.00,1.0,0.7947682505496475,0.9952774209884506,0.12143344028353147,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.97, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9444849545476643,0.9996994774839555,0.028965478293015025,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9005986885869051,0.9990934842696569,0.0537172825059879,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.148,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.148,50,Impact,"Command and Control, Impact, None, Reconnaissance","Impact:0.42, Command and Control:0.25, None:0.16, Reconnaissance:0.15, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.2648621300278271,0.7845117016882431,0.8703617999857548,True,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, None:0.22, Impact:0.22, Reconnaissance:0.19, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12095056608003575,0.43065346202137716,1.5334032261581036,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, Impact:0.22, None:0.21, Reconnaissance:0.19, Exfiltration:0.01, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12227147747039997,0.432244490554113,1.5237190370315639,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, None:0.22, Impact:0.22, Reconnaissance:0.19, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12095056608003575,0.43065346202137716,1.5334032261581036,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.148,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.148,22,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179776,0.4335886644290673,1.5141277326297753,False,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.66, None:0.34",0.5,0.20481927710843373,0.4579565896743106,11.516613813127407,False,False
+192.168.100.150,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,None,"None, Reconnaissance","None:0.62, Reconnaissance:0.38",0.5,0.44927536231884063,0.8526012524109428,6.335794556137791,True,True
+192.168.100.150,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.69, None:0.26, Impact:0.03, Discovery:0.02",None,None,None:1.00,0.5,0.14853094878643605,0.3519840386217825,1.3522984424779692,False,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",None,None,None:1.00,0.0,0.040516612852827885,0.090656696956921,2.5526133474642063,False,False
+192.168.100.150,50,None,"None, Reconnaissance","None:0.47, Reconnaissance:0.47, Impact:0.03, Exfiltration:0.02, Discovery:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.70, None:0.30",1.0,0.6204239558186446,0.9249414910222865,0.14985857545502207,False,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:0.99,None,None,None:1.00,1.0,0.9845575959933224,0.9999891684079768,0.007811715011870334,True,True
+192.168.100.150,50,None,None,None:0.99,None,None,None:1.00,1.0,0.9845575959933224,0.9999891684079768,0.007811715011870334,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.50, None:0.43, Impact:0.04, Discovery:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.58, None:0.42",1.0,0.8529033234915586,0.9939594117518847,0.0742649233533933,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.150,50,None,"None, Reconnaissance","None:0.80, Reconnaissance:0.18, Impact:0.02",None,"None, Reconnaissance","None:0.80, Reconnaissance:0.20",1.0,0.9532044760935909,0.9993961632253002,0.02551933142094161,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,"None, Reconnaissance","None:0.71, Reconnaissance:0.27, Impact:0.01",None,"None, Reconnaissance","None:0.70, Reconnaissance:0.30",1.0,0.9432138542086184,0.9990603705268226,0.023016645826569246,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.150,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.52, None:0.42, Impact:0.04, Discovery:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.64, None:0.36",1.0,0.790804765733499,0.985440437776473,0.0762982980009104,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.72, None:0.19, Impact:0.06, Discovery:0.02",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.84, None:0.16",1.0,0.778606519166637,0.9936743504294309,0.10969229484878104,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,"None, Reconnaissance","None:0.82, Reconnaissance:0.18",0.5,0.6949152542372882,0.9767443431718837,2.844329047101332,True,True
+192.168.100.150,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.58, None:0.42",0.5,0.26582278481012656,0.5865098121518428,10.003702831300217,False,False
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.53, None:0.39, Impact:0.05, Discovery:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.62, None:0.38",1.0,0.8417001464348738,0.9935949368595774,0.07948056244524812,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.150,50,None,"None, Reconnaissance","None:0.62, Reconnaissance:0.33, Impact:0.03",None,"None, Reconnaissance","None:0.62, Reconnaissance:0.38",1.0,0.9072550486163051,0.9971608662707908,0.04851323015978601,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.150,50,None,"None, Reconnaissance","None:0.77, Reconnaissance:0.22",None,"None, Reconnaissance","None:0.76, Reconnaissance:0.24",1.0,0.9556025369978859,0.9994777747119722,0.01838055197498657,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.150,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.150,50,Reconnaissance,"Impact, None, Reconnaissance","Reconnaissance:0.56, Impact:0.31, None:0.10, Discovery:0.02",Impact,"Impact, Reconnaissance","Impact:0.52, Reconnaissance:0.48",0.6666666666666666,0.6496309384236861,0.9356372013295902,0.19961064824321123,False,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.62, Reconnaissance:0.24, None:0.10, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4532771399505883,0.9197143206233682,0.47192547480843466,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.73, Reconnaissance:0.16, None:0.09, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.5,0.5730690577316346,0.9698201624676756,0.31663039440767343,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.78, Reconnaissance:0.13, None:0.07",Impact,Impact,Impact:1.00,0.5,0.6363933889707084,0.9817648584780088,0.2512858572604903,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.93, Reconnaissance:0.05, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8754688672168043,0.998675720917157,0.06870719800979082,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.88, Reconnaissance:0.08, None:0.04",Impact,Impact,Impact:1.00,1.0,0.7796760989499913,0.9952591469342993,0.13216090360233898,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.88, Reconnaissance:0.08, None:0.04",Impact,Impact,Impact:1.00,1.0,0.7796760989499912,0.9952591469342993,0.1321609036023388,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.76, Reconnaissance:0.14, None:0.07",Impact,Impact,Impact:1.00,0.5,0.6147263038914905,0.97824708013555,0.2725964350337399,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.75, Reconnaissance:0.15, None:0.08",Impact,Impact,Impact:1.00,0.5,0.5936254980079683,0.9742783255506409,0.2943710606025774,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.83, Reconnaissance:0.11, None:0.05",Impact,Impact,Impact:1.00,0.5,0.7050298380221657,0.9899611359547812,0.1899505839584456,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.92, Reconnaissance:0.05, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8470631695603993,0.9979552105864575,0.08642972799838747,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.72, Reconnaissance:0.17, None:0.09, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.5,0.5629884338855895,0.9673948902963218,0.3279486656803358,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.81, Reconnaissance:0.11, None:0.06",Impact,Impact,Impact:1.00,0.5,0.6815200941651253,0.9875893322397932,0.20998056478792887,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.82, Reconnaissance:0.11, None:0.05",Impact,Impact,Impact:1.00,0.5,0.6931933626820186,0.9888170857771039,0.1999154251950023,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.93, Reconnaissance:0.05, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8611576400521124,0.99833871644766,0.0775292025092378,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.84, Reconnaissance:0.10, None:0.05",Impact,Impact,Impact:1.00,1.0,0.7292062943109114,0.9920123197500132,0.17031393766967734,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.89, Reconnaissance:0.07, None:0.03",Impact,Impact,Impact:1.00,1.0,0.8060321473722233,0.9965030278384104,0.1136167267869674,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.59, Reconnaissance:0.24, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.417635384179189,0.9058348669064035,0.5289895943936621,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.59, Reconnaissance:0.24, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4176353841791891,0.9058348669064035,0.528989594393662,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.58, Reconnaissance:0.24, None:0.14, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4094432699083859,0.9002457511536889,0.5430045221302262,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.70, Reconnaissance:0.18, None:0.09, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.5,0.5429717636167258,0.9602921226822302,0.35126105409465225,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.84, Reconnaissance:0.13, None:0.03",Impact,Impact,Impact:1.00,0.5,0.724137931034483,0.9883091635839221,0.17435338714477755,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.84, Reconnaissance:0.13, None:0.03",Impact,Impact,Impact:1.00,0.5,0.724137931034483,0.9883091635839221,0.17435338714477755,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.84, Reconnaissance:0.13, None:0.03",Impact,Impact,Impact:1.00,0.5,0.724137931034483,0.9883091635839221,0.17435338714477755,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.84, Reconnaissance:0.13, None:0.03",Impact,Impact,Impact:1.00,0.5,0.724137931034483,0.9883091635839221,0.17435338714477755,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.90, Reconnaissance:0.06, None:0.03",Impact,Impact,Impact:1.00,1.0,0.8186778212239704,0.9970366430113137,0.1050272378677059,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.93, Reconnaissance:0.04, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8749414080809975,0.998946137862892,0.06902858641043605,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8969932656739067,0.9989723920282518,0.05582988496067048,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,"Command and Control, Impact, None","Impact:0.45, Command and Control:0.25, None:0.19, Reconnaissance:0.09",Impact,Impact,Impact:1.00,0.3333333333333333,0.2927412578372437,0.8101744455805417,0.7920839284199693,True,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.55, Reconnaissance:0.30, None:0.11, Command and Control:0.02, Discovery:0.02",Impact,Impact,Impact:1.00,0.3333333333333333,0.3835085777531821,0.8650831241330325,0.5898688311064435,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.59, Reconnaissance:0.28, None:0.10, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4218683349921796,0.8927527113529841,0.5218865711254157,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.75, Reconnaissance:0.17, None:0.06",Impact,Impact,Impact:1.00,0.5,0.6026283104291033,0.9714254489074694,0.2849524678809152,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.79, Reconnaissance:0.15, None:0.05",Impact,Impact,Impact:1.00,0.5,0.65809981760902,0.9818574928552497,0.23092373863317206,True,True
+192.168.100.150,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.69, Reconnaissance:0.22, None:0.08, Discovery:0.01",Impact,Impact,Impact:1.00,0.5,0.5212017493820114,0.946990481056888,0.37797154379924236,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9522670701351945,0.999756336872961,0.024753864466229368,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.82, Reconnaissance:0.11, None:0.05",Impact,Impact,Impact:1.00,0.5,0.6999575010624738,0.9892247376526313,0.19419172936444196,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.90, Reconnaissance:0.07, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8256503879507077,0.9970768018334765,0.1003729741467873,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.85, Reconnaissance:0.10, None:0.04",Impact,Impact,Impact:1.00,1.0,0.7358097552508247,0.992271566272797,0.1651105200636001,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.05, None:0.01",Impact,Impact,Impact:1.00,1.0,0.8812905653278152,0.9986459867724234,0.06517872602499432,True,True
+192.168.100.150,50,Impact,"Impact, None","Impact:0.64, None:0.32, Reconnaissance:0.03",Impact,Impact,Impact:1.00,0.5,0.4682865021987033,0.8927887708606406,0.4496238817631871,True,True
+192.168.100.150,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.82, Reconnaissance:0.11, None:0.05",Impact,Impact,Impact:1.00,0.5,0.6883336147222693,0.9880550452636966,0.20407648859698366,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.84, Reconnaissance:0.10, None:0.05",Impact,Impact,Impact:1.00,1.0,0.7204301075268814,0.9913243521429602,0.17733401528291565,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.84, Reconnaissance:0.10, None:0.05",Impact,Impact,Impact:1.00,1.0,0.7204301075268813,0.9913243521429602,0.17733401528291584,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.97, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9476093095724994,0.9997255345472149,0.027268427154193763,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.75, Reconnaissance:0.15, None:0.08",Impact,Impact,Impact:1.00,0.5,0.6041065126724416,0.9763214208503042,0.28342448219913935,True,True
+192.168.100.150,50,Impact,"Impact, Reconnaissance","Impact:0.84, Reconnaissance:0.10, None:0.05",Impact,Impact,Impact:1.00,0.5,0.7170329670329672,0.9910250642355026,0.1800840618537627,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.85, Reconnaissance:0.09, None:0.04",Impact,Impact,Impact:1.00,1.0,0.7415534656913971,0.9929262224892659,0.16063834596281226,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.96, Reconnaissance:0.03",Impact,Impact,Impact:1.00,1.0,0.920860545524395,0.9994487259208145,0.042072776421907765,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.150,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.150,50,Impact,"Command and Control, Impact, Reconnaissance","Impact:0.63, Command and Control:0.17, Reconnaissance:0.10, None:0.09",Impact,Impact,Impact:1.00,0.3333333333333333,0.4588424085488161,0.9459371010125921,0.46354453418499786,True,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.150,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.150,50,None,"Command and Control, Impact, None, Reconnaissance","None:0.42, Command and Control:0.26, Impact:0.16, Reconnaissance:0.14",Impact,"Exfiltration, Impact","Impact:0.72, Exfiltration:0.28",0.2,0.09167404782993792,0.2835079289793443,2.101071444715165,False,True
+192.168.100.150,50,None,None,None:1.00,Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,50,None,None,"None:0.95, Exfiltration:0.02, Impact:0.01",Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.011426153195090983,0.023684709475964714,3.7900645983612824,False,False
+192.168.100.150,50,None,None,"None:0.98, Exfiltration:0.01",Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.005698607007176021,0.011601759947264595,4.480068769524029,False,False
+192.168.100.150,50,None,None,None:1.00,Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.150,19,None,None,"None:0.92, Exfiltration:0.04, Impact:0.03",Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.020122973728339853,0.04287503762283876,3.2326691470005366,False,False
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.68, None:0.32",0.5,0.19047619047619047,0.42579703632987953,11.89919344831518,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,None,"None, Reconnaissance","None:0.78, Reconnaissance:0.22",0.5,0.639344262295082,0.9624496759864037,3.52564180223814,True,True
+192.168.100.149,50,None,"None, Reconnaissance","None:0.69, Reconnaissance:0.29, Impact:0.01",None,None,None:1.00,0.5,0.5251026207767603,0.9221379370144944,0.3730760868937455,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.69, None:0.26, Impact:0.03, Discovery:0.02",None,"None, Reconnaissance","None:0.54, Reconnaissance:0.46",1.0,0.560847813392674,0.8741549178750403,0.21303370895131035,False,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.53, None:0.42, Impact:0.02, Discovery:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.36390178794872513,0.7868103339428962,0.6280736343780832,True,True
+192.168.100.149,50,None,None,"None:0.96, Reconnaissance:0.04",None,"None, Reconnaissance","None:0.94, Reconnaissance:0.06",0.5,0.9542636613704477,0.9996689783097661,0.009379517439937722,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,"None, Reconnaissance","None:0.70, Reconnaissance:0.26, Impact:0.02",None,"None, Reconnaissance","None:0.70, Reconnaissance:0.30",1.0,0.9280719280719277,0.998379079810627,0.038284761336128535,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685347,0.9913201667351286,0.20723864347454535,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.65, None:0.26, Impact:0.06, Discovery:0.02",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.98, None:0.02",1.0,0.503759398496241,0.9316521498328015,0.35095162300766114,True,True
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:0.99,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0004628850361891935,0.0009325884571842084,6.985347434055275,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,"None:0.98, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0013870208473436443,0.0028359857648869013,5.888835986495978,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.92, None:0.08",0.5,0.04166666666666667,0.086629616364842,16.66825691266759,False,False
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,"None, Reconnaissance","None:0.54, Reconnaissance:0.43, Impact:0.02, Discovery:0.01",None,"None, Reconnaissance","None:0.52, Reconnaissance:0.48",1.0,0.9033846634878451,0.9970029900374516,0.037157921191833684,True,True
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.65, None:0.30, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.4848133828772584,0.9102557779627753,0.42613315536490043,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.55, None:0.41, Impact:0.02, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.3797662414379948,0.8041965794566518,0.5969662836558602,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.65, None:0.30, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.4848133828772584,0.9102557779627753,0.42613315536490043,True,True
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.77, None:0.17, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.6274805160783283,0.9759635225424904,0.2599286013139565,True,True
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.80, None:0.13, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.6729935834985049,0.9856579211888525,0.21748688967114663,True,True
+192.168.100.149,50,None,"None, Reconnaissance","None:0.63, Reconnaissance:0.34, Impact:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.64, None:0.36",1.0,0.5403201449713076,0.8456822408848349,0.19962337330090543,False,True
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,"None:0.96, Reconnaissance:0.04",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.018072933376109494,0.036970983743116005,3.338104232302393,False,False
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685348,0.9913201667351286,0.20723864347454518,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685347,0.9913201667351286,0.20723864347454535,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685347,0.9913201667351286,0.20723864347454535,True,True
+192.168.100.149,50,None,"None, Reconnaissance","None:0.51, Reconnaissance:0.43, Impact:0.04, Discovery:0.01",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.50, None:0.50",1.0,0.8750000000000002,0.9950660472452737,0.06391668575494241,False,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.54, None:0.46",0.5,0.2987012987012987,0.648466455599791,9.257223843275879,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,None,"None, Reconnaissance","None:0.76, Reconnaissance:0.24",0.5,0.6129032258064516,0.9535826651341416,3.8698834504615944,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.75, None:0.15, Impact:0.07, Discovery:0.02",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.88, None:0.12",1.0,0.7669226393629128,0.993892124448526,0.11605482770589078,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685348,0.9913201667351286,0.20723864347454518,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.80, None:0.09, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6620821872134705,0.988741692288511,0.2272895463227515,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.149,50,None,"None, Reconnaissance","None:0.74, Reconnaissance:0.23, Impact:0.02",None,"None, Reconnaissance","None:0.74, Reconnaissance:0.26",1.0,0.9382497383463486,0.9988572975157561,0.03317683806081292,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.149,50,None,"None, Reconnaissance","None:0.75, Reconnaissance:0.24",None,"None, Reconnaissance","None:0.74, Reconnaissance:0.26",1.0,0.9515259595509261,0.9993558997566143,0.01992312189360338,True,True
+192.168.100.149,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.149,50,Reconnaissance,"Impact, Reconnaissance","Reconnaissance:0.77, Impact:0.12, None:0.07, Discovery:0.02, Exfiltration:0.01",Reconnaissance,"Impact, Reconnaissance","Reconnaissance:0.84, Impact:0.16",1.0,0.8023213899502558,0.9942271058031511,0.11990254374500506,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.91, Reconnaissance:0.06, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8306636155606408,0.9974531459571188,0.09706171284313124,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.84, Reconnaissance:0.10, None:0.05",Impact,Impact,Impact:1.00,1.0,0.7204301075268814,0.9913243521429602,0.17733401528291565,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.84, Reconnaissance:0.10, None:0.05",Impact,Impact,Impact:1.00,1.0,0.7204301075268816,0.9913243521429602,0.17733401528291545,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.96, Reconnaissance:0.03",Impact,Impact,Impact:1.00,1.0,0.9230769230769231,0.9994836027747305,0.040821994520254985,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.85, Reconnaissance:0.09, None:0.04",Impact,Impact,Impact:1.00,1.0,0.7467248908296941,0.9932992340819629,0.15665381004537696,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.82, Reconnaissance:0.11, None:0.05",Impact,Impact,Impact:1.00,0.5,0.6963528413910094,0.9891343855130345,0.1972321695297089,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.84, Reconnaissance:0.10, None:0.05",Impact,Impact,Impact:1.00,0.5,0.7170329670329672,0.9910250642355026,0.1800840618537627,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.93, Reconnaissance:0.05, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8754688672168042,0.998675720917157,0.06870719800979082,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.92, Reconnaissance:0.06, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8497965223825381,0.9978459849538182,0.08468680816719361,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.65, Reconnaissance:0.24, None:0.09, Discovery:0.01",Impact,Impact,Impact:1.00,0.5,0.48544266191325003,0.9315633775976895,0.42525973543634393,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.79, Reconnaissance:0.12, None:0.06",Impact,Impact,Impact:1.00,0.5,0.6586498590147623,0.9848677094864293,0.23041996028498582,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.65, Reconnaissance:0.21, None:0.11, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4777597162701343,0.9386803468915342,0.4360274136908046,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.59, Reconnaissance:0.24, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.41763538417918905,0.9058348669064035,0.528989594393662,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.66, Reconnaissance:0.20, None:0.11, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.49588631264023914,0.9462426939948564,0.41098028879627496,True,True
+192.168.100.149,50,Impact,"Command and Control, Impact, None, Reconnaissance","Impact:0.47, Command and Control:0.19, None:0.18, Reconnaissance:0.15, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.3031013812874641,0.8410829609373025,0.7652878583376277,True,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.149,50,None,None,"None:0.89, Command and Control:0.05, Impact:0.04, Reconnaissance:0.02",Impact,Impact,Impact:1.00,0.0,0.02090889694900789,0.045881528895154455,3.1951266446565376,False,False
+192.168.100.149,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,"Command and Control, Impact, None, Reconnaissance","None:0.56, Command and Control:0.20, Impact:0.12, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.0647340889276373,0.1978810771071876,2.1070452451142385,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Impact,"Command and Control, Impact, None, Reconnaissance","Impact:0.31, Command and Control:0.27, Reconnaissance:0.23, None:0.18, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.1823126034523527,0.6170947514028704,1.176357637292963,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.75, Reconnaissance:0.17, None:0.06",Impact,Impact,Impact:1.00,0.5,0.6026283104291033,0.9714254489074694,0.2849524678809152,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.92, Reconnaissance:0.06, None:0.02",Impact,Impact,Impact:1.00,1.0,0.8502243397011888,0.9977251077375479,0.0844147511423639,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.84, Reconnaissance:0.11, None:0.04",Impact,Impact,Impact:1.00,0.5,0.7299541562148602,0.9905599858761422,0.16972127481821633,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.73, Reconnaissance:0.19, None:0.07",Impact,Impact,Impact:1.00,0.5,0.5710919088766692,0.9634937658678705,0.3188288014486179,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.72, Reconnaissance:0.20, None:0.07, Discovery:0.01",Impact,Impact,Impact:1.00,0.5,0.5608537870215005,0.9605374862660765,0.3303808269848965,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.80, Reconnaissance:0.14, None:0.05",Impact,Impact,Impact:1.00,0.5,0.6696581374963475,0.9835731847914657,0.22045965618505237,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.86, Reconnaissance:0.10, None:0.03",Impact,Impact,Impact:1.00,1.0,0.7553098121818498,0.9926919921836269,0.15012545857763798,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.84, Reconnaissance:0.11, None:0.04",Impact,Impact,Impact:1.00,0.5,0.7299541562148602,0.9905599858761422,0.16972127481821633,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.72, Reconnaissance:0.20, None:0.07, Discovery:0.01",Impact,Impact,Impact:1.00,0.5,0.5608537870215003,0.9605374862660765,0.33038082698489685,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.79, Reconnaissance:0.15, None:0.05",Impact,Impact,Impact:1.00,0.5,0.646700424025359,0.9800249192261272,0.24149847703618865,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.78, Reconnaissance:0.15, None:0.05",Impact,Impact,Impact:1.00,0.5,0.645819618169848,0.9798757934435578,0.24232637073098415,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.97, Reconnaissance:0.03",Impact,Impact,Impact:1.00,1.0,0.9411821799475882,0.9996472630265966,0.030768533671636476,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.97, Reconnaissance:0.03",Impact,Impact,Impact:1.00,1.0,0.9326472435618689,0.9995467892869934,0.03547174930825268,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.80, Reconnaissance:0.12, None:0.06",Impact,Impact,Impact:1.00,0.5,0.6655562958027982,0.985463832929873,0.2241440516477931,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.85, Reconnaissance:0.10, None:0.04",Impact,Impact,Impact:1.00,1.0,0.7358097552508246,0.992271566272797,0.1651105200636003,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.87, Reconnaissance:0.08, None:0.03",Impact,Impact,Impact:1.00,1.0,0.77320684457842,0.9946916555256105,0.13685118274919703,True,True
+192.168.100.149,50,Impact,"Impact, Reconnaissance","Impact:0.78, Reconnaissance:0.13, None:0.06",Impact,Impact,Impact:1.00,0.5,0.6433853738701727,0.9825121184165015,0.2446225829913338,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.66, Reconnaissance:0.20, None:0.11, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4958863126402392,0.9462426939948564,0.4109802887962748,True,True
+192.168.100.149,50,Impact,"Impact, None, Reconnaissance","Impact:0.58, Reconnaissance:0.24, None:0.14, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.40944326990838603,0.9002457511536891,0.5430045221302261,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.97, Reconnaissance:0.03",Impact,Impact,Impact:1.00,1.0,0.9331142470520007,0.99959097523223,0.03521275575574442,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.149,50,Impact,Impact,"Impact:0.82, Command and Control:0.07, Reconnaissance:0.06, None:0.04",Impact,Impact,Impact:1.00,1.0,0.7001020061203673,0.9926285160368942,0.1940703038285026,True,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, Impact:0.22, None:0.21, Reconnaissance:0.19, Exfiltration:0.01, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12227147747039996,0.43224449055411296,1.5237190370315639,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, None:0.22, Impact:0.22, Reconnaissance:0.19, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12095056608003575,0.43065346202137716,1.5334032261581036,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.149,50,None,"Command and Control, Exfiltration, Impact, None, Reconnaissance","None:0.44, Command and Control:0.17, Impact:0.16, Reconnaissance:0.11, Exfiltration:0.11",Impact,Impact,Impact:1.00,0.2,0.08766586904502931,0.30815712208460444,1.8251094489096098,False,True
+192.168.100.149,50,None,"Exfiltration, Impact, None","None:0.64, Exfiltration:0.17, Impact:0.11, Reconnaissance:0.04, Command and Control:0.02",Impact,"Exfiltration, Impact","Impact:0.94, Exfiltration:0.06",0.6666666666666666,0.09326731371732794,0.17913627637985666,1.9477941366162475,False,True
+192.168.100.149,50,None,None,"None:0.94, Exfiltration:0.03, Impact:0.02",Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.01526070368800338,0.03201826900182092,3.504472390828961,False,False
+192.168.100.149,50,None,None,None:1.00,Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,50,None,None,None:1.00,Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.149,40,None,None,None:1.00,Exfiltration,Exfiltration,Exfiltration:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,"None, Reconnaissance","None:0.56, Reconnaissance:0.41, Impact:0.02, Discovery:0.01",None,None,None:1.00,0.5,0.3846591717660452,0.8030473076082001,0.5877044483436581,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",None,None,None:1.00,0.0,0.0309278350515464,0.06863793593345441,2.8134107167600364,False,False
+192.168.100.147,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.69, None:0.26, Impact:0.03, Discovery:0.02",None,"None, Reconnaissance","None:0.76, Reconnaissance:0.24",1.0,0.3321300611513699,0.617154164963469,0.5667901795727741,False,True
+192.168.100.147,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.82, None:0.11, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.6966458485781866,0.9893284986047589,0.19698419682742327,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.147,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.77, None:0.17, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.6274805160783287,0.9759635225424904,0.2599286013139562,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.147,50,None,"None, Reconnaissance","None:0.77, Reconnaissance:0.22",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.12189205579138868,0.27305267380267567,1.52648882945335,False,True
+192.168.100.147,50,None,None,None:1.00,None,"None, Reconnaissance","None:0.88, Reconnaissance:0.12",0.5,0.7857142857142857,0.990830168044299,1.8435566980015743,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,"None, Reconnaissance","None:0.67, Reconnaissance:0.28, Impact:0.03",None,"None, Reconnaissance","None:0.68, Reconnaissance:0.32",1.0,0.9142449916858026,0.9981589430583194,0.047473206471441404,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.147,50,None,"None, Reconnaissance","None:0.86, Reconnaissance:0.12, Impact:0.01",None,"None, Reconnaissance","None:0.86, Reconnaissance:0.14",1.0,0.9669098756551228,0.99973979877825,0.017864330466369652,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,"None, Reconnaissance","None:0.94, Reconnaissance:0.06",0.5,0.8867924528301886,0.9979690828636266,0.8782733221365374,True,True
+192.168.100.147,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.78, None:0.11, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.5,0.6400461057138157,0.9854383923751994,0.2477922391664749,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,"None, Reconnaissance","Reconnaissance:0.98, None:0.02",0.5,0.7375121747599833,0.9944578834976371,0.1426867166352123,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,None,None,None:1.00,Reconnaissance,Reconnaissance,Reconnaissance:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,None,None,None:1.00,Reconnaissance,"None, Reconnaissance","Reconnaissance:0.78, None:0.22",0.5,0.12359550561797752,0.2714601650218062,13.841223018851464,False,False
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,None,None:1.00,None,None,None:1.00,1.0,1.0,1.0,0.0,True,True
+192.168.100.147,50,None,"None, Reconnaissance","None:0.57, Reconnaissance:0.38, Impact:0.03",None,"None, Reconnaissance","None:0.56, Reconnaissance:0.44",1.0,0.8912713546328362,0.9961043672528456,0.05620251617307681,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.81, None:0.08, Impact:0.07, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.6846725185685348,0.9913201667351286,0.20723864347454518,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, Impact:0.07, None:0.06, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7078382767757928,0.9932403362420034,0.18762085860889907,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, Impact:0.07, None:0.04, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7316017316017317,0.994565129964807,0.16841865162496306,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.83, None:0.09, Impact:0.05, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.704118571135851,0.9922114550946923,0.19070934152333485,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.87, None:0.06, Impact:0.03, Discovery:0.02, Exfiltration:0.01",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7714791851195748,0.9963940366339796,0.13811330212963416,True,True
+192.168.100.147,50,Reconnaissance,Reconnaissance,"Reconnaissance:0.85, None:0.08, Impact:0.03, Discovery:0.02",Reconnaissance,Reconnaissance,Reconnaissance:1.00,1.0,0.7458625329861414,0.9946368044792868,0.15731550911357023,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.91, Reconnaissance:0.07, None:0.01",Impact,"Impact, Reconnaissance","Impact:0.96, Reconnaissance:0.04",0.5,0.9109497420217852,0.9993159695970462,0.025728711826590808,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.95, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.9047619047619048,0.999218645259692,0.05129329438755048,True,True
+192.168.100.147,50,Impact,"Impact, Reconnaissance","Impact:0.70, Reconnaissance:0.18, None:0.10, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.5,0.5335071308081583,0.9592700125265915,0.3626930162642953,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.59, Reconnaissance:0.24, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.417635384179189,0.9058348669064035,0.5289895943936621,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.60, Reconnaissance:0.24, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4259232853272493,0.9111867098915718,0.5151683732001278,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.61, Reconnaissance:0.23, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.4343086632243259,0.9163077581821504,0.501535576858898,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.64, Reconnaissance:0.21, None:0.12, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.46886016451233825,0.9346150000092674,0.4487902328465381,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.58, Reconnaissance:0.28, None:0.11, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.408252358822701,0.8861929450825505,0.545072062494582,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.56, Reconnaissance:0.30, None:0.11, Discovery:0.02, Command and Control:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.38888888888888884,0.8656748984925781,0.5798184952529422,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.84, None:0.08, Reconnaissance:0.05, Exfiltration:0.02",Impact,Impact,Impact:1.00,1.0,0.7207261464337957,0.9929250067554176,0.1770952378223725,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.93, Reconnaissance:0.04, None:0.01",Impact,Impact,Impact:1.00,1.0,0.8721332958906679,0.9987347207316775,0.07074440452575763,True,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,None,None,"None:0.87, Command and Control:0.06, Impact:0.05, Reconnaissance:0.02",Impact,Impact,Impact:1.00,0.0,0.023941855493800762,0.05326032686808567,3.0626396385499213,False,False
+192.168.100.147,50,None,None,None:1.00,Impact,Impact,Impact:1.00,0.0,0.0,0.0,18.420680743952367,False,False
+192.168.100.147,50,None,"Command and Control, Impact, None","None:0.34, Command and Control:0.30, Impact:0.25, Reconnaissance:0.10",Impact,Impact,Impact:1.00,0.3333333333333333,0.1414790996784564,0.47277150951614494,1.3947809749972104,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.34, Impact:0.28, None:0.25, Reconnaissance:0.11",Impact,Impact,Impact:1.00,0.25,0.1627906976744184,0.5396523225956995,1.2729656758128884,False,True
+192.168.100.147,50,Impact,"Command and Control, Impact, None","Impact:0.59, Command and Control:0.19, None:0.14, Reconnaissance:0.07",Impact,Impact,Impact:1.00,0.3333333333333333,0.41532800226452476,0.9214421153115134,0.5329008314178483,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.98, Reconnaissance:0.02",Impact,Impact,Impact:1.00,1.0,0.9559902200488997,0.9997877874309256,0.022756987122616278,True,True
+192.168.100.147,50,Impact,"Impact, Reconnaissance","Impact:0.73, Reconnaissance:0.19, None:0.07",Impact,Impact,Impact:1.00,0.5,0.5710919088766692,0.9634937658678705,0.3188288014486179,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.64, Reconnaissance:0.22, None:0.11, Exfiltration:0.01, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.47199528961507337,0.9337045378310833,0.4442579128273195,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.60, Reconnaissance:0.24, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.42592328532724916,0.9111867098915716,0.5151683732001281,True,True
+192.168.100.147,50,Impact,"Impact, None, Reconnaissance","Impact:0.59, Reconnaissance:0.24, None:0.13, Exfiltration:0.02, Discovery:0.01",Impact,Impact,Impact:1.00,0.3333333333333333,0.41763538417918905,0.9058348669064035,0.5289895943936621,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.89, Reconnaissance:0.07, None:0.03",Impact,Impact,Impact:1.00,1.0,0.7960576534506758,0.9960134701864095,0.1205305566377475,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.147,50,Impact,Impact,"Impact:0.94, Reconnaissance:0.04",Impact,Impact,Impact:1.00,1.0,0.8957345971563982,0.9989272905248324,0.056570351488394455,True,True
+192.168.100.147,50,Impact,"Command and Control, Impact, Reconnaissance","Impact:0.64, Command and Control:0.15, Reconnaissance:0.11, None:0.09",Impact,Impact,Impact:1.00,0.3333333333333333,0.4711290915777857,0.9517588152786987,0.4455061576453485,True,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, Impact:0.22, None:0.21, Reconnaissance:0.19, Exfiltration:0.01, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12227147747039997,0.432244490554113,1.5237190370315639,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, Impact:0.22, None:0.21, Reconnaissance:0.19, Exfiltration:0.01, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12227147747039996,0.43224449055411296,1.5237190370315639,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, Impact:0.22, None:0.21, Reconnaissance:0.19, Exfiltration:0.01, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12227147747039997,0.432244490554113,1.5237190370315639,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.35, Impact:0.22, None:0.21, Reconnaissance:0.19, Exfiltration:0.01, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12227147747039997,0.432244490554113,1.5237190370315639,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,50,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01, Exfiltration:0.01",Impact,Impact,Impact:1.00,0.25,0.1235955056179774,0.4335886644290668,1.5141277326297764,False,True
+192.168.100.147,35,Command and Control,"Command and Control, Impact, None, Reconnaissance","Command and Control:0.36, Impact:0.22, None:0.20, Reconnaissance:0.20, Discovery:0.01",Impact,Impact,Impact:1.00,0.25,0.12359550561797747,0.43358866442906696,1.514127732629776,False,True
+192.168.100.3,50,None,"Exfiltration, None","None:0.51, Exfiltration:0.30, Impact:0.09, Reconnaissance:0.08, Command and Control:0.02",None,None,None:1.00,0.5,0.33922592741395474,0.8451548145569654,0.6800335414145621,True,True
+192.168.100.3,50,None,"Exfiltration, None","None:0.47, Exfiltration:0.33, Impact:0.09, Reconnaissance:0.08, Command and Control:0.02",None,"None, Reconnaissance","None:0.80, Reconnaissance:0.20",0.3333333333333333,0.3850223681112452,0.8102911206050225,0.5952476966334558,True,True
+192.168.100.3,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.3,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.3,50,None,"Exfiltration, None","None:0.49, Exfiltration:0.38, Impact:0.07, Reconnaissance:0.03, Command and Control:0.02",None,None,None:1.00,0.5,0.3245033112582782,0.7833283851742242,0.7133498878774646,True,True
+192.168.100.3,50,None,"Exfiltration, None","None:0.49, Exfiltration:0.38, Impact:0.07, Reconnaissance:0.03, Command and Control:0.02",None,None,None:1.00,0.5,0.32450331125827814,0.783328385174224,0.7133498878774648,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None","Exfiltration:0.56, None:0.36, Impact:0.04, Reconnaissance:0.02, Command and Control:0.02",None,None,None:1.00,0.5,0.219809709685289,0.5409034361445203,1.0205407532479545,False,True
+192.168.100.3,50,None,"Exfiltration, None","None:0.49, Exfiltration:0.33, Impact:0.09, Reconnaissance:0.07, Command and Control:0.02",None,None,None:1.00,0.5,0.326963906581741,0.8176852543072403,0.707651866762827,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None","Exfiltration:0.54, None:0.35, Reconnaissance:0.05, Impact:0.04, Command and Control:0.02",None,None,None:1.00,0.5,0.2090436464756377,0.5369757375943067,1.0618947057329473,False,True
+192.168.100.3,50,None,"Exfiltration, None","None:0.51, Exfiltration:0.30, Impact:0.09, Reconnaissance:0.07, Command and Control:0.02",None,None,None:1.00,0.5,0.3457139012245998,0.8481912268352692,0.6659211943063535,True,True
+192.168.100.3,50,None,"Exfiltration, None","None:0.51, Exfiltration:0.34, Impact:0.08, Reconnaissance:0.04, Command and Control:0.02",None,"None, Reconnaissance","None:0.94, Reconnaissance:0.06",0.3333333333333333,0.38255219134522334,0.827498616840694,0.5938570645761317,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None","Exfiltration:0.43, None:0.40, Reconnaissance:0.08, Impact:0.07, Command and Control:0.02",None,None,None:1.00,0.5,0.2482836100362002,0.6673019289068213,0.9218059125622652,False,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.51, None:0.26, Reconnaissance:0.16, Impact:0.05, Command and Control:0.01",Exfiltration,"Exfiltration, None","Exfiltration:0.66, None:0.34",0.6666666666666666,0.6233766233766234,0.9585673122655155,0.26406521745185507,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.58, Reconnaissance:0.24, None:0.12, Impact:0.05",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.4116318464144552,0.9063382354518731,0.5392250982876886,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.59, Reconnaissance:0.24, None:0.11, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42005112184038645,0.9093072497183831,0.5249245481454922,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,50,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.42857142857142866,0.9118941213784192,0.5108256237659906,True,True
+192.168.100.3,23,Exfiltration,"Exfiltration, None, Reconnaissance","Exfiltration:0.60, Reconnaissance:0.25, None:0.10, Impact:0.04",Exfiltration,Exfiltration,Exfiltration:1.00,0.3333333333333333,0.4285714285714285,0.9118941213784191,0.5108256237659907,True,True
+192.168.100.46,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.46,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.46,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.46,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.46,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.46,6,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.02",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.944280496308101,0.4620354595965586,True,True
+192.168.100.5,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.5,43,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.02",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.944280496308101,0.4620354595965586,True,True
+192.168.100.6,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.6,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,"None, Reconnaissance","None:0.90, Reconnaissance:0.10",0.25,0.5082956259426847,0.9457879576707899,0.40310550475184237,True,True
+192.168.100.6,24,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.02",None,"Exfiltration, None, Reconnaissance","None:0.46, Exfiltration:0.42, Reconnaissance:0.12",0.5,0.5178345560333925,0.8758471030814892,0.33442979750205004,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,"None, Reconnaissance","None:0.94, Reconnaissance:0.06",0.25,0.5082956259426847,0.9465637500457474,0.39475974822399346,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,50,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.45985401459854003,0.944280496308101,0.4620354595965589,True,True
+192.168.100.7,36,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.9442804963081008,0.4620354595965586,True,True
+192.168.100.27,19,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.944280496308101,0.4620354595965586,True,True
+0.0.0.0,22,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.12, Reconnaissance:0.04, Command and Control:0.02",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.944280496308101,0.4620354595965586,True,True
+192.168.100.55,3,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.944280496308101,0.4620354595965586,True,True
+192.168.100.4,8,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.02",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.944280496308101,0.4620354595965586,True,True
+13.55.154.73,1,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.944280496308101,0.4620354595965586,True,True
+13.211.17.145,1,None,"Exfiltration, Impact, None","None:0.63, Exfiltration:0.18, Impact:0.11, Reconnaissance:0.04, Command and Control:0.03",None,None,None:1.00,0.3333333333333333,0.4598540145985402,0.944280496308101,0.4620354595965586,True,True

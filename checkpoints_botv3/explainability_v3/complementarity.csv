@@ -1,0 +1,13 @@
+cluster,n_train,true_tactic,purity,rule,llm,fused,agree,rule_ok,llm_ok,fused_ok
+1,4035,Impact,1.0,Impact,Impact,Impact,True,True,True,True
+3,937,Exfiltration,0.9060832443970117,Reconnaissance,Exfiltration,Exfiltration,False,False,True,True
+4,3143,Impact,1.0,Impact,Impact,Impact,True,True,True,True
+6,398,None,1.0,Impact,None,Impact,False,False,True,False
+8,2607,Impact,1.0,Impact,Impact,Impact,True,True,True,True
+9,2588,Impact,0.999613601236476,Impact,Impact,Impact,True,True,True,True
+11,2944,Impact,1.0,Impact,Impact,Impact,True,True,True,True
+12,230,None,1.0,Reconnaissance,None,None,False,False,True,True
+14,4537,Reconnaissance,0.9155829843508927,Reconnaissance,Reconnaissance,Reconnaissance,True,True,True,True
+16,137,None,0.9197080291970803,Reconnaissance,None,Reconnaissance,False,False,True,False
+17,170,None,1.0,Impact,None,None,False,False,True,True
+18,1150,Impact,1.0,Impact,Impact,Impact,True,True,True,True
