@@ -19,24 +19,27 @@ BGTD-NID is an unsupervised framework that discovers network behaviours from raw
 - **Three-track encoder** — jointly captures flow statistics (MLP), IP communication topology (GraphSAGE), and temporal dynamics (Transformer)
 - **Dual semantic labelling** — independent rule-based and LLM-based scorers fused via weighted probabilistic combination
 - **Portable Knowledge Base** — stores fused behaviour/tactic distributions with traceable explanation chains
-- **Streaming adaptation** — online EM updates, drift detection via log-likelihood monitoring, Dynamic KB, and novelty detection for zero-day attacks
-- **Cross-dataset evaluation** — tested on NF-BoT-IoT-v2, NF-UNSW-NB15-v2, and NF-CICIDS-2018-v2
+- **Leakage-safe evaluation (v3)** — per-class chronological train / gap / test split; fusion weight and thresholds selected on validation only
+- **Streaming adaptation** — online EM updates, log-likelihood drift monitoring and a Dynamic KB that re-labels clusters per batch
+- **Cross-dataset evaluation** — NF-BoT-IoT-v3 (primary) with label-free transfer to NF-UNSW-NB15-v3; the original v2 experiments (incl. NF-CICIDS-2018-v2) are kept in `src/v2_runs/`
 
 ## Results Summary
 
-| Metric | NF-BoT-IoT-v2 | NF-UNSW-NB15-v2 | NF-CICIDS-2018-v2 |
-|--------|---------------|-----------------|-------------------|
-| Cluster purity (%) | 78.22 | 67.88 | 84.38 |
-| Per-flow tactic accuracy (%) | 64.11 | 52.30 | 69.72 |
-| Window Top-1 accuracy (%) | 73.86 | 55.62 | 84.74 |
-| Window Multi-Tactic Coverage (%) | 97.73 | 86.98 | 92.74 |
-| Window cosine similarity (%) | 87.61 | 81.77 | 79.05 |
-| Hopkins statistic | 0.998 | 0.991 | 0.992 |
+**NF-BoT-IoT-v3 (chronological split, test set, final model seed 44, fused w_r = 0.7 selected on validation):**
 
-**Streaming capabilities (BoT-IoT):**
-- Drift detection F1: 0.80 (1-batch latency)
-- Novelty detection AUC-ROC: 0.823 (held-out Theft attack)
-- Online EM log-likelihood improvement: +0.72
+| Metric | Rules | LLM | Fused |
+|--------|-------|-----|-------|
+| Per-flow tactic accuracy (%) | 88.80 | 91.12 | 89.31 |
+| Per-flow macro-F1 (%) | 66.09 | 68.17 | 66.45 |
+| Window Top-1 accuracy, W=50 (%) | 91.72 | 90.45 | 91.72 |
+
+Scope: Impact and Reconnaissance are attributed reliably; low-volume Exfiltration (Theft), whose flows resemble benign traffic at flow level, is not.
+
+**Cross-dataset transfer (NF-UNSW-NB15-v3, label-free, w_r = 0.5 fixed a priori):** fused macro-F1 0.115 (all tactics), 0.306 (shared tactics), W50 Top-1 0.395.
+
+**Streaming (NF-BoT-IoT-v3):** online adaptation improves macro-F1 over a static model in all three phases (0.685 vs 0.665, 0.629 vs 0.501, 0.430 vs 0.112). Drift detection: precision 1.00, recall 0.33. Likelihood-based novelty detection does not separate unseen attacks on this dataset (leave-one-attack-out AUC 0.28–0.59).
+
+Results for the v2 datasets (random split, original submission) are reproducible from `src/v2_runs/`.
 
 ## Installation
 
@@ -81,9 +84,9 @@ Download the standardised NetFlow datasets from [Sarhan et al. (2022)](https://s
 ```bash
 mkdir -p data/
 # Place dataset CSV files:
-#   data/NF-BoT-IoT-v2.csv
-#   data/NF-UNSW-NB15-v2.csv
-#   data/NF-CSE-CIC-IDS2018-v2.csv
+#   data/NF-BoT-IoT-v3.csv        (v3 runs, primary)
+#   data/NF-UNSW-NB15-v3.csv      (v3 transfer target)
+#   data/NF-BoT-IoT-v2.csv, NF-UNSW-NB15-v2.csv, NF-CSE-CIC-IDS2018-v2.csv  (v2 runs)
 ```
 
 ### API Keys (optional)
@@ -94,7 +97,10 @@ export OPENAI_API_KEY="sk-..."
 
 # For multi-LLM explanation quality evaluation
 export ANTHROPIC_API_KEY="sk-ant-..."
+export GEMINI_API_KEY="..."
 ```
+
+Keys are read from environment variables only; never commit them.
 
 ## Project Structure
 
@@ -116,10 +122,28 @@ bgtd-nid/
 ├── evaluate_embeddings.py      # 9 embedding diagnostic plots
 │
 ├── src/
+│   ├── v2_runs/                # Original submission (v2 datasets, random split)
+│   │   ├── main.py, main_unsw.py, main_cicids.py
+│   │   └── ...                 # v2 validation / inference / ablation / streaming scripts
+│   │
+│   ├── v3_runs/                # Revision (v3 datasets, leakage-safe chronological split)
+│   │   ├── training_v3.py              # Training (SEED, CHECKPOINT_DIR, TRANSFER_KB, HOLDOUT_ATTACK via env)
+│   │   ├── inference_v3.py             # Test inference + timing (no LLM calls)
+│   │   ├── sweep_fusion_window_v3.py   # Fusion weight (validation) + window-size sensitivity
+│   │   ├── run_ablation_v3.py          # Encoder / clustering ablations over seeds
+│   │   ├── baseline_experiments_v3.py  # IF, AE, K-Means oracle, RF, MLP, E-GraphSAGE
+│   │   ├── streaming_v3.py             # Three-phase adaptation, drift, leave-one-attack-out novelty
+│   │   ├── novelty_loo_summary.py      # Collects leave-one-attack-out results
+│   │   ├── explainability_v3_extra.py  # Complementarity, hallucination, sensitivity, judges
+│   │   ├── cluster_purity_table_v3.py  # Per-cluster size / purity / fused labels
+│   │   ├── explain_chain_v3.py         # Explanation chains, heuristic-semantic matrix, flow trace
+│   │   └── check_split_dates.py        # Train/test date ranges per class
+│   │
 │   ├── config/
 │   │   ├── config.py           # BoT-IoT configuration
 │   │   ├── config_unsw.py      # UNSW-NB15 configuration
-│   │   └── config_cicids.py    # CICIDS-2018 configuration
+│   │   ├── config_cicids.py    # CICIDS-2018 configuration
+│   │   └── config_v3.py        # v3 datasets (paths, dims, CHECKPOINT_DIR override)
 │   │
 │   ├── data/
 │   │   ├── loader.py           # Dataset loading utility
@@ -165,84 +189,57 @@ bgtd-nid/
 
 ## Usage
 
-### 1. Training
+### v3 (revision)
+
+Run from the repository root; scripts read `V3_DATASET` and `CHECKPOINT_DIR` from the environment.
 
 ```bash
-# Train on NF-BoT-IoT-v2 (primary dataset)
-python main.py
+# 1. Train (final model: seed 44)
+SEED=44 V3_DATASET=bot_iot CHECKPOINT_DIR=checkpoints_botv3 python src/v3_runs/training_v3.py
 
-# Train on other datasets
-python main_unsw.py
-python main_cicids.py
+# 2. Inference on the held-out test split (no LLM calls)
+FUSION_W_RULES=0.7 V3_DATASET=bot_iot CHECKPOINT_DIR=checkpoints_botv3 python src/v3_runs/inference_v3.py
+
+# 3. Fusion-weight (validation) and window-size sensitivity
+V3_DATASET=bot_iot CHECKPOINT_DIR=checkpoints_botv3 python src/v3_runs/sweep_fusion_window_v3.py
+
+# 4. Ablations (3 seeds; LLM on, as in the final model)
+V3_DATASET=bot_iot python src/v3_runs/run_ablation_v3.py                 # encoder tracks
+V3_DATASET=bot_iot python src/v3_runs/run_ablation_v3.py --study cluster # K-Means / GMM / DP-GMM
+
+# 5. Baselines
+FUSION_W_RULES=0.7 V3_DATASET=bot_iot CHECKPOINT_DIR=checkpoints_botv3 python src/v3_runs/baseline_experiments_v3.py
+
+# 6. Streaming (three-phase adaptation + drift); STREAM_SHUFFLE=0 for time order
+V3_DATASET=bot_iot CHECKPOINT_DIR=checkpoints_botv3 python src/v3_runs/streaming_v3.py bot_iot
+#    Leave-one-attack-out novelty (train one HOLDOUT_ATTACK model per class first)
+NOVELTY_ONLY=1 HOLDOUT_CKPT_DIR=checkpoints_botv3_holdout_Theft CHECKPOINT_DIR=checkpoints_botv3 V3_DATASET=bot_iot python src/v3_runs/streaming_v3.py bot_iot
+python src/v3_runs/novelty_loo_summary.py checkpoints_botv3/streaming_results
+
+# 7. Explainability
+FUSION_W_RULES=0.7 V3_DATASET=bot_iot python src/v3_runs/explainability_v3_extra.py 1 2 3 4 5
+FUSION_W_RULES=0.7 V3_DATASET=bot_iot python src/v3_runs/cluster_purity_table_v3.py
+EXAMPLE_CLUSTERS=14,1,3,19 TRACE_CLUSTER=14 FUSION_W_RULES=0.7 V3_DATASET=bot_iot python src/v3_runs/explain_chain_v3.py
+
+# 8. Transfer to NF-UNSW-NB15-v3 (label-free refit, BoT-IoT knowledge frozen)
+TRANSFER_KB=bot_iot V3_DATASET=unsw_nb15 CHECKPOINT_DIR=checkpoints_unswv3_transfer python src/v3_runs/training_v3.py
+FUSION_W_RULES=0.5 TRANSFER_KB=bot_iot V3_DATASET=unsw_nb15 CHECKPOINT_DIR=checkpoints_unswv3_transfer python src/v3_runs/inference_v3.py
 ```
 
-Training outputs:
-- `checkpoints/model_checkpoint.pt` — encoder + GMM + cluster assignments
-- `checkpoints/knowledge_base.json` — fused behaviour/tactic KB
-
-### 2. Validation
+### v2 (original submission)
 
 ```bash
+python src/v2_runs/main.py          # NF-BoT-IoT-v2
+python src/v2_runs/main_unsw.py     # NF-UNSW-NB15-v2
+python src/v2_runs/main_cicids.py   # NF-CICIDS-2018-v2
 python validation.py bot_iot
-```
-
-Computes: cluster purity, NMI/ARI, silhouette scores, per-flow tactic accuracy, window-level metrics, and generates the cluster composition plot.
-
-### 3. Inference
-
-```bash
 python inference.py bot_iot
-```
-
-Runs KB-based tactic prediction on held-out test data. No LLM calls — uses pre-computed KB entries.
-
-### 4. Ablation Studies
-
-```bash
-# Clustering method comparison (K-Means vs GMM vs DP-GMM)
-python ablation_studies.py bot_iot cluster
-
-# Window size sensitivity (W = 5, 10, 20, 30, 50, 75, 100, 200)
-python ablation_studies.py bot_iot window
-
-# Fusion weight sensitivity (w_r = 0.0 to 1.0)
-python ablation_studies.py bot_iot fusion
-
-# Covariance type comparison
-python ablation_studies.py bot_iot covariance
-
-# Encoder track ablation (requires retraining per config)
+python ablation_studies.py bot_iot cluster   # also: window | fusion | covariance
 python ablation_encoder.py bot_iot
-python ablation_encoder.py cicids2018
-```
-
-### 5. Streaming Evaluation
-
-```bash
 python streaming_pipeline.py bot_iot
-```
-
-Runs three evaluations:
-1. **Three-phase adaptation** — stable → drift injection → recovery (Static GMM vs Online GMM + Dynamic KB)
-2. **Drift detection** — log-likelihood monitoring with simulated distribution shift
-3. **Novelty detection** — hold-out attack type (Theft/Exfiltration) flagging via log-likelihood thresholding
-
-### 6. Explainability Evaluation
-
-```bash
-# Requires OPENAI_API_KEY and optionally ANTHROPIC_API_KEY
 python explainability_eval.py bot_iot
-```
-
-Evaluates explanation quality across three dimensions: consistency (rule vs LLM agreement), feature alignment (cited features match Fisher-derived signatures), and semantic quality (multi-LLM judge scoring).
-
-### 7. Baseline Comparison
-
-```bash
 python baselines.py bot_iot
 ```
-
-Compares against: Isolation Forest, Plain Autoencoder, K-Means (oracle), Random Forest, MLP Classifier, E-GraphSAGE.
 
 ## Three Operational Modes
 
@@ -255,8 +252,7 @@ Inference:  Stage 4 + KB lookup + window aggregation
                             No LLM calls, no rule recomputation.
 
 Streaming:  Inference + online EM + drift detection + Dynamic KB
-                        →  Continuous adaptation under evolving traffic.
-                            Novelty flagging for zero-day attacks.
+                        →  Batch-level adaptation under evolving traffic.
 ```
 
 ## Key Design Decisions
@@ -267,7 +263,8 @@ Streaming:  Inference + online EM + drift detection + Dynamic KB
 | **Raw feature passthrough** in cluster summaries | Inverse-transforming log-scaled/standardised features produces artifacts (e.g., OUT_BYTES=0 for 728K-byte clusters) |
 | **LayerNorm per track** before fusion | GraphSAGE dominates 60-80% of fusion norm without it, drowning out discriminative MLP features |
 | **DP-GMM** over fixed-K alternatives | Automatic cluster count determination; matches GMM quality at equal K while eliminating manual K specification |
-| **Window aggregation** (W=50) | Per-flow predictions lack temporal context; window-level Multi-Tactic Coverage reaches 97.73% vs 64% per-flow |
+| **Window aggregation** (W=50) | Fixed a priori; aggregates per-flow predictions per source IP |
+| **Fusion weight** w_r = 0.7 | Selected on the validation gap (v3); never tuned on test |
 
 ## Datasets
 
@@ -275,13 +272,15 @@ All datasets use the [standardised NetFlow representation](https://staff.itee.uq
 
 | Dataset | Flows | Attack Types | MITRE Tactics | Role |
 |---------|-------|-------------|---------------|------|
-| NF-BoT-IoT-v2 | ~3.6M (42K sampled) | 4 | 4 | Primary benchmark |
-| NF-UNSW-NB15-v2 | ~2.5M (65K sampled) | 9 | 7 | Limitation case |
-| NF-CICIDS-2018-v2 | ~16M (120K sampled) | 14 | 6 | Cross-dataset validation |
+| NF-BoT-IoT-v3 | sampled | 4 | 4 | Primary benchmark (revision) |
+| NF-UNSW-NB15-v3 | sampled | 9 | 7 | Label-free transfer target (revision) |
+| NF-BoT-IoT-v2 | ~3.6M (42K sampled) | 4 | 4 | Original submission |
+| NF-UNSW-NB15-v2 | ~2.5M (65K sampled) | 9 | 7 | Original submission |
+| NF-CICIDS-2018-v2 | ~16M (120K sampled) | 14 | 6 | Original submission |
 
 ## Configuration
 
-Dataset-specific settings are in `src/config/`:
+Dataset-specific settings are in `src/config/` (`config_v3.py` for the v3 runs):
 
 ```python
 # Key hyperparameters (src/config/config.py)
